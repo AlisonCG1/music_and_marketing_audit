@@ -1,0 +1,10 @@
+dagster
+pandas
+requests
+google_auth_oauthlib
+googleapiclient
+dotenv
+textblob
+isodate 
+textblob
+minio
