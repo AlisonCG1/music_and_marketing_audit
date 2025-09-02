@@ -8,3 +8,6 @@ textblob
 isodate 
 textblob
 minio
+pyarrow
+fastparquet
+dagster
