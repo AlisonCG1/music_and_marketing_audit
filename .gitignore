@@ -1,2 +1,10 @@
 .env
 youtube_pipeline.log
+spotifyapi.py
+youtubeapi.py
+dagster_home/
+__pycache__/
+.ipynb_checkpoints
+.vscode/
+logs/
+data/

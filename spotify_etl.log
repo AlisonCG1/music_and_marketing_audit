@@ -1,0 +1,1438 @@
+2025-09-03 10:31:25,551 - INFO - Starting Spotify data processing
+2025-09-03 10:31:25,699 - INFO - Spotify token retrieved successfully
+2025-09-03 10:31:25,705 - DEBUG - Spotify token (first 10 chars): BQA9AZEJe7...
+2025-09-03 10:31:25,708 - INFO - Attempting to load spotify_search.parquet from MinIO bucket bronze-layer
+2025-09-03 10:31:25,726 - INFO - No existing spotify_search.parquet found in MinIO; starting fresh
+2025-09-03 10:31:25,730 - INFO - Attempting to load spotify_tracks.parquet from MinIO bucket bronze-layer
+2025-09-03 10:31:25,735 - INFO - No existing spotify_tracks.parquet found in MinIO; starting fresh
+2025-09-03 10:31:25,840 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:25,840 - ERROR - Error fetching tracks for genre 'pop' on request 1: Spotify API request failed: 
+2025-09-03 10:31:25,841 - INFO - Total tracks retrieved for genre 'pop': 0
+2025-09-03 10:31:25,844 - INFO - Genre 'pop' returned 0 tracks
+2025-09-03 10:31:26,448 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:26,448 - ERROR - Error fetching tracks for genre 'electronic' on request 1: Spotify API request failed: 
+2025-09-03 10:31:26,449 - INFO - Total tracks retrieved for genre 'electronic': 0
+2025-09-03 10:31:26,452 - INFO - Genre 'electronic' returned 0 tracks
+2025-09-03 10:31:27,061 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:27,061 - ERROR - Error fetching tracks for genre 'heavy metal' on request 1: Spotify API request failed: 
+2025-09-03 10:31:27,064 - INFO - Total tracks retrieved for genre 'heavy metal': 0
+2025-09-03 10:31:27,068 - INFO - Genre 'heavy metal' returned 0 tracks
+2025-09-03 10:31:27,665 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:27,665 - ERROR - Error fetching tracks for genre 'country' on request 1: Spotify API request failed: 
+2025-09-03 10:31:27,668 - INFO - Total tracks retrieved for genre 'country': 0
+2025-09-03 10:31:27,671 - INFO - Genre 'country' returned 0 tracks
+2025-09-03 10:31:28,266 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:28,266 - ERROR - Error fetching tracks for genre 'jazz' on request 1: Spotify API request failed: 
+2025-09-03 10:31:28,269 - INFO - Total tracks retrieved for genre 'jazz': 0
+2025-09-03 10:31:28,276 - INFO - Genre 'jazz' returned 0 tracks
+2025-09-03 10:31:28,875 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:28,875 - ERROR - Error fetching tracks for genre 'hip hop' on request 1: Spotify API request failed: 
+2025-09-03 10:31:28,876 - INFO - Total tracks retrieved for genre 'hip hop': 0
+2025-09-03 10:31:28,879 - INFO - Genre 'hip hop' returned 0 tracks
+2025-09-03 10:31:29,479 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:29,479 - ERROR - Error fetching tracks for genre 'classical' on request 1: Spotify API request failed: 
+2025-09-03 10:31:29,483 - INFO - Total tracks retrieved for genre 'classical': 0
+2025-09-03 10:31:29,489 - INFO - Genre 'classical' returned 0 tracks
+2025-09-03 10:31:30,080 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:30,080 - ERROR - Error fetching tracks for genre 'folk' on request 1: Spotify API request failed: 
+2025-09-03 10:31:30,083 - INFO - Total tracks retrieved for genre 'folk': 0
+2025-09-03 10:31:30,087 - INFO - Genre 'folk' returned 0 tracks
+2025-09-03 10:31:30,687 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:30,687 - ERROR - Error fetching tracks for genre 'rock' on request 1: Spotify API request failed: 
+2025-09-03 10:31:30,690 - INFO - Total tracks retrieved for genre 'rock': 0
+2025-09-03 10:31:30,695 - INFO - Genre 'rock' returned 0 tracks
+2025-09-03 10:31:31,292 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:31,292 - ERROR - Error fetching tracks for genre 'reggae' on request 1: Spotify API request failed: 
+2025-09-03 10:31:31,293 - INFO - Total tracks retrieved for genre 'reggae': 0
+2025-09-03 10:31:31,296 - INFO - Genre 'reggae' returned 0 tracks
+2025-09-03 10:31:31,890 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:31,890 - ERROR - Error fetching tracks for genre 'blues' on request 1: Spotify API request failed: 
+2025-09-03 10:31:31,893 - INFO - Total tracks retrieved for genre 'blues': 0
+2025-09-03 10:31:31,896 - INFO - Genre 'blues' returned 0 tracks
+2025-09-03 10:31:32,487 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:31:32,488 - ERROR - Error fetching tracks for genre 'r&b' on request 1: Spotify API request failed: 
+2025-09-03 10:31:32,490 - INFO - Total tracks retrieved for genre 'r&b': 0
+2025-09-03 10:31:32,493 - INFO - Genre 'r&b' returned 0 tracks
+2025-09-03 10:31:33,001 - WARNING - No new search data retrieved from Spotify
+2025-09-03 10:31:33,004 - ERROR - Cannot upload spotify_search.parquet: DataFrame is None or empty
+2025-09-03 10:31:33,006 - INFO - Found 0 albums for track extraction
+2025-09-03 10:31:33,009 - WARNING - No new track data retrieved from Spotify
+2025-09-03 10:31:33,012 - ERROR - Cannot upload spotify_tracks.parquet: DataFrame is None or empty
+2025-09-03 10:31:33,014 - INFO - Final Search DataFrame: 0 rows
+2025-09-03 10:31:33,015 - INFO - Final Tracks DataFrame: 0 rows
+2025-09-03 10:43:49,391 - INFO - Starting Spotify data processing
+2025-09-03 10:43:49,524 - INFO - Spotify token retrieved successfully
+2025-09-03 10:43:49,528 - DEBUG - Spotify token (first 10 chars): BQBJH4B2JN...
+2025-09-03 10:43:49,530 - INFO - Attempting to load spotify_search.parquet from MinIO bucket bronze-layer
+2025-09-03 10:43:49,547 - INFO - No existing spotify_search.parquet found in MinIO; starting fresh
+2025-09-03 10:43:49,551 - INFO - Attempting to load spotify_tracks.parquet from MinIO bucket bronze-layer
+2025-09-03 10:43:49,565 - INFO - No existing spotify_tracks.parquet found in MinIO; starting fresh
+2025-09-03 10:43:49,676 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:49,676 - ERROR - Error fetching tracks for genre 'pop' on request 1: Spotify API request failed: 
+2025-09-03 10:43:49,677 - INFO - Total tracks retrieved for genre 'pop': 0
+2025-09-03 10:43:49,680 - INFO - Genre 'pop' returned 0 tracks
+2025-09-03 10:43:50,286 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:50,286 - ERROR - Error fetching tracks for genre 'electronic' on request 1: Spotify API request failed: 
+2025-09-03 10:43:50,289 - INFO - Total tracks retrieved for genre 'electronic': 0
+2025-09-03 10:43:50,294 - INFO - Genre 'electronic' returned 0 tracks
+2025-09-03 10:43:50,893 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:50,893 - ERROR - Error fetching tracks for genre 'heavy metal' on request 1: Spotify API request failed: 
+2025-09-03 10:43:50,896 - INFO - Total tracks retrieved for genre 'heavy metal': 0
+2025-09-03 10:43:50,899 - INFO - Genre 'heavy metal' returned 0 tracks
+2025-09-03 10:43:51,493 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:51,494 - ERROR - Error fetching tracks for genre 'country' on request 1: Spotify API request failed: 
+2025-09-03 10:43:51,496 - INFO - Total tracks retrieved for genre 'country': 0
+2025-09-03 10:43:51,499 - INFO - Genre 'country' returned 0 tracks
+2025-09-03 10:43:52,120 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:52,121 - ERROR - Error fetching tracks for genre 'jazz' on request 1: Spotify API request failed: 
+2025-09-03 10:43:52,124 - INFO - Total tracks retrieved for genre 'jazz': 0
+2025-09-03 10:43:52,127 - INFO - Genre 'jazz' returned 0 tracks
+2025-09-03 10:43:52,719 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:52,719 - ERROR - Error fetching tracks for genre 'hip hop' on request 1: Spotify API request failed: 
+2025-09-03 10:43:52,721 - INFO - Total tracks retrieved for genre 'hip hop': 0
+2025-09-03 10:43:52,724 - INFO - Genre 'hip hop' returned 0 tracks
+2025-09-03 10:43:53,328 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:53,329 - ERROR - Error fetching tracks for genre 'classical' on request 1: Spotify API request failed: 
+2025-09-03 10:43:53,330 - INFO - Total tracks retrieved for genre 'classical': 0
+2025-09-03 10:43:53,334 - INFO - Genre 'classical' returned 0 tracks
+2025-09-03 10:43:53,936 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:53,938 - ERROR - Error fetching tracks for genre 'folk' on request 1: Spotify API request failed: 
+2025-09-03 10:43:53,942 - INFO - Total tracks retrieved for genre 'folk': 0
+2025-09-03 10:43:53,946 - INFO - Genre 'folk' returned 0 tracks
+2025-09-03 10:43:54,548 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:54,548 - ERROR - Error fetching tracks for genre 'rock' on request 1: Spotify API request failed: 
+2025-09-03 10:43:54,572 - INFO - Total tracks retrieved for genre 'rock': 0
+2025-09-03 10:43:54,595 - INFO - Genre 'rock' returned 0 tracks
+2025-09-03 10:43:55,196 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:55,196 - ERROR - Error fetching tracks for genre 'reggae' on request 1: Spotify API request failed: 
+2025-09-03 10:43:55,198 - INFO - Total tracks retrieved for genre 'reggae': 0
+2025-09-03 10:43:55,200 - INFO - Genre 'reggae' returned 0 tracks
+2025-09-03 10:43:55,806 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:55,806 - ERROR - Error fetching tracks for genre 'blues' on request 1: Spotify API request failed: 
+2025-09-03 10:43:55,809 - INFO - Total tracks retrieved for genre 'blues': 0
+2025-09-03 10:43:55,813 - INFO - Genre 'blues' returned 0 tracks
+2025-09-03 10:43:56,407 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:43:56,408 - ERROR - Error fetching tracks for genre 'r&b' on request 1: Spotify API request failed: 
+2025-09-03 10:43:56,412 - INFO - Total tracks retrieved for genre 'r&b': 0
+2025-09-03 10:43:56,418 - INFO - Genre 'r&b' returned 0 tracks
+2025-09-03 10:43:56,925 - WARNING - No new search data retrieved from Spotify
+2025-09-03 10:43:56,927 - WARNING - Nothing to upload for spotify_search.parquet, DataFrame is empty
+2025-09-03 10:43:56,929 - INFO - Found 0 albums for track extraction
+2025-09-03 10:43:56,932 - WARNING - No new track data retrieved from Spotify
+2025-09-03 10:43:56,935 - WARNING - Nothing to upload for spotify_tracks.parquet, DataFrame is empty
+2025-09-03 10:43:56,937 - INFO - Final Search DataFrame: 0 rows
+2025-09-03 10:43:56,939 - INFO - Final Tracks DataFrame: 0 rows
+2025-09-03 10:46:56,410 - INFO - Starting Spotify data processing
+2025-09-03 10:46:56,542 - INFO - Spotify token retrieved successfully
+2025-09-03 10:46:56,547 - DEBUG - Spotify token (first 10 chars): BQAJwSS97H...
+2025-09-03 10:46:56,549 - INFO - Attempting to load spotify_search.parquet from MinIO bucket bronze-layer
+2025-09-03 10:46:56,563 - INFO - No existing spotify_search.parquet found in MinIO; starting fresh
+2025-09-03 10:46:56,568 - INFO - Attempting to load spotify_tracks.parquet from MinIO bucket bronze-layer
+2025-09-03 10:46:56,573 - INFO - No existing spotify_tracks.parquet found in MinIO; starting fresh
+2025-09-03 10:46:56,678 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:46:56,678 - ERROR - Error fetching tracks for genre 'pop' on request 1: Spotify API request failed: 
+2025-09-03 10:46:56,679 - INFO - Total tracks retrieved for genre 'pop': 0
+2025-09-03 10:46:56,683 - INFO - Genre 'pop' returned 0 tracks
+2025-09-03 10:46:57,286 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:46:57,286 - ERROR - Error fetching tracks for genre 'electronic' on request 1: Spotify API request failed: 
+2025-09-03 10:46:57,288 - INFO - Total tracks retrieved for genre 'electronic': 0
+2025-09-03 10:46:57,290 - INFO - Genre 'electronic' returned 0 tracks
+2025-09-03 10:46:57,893 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:46:57,893 - ERROR - Error fetching tracks for genre 'heavy metal' on request 1: Spotify API request failed: 
+2025-09-03 10:46:57,896 - INFO - Total tracks retrieved for genre 'heavy metal': 0
+2025-09-03 10:46:57,901 - INFO - Genre 'heavy metal' returned 0 tracks
+2025-09-03 10:46:58,501 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:46:58,501 - ERROR - Error fetching tracks for genre 'country' on request 1: Spotify API request failed: 
+2025-09-03 10:46:58,502 - INFO - Total tracks retrieved for genre 'country': 0
+2025-09-03 10:46:58,505 - INFO - Genre 'country' returned 0 tracks
+2025-09-03 10:46:59,103 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:46:59,103 - ERROR - Error fetching tracks for genre 'jazz' on request 1: Spotify API request failed: 
+2025-09-03 10:46:59,107 - INFO - Total tracks retrieved for genre 'jazz': 0
+2025-09-03 10:46:59,110 - INFO - Genre 'jazz' returned 0 tracks
+2025-09-03 10:46:59,709 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:46:59,709 - ERROR - Error fetching tracks for genre 'hip hop' on request 1: Spotify API request failed: 
+2025-09-03 10:46:59,711 - INFO - Total tracks retrieved for genre 'hip hop': 0
+2025-09-03 10:46:59,714 - INFO - Genre 'hip hop' returned 0 tracks
+2025-09-03 10:47:00,316 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:47:00,316 - ERROR - Error fetching tracks for genre 'classical' on request 1: Spotify API request failed: 
+2025-09-03 10:47:00,320 - INFO - Total tracks retrieved for genre 'classical': 0
+2025-09-03 10:47:00,327 - INFO - Genre 'classical' returned 0 tracks
+2025-09-03 10:47:00,928 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:47:00,928 - ERROR - Error fetching tracks for genre 'folk' on request 1: Spotify API request failed: 
+2025-09-03 10:47:00,933 - INFO - Total tracks retrieved for genre 'folk': 0
+2025-09-03 10:47:00,937 - INFO - Genre 'folk' returned 0 tracks
+2025-09-03 10:47:01,545 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:47:01,545 - ERROR - Error fetching tracks for genre 'rock' on request 1: Spotify API request failed: 
+2025-09-03 10:47:01,548 - INFO - Total tracks retrieved for genre 'rock': 0
+2025-09-03 10:47:01,552 - INFO - Genre 'rock' returned 0 tracks
+2025-09-03 10:47:02,157 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:47:02,161 - ERROR - Error fetching tracks for genre 'reggae' on request 1: Spotify API request failed: 
+2025-09-03 10:47:02,162 - INFO - Total tracks retrieved for genre 'reggae': 0
+2025-09-03 10:47:02,167 - INFO - Genre 'reggae' returned 0 tracks
+2025-09-03 10:47:02,766 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:47:02,766 - ERROR - Error fetching tracks for genre 'blues' on request 1: Spotify API request failed: 
+2025-09-03 10:47:02,771 - INFO - Total tracks retrieved for genre 'blues': 0
+2025-09-03 10:47:02,775 - INFO - Genre 'blues' returned 0 tracks
+2025-09-03 10:47:03,370 - ERROR - Spotify API request failed: 404 - 
+2025-09-03 10:47:03,370 - ERROR - Error fetching tracks for genre 'r&b' on request 1: Spotify API request failed: 
+2025-09-03 10:47:03,373 - INFO - Total tracks retrieved for genre 'r&b': 0
+2025-09-03 10:47:03,375 - INFO - Genre 'r&b' returned 0 tracks
+2025-09-03 10:47:03,884 - WARNING - No new search data retrieved from Spotify
+2025-09-03 10:47:03,887 - WARNING - Nothing to upload for spotify_search.parquet, DataFrame is empty
+2025-09-03 10:47:03,889 - INFO - Found 0 albums for track extraction
+2025-09-03 10:47:03,892 - WARNING - No new track data retrieved from Spotify
+2025-09-03 10:47:03,895 - WARNING - Nothing to upload for spotify_tracks.parquet, DataFrame is empty
+2025-09-03 10:47:03,897 - INFO - Final Search DataFrame: 0 rows
+2025-09-03 10:47:03,899 - INFO - Final Tracks DataFrame: 0 rows
+2025-09-03 11:00:14,072 - INFO - Starting Spotify ETL
+2025-09-03 11:00:14,228 - INFO - Spotify token retrieved successfully
+2025-09-03 11:00:14,236 - INFO - Attempting to load spotify_search.parquet from MinIO bucket bronze-layer
+2025-09-03 11:00:14,252 - INFO - No existing spotify_search.parquet found in MinIO; starting fresh
+2025-09-03 11:00:14,256 - INFO - Attempting to load spotify_tracks.parquet from MinIO bucket bronze-layer
+2025-09-03 11:00:14,264 - INFO - No existing spotify_tracks.parquet found in MinIO; starting fresh
+2025-09-03 11:00:15,060 - DEBUG - Retrieved 28 tracks for album 07fcZXkBS0y4Y80GT60PZq at offset 0
+2025-09-03 11:00:15,060 - INFO - Retrieved total 28 tracks for album 07fcZXkBS0y4Y80GT60PZq
+2025-09-03 11:00:15,685 - DEBUG - Retrieved 10 tracks for album 2HIwUmdxEl7SeWa1ndH5wC at offset 0
+2025-09-03 11:00:15,685 - INFO - Retrieved total 10 tracks for album 2HIwUmdxEl7SeWa1ndH5wC
+2025-09-03 11:00:16,328 - DEBUG - Retrieved 15 tracks for album 0YIOpXQvcbiDNPusSqi5Ew at offset 0
+2025-09-03 11:00:16,330 - INFO - Retrieved total 15 tracks for album 0YIOpXQvcbiDNPusSqi5Ew
+2025-09-03 11:00:16,960 - DEBUG - Retrieved 7 tracks for album 4rs52z8T5zPbsa5HM75tua at offset 0
+2025-09-03 11:00:16,960 - INFO - Retrieved total 7 tracks for album 4rs52z8T5zPbsa5HM75tua
+2025-09-03 11:00:17,644 - DEBUG - Retrieved 11 tracks for album 2knEuvsxqHMAoxlQpIdpQD at offset 0
+2025-09-03 11:00:17,645 - INFO - Retrieved total 11 tracks for album 2knEuvsxqHMAoxlQpIdpQD
+2025-09-03 11:00:18,270 - DEBUG - Retrieved 12 tracks for album 14JkAa6IiFaOh5s0nMyMU9 at offset 0
+2025-09-03 11:00:18,270 - INFO - Retrieved total 12 tracks for album 14JkAa6IiFaOh5s0nMyMU9
+2025-09-03 11:00:18,933 - DEBUG - Retrieved 38 tracks for album 0Jh7XIEQrNQAXm7a6hbJ1h at offset 0
+2025-09-03 11:00:18,934 - INFO - Retrieved total 38 tracks for album 0Jh7XIEQrNQAXm7a6hbJ1h
+2025-09-03 11:00:19,557 - DEBUG - Retrieved 1 tracks for album 5nNtpPsSUgb9Hlb3dF1gXa at offset 0
+2025-09-03 11:00:19,557 - INFO - Retrieved total 1 tracks for album 5nNtpPsSUgb9Hlb3dF1gXa
+2025-09-03 11:00:20,188 - DEBUG - Retrieved 3 tracks for album 2eFWG2ZnDaiiesSNssfaVc at offset 0
+2025-09-03 11:00:20,188 - INFO - Retrieved total 3 tracks for album 2eFWG2ZnDaiiesSNssfaVc
+2025-09-03 11:00:20,819 - DEBUG - Retrieved 1 tracks for album 61gXgHuW5D1ls1ikoLW6En at offset 0
+2025-09-03 11:00:20,820 - INFO - Retrieved total 1 tracks for album 61gXgHuW5D1ls1ikoLW6En
+2025-09-03 11:00:21,471 - DEBUG - Retrieved 15 tracks for album 6zJcDGIgURV28s5IdA9pSG at offset 0
+2025-09-03 11:00:21,471 - INFO - Retrieved total 15 tracks for album 6zJcDGIgURV28s5IdA9pSG
+2025-09-03 11:00:22,254 - DEBUG - Retrieved 35 tracks for album 4wcFyCDvWuIAIIfemgtNUv at offset 0
+2025-09-03 11:00:22,255 - INFO - Retrieved total 35 tracks for album 4wcFyCDvWuIAIIfemgtNUv
+2025-09-03 11:00:22,909 - DEBUG - Retrieved 20 tracks for album 3hkiqiiKT2qYHWCGcBKcYM at offset 0
+2025-09-03 11:00:22,909 - INFO - Retrieved total 20 tracks for album 3hkiqiiKT2qYHWCGcBKcYM
+2025-09-03 11:00:23,587 - DEBUG - Retrieved 9 tracks for album 6d1vGZsr6Uy3h9IigBpPAf at offset 0
+2025-09-03 11:00:23,587 - INFO - Retrieved total 9 tracks for album 6d1vGZsr6Uy3h9IigBpPAf
+2025-09-03 11:00:24,207 - DEBUG - Retrieved 1 tracks for album 4fY4PZSioPJFtkBvGmI3Wn at offset 0
+2025-09-03 11:00:24,207 - INFO - Retrieved total 1 tracks for album 4fY4PZSioPJFtkBvGmI3Wn
+2025-09-03 11:00:24,830 - DEBUG - Retrieved 1 tracks for album 4gxFqhVYU4wp1XDH1KiIo4 at offset 0
+2025-09-03 11:00:24,831 - INFO - Retrieved total 1 tracks for album 4gxFqhVYU4wp1XDH1KiIo4
+2025-09-03 11:00:25,507 - DEBUG - Retrieved 1 tracks for album 3T7FsDOZJecfoHg8jmEMu9 at offset 0
+2025-09-03 11:00:25,507 - INFO - Retrieved total 1 tracks for album 3T7FsDOZJecfoHg8jmEMu9
+2025-09-03 11:00:26,180 - DEBUG - Retrieved 3 tracks for album 3ISFqS96zxVoFpIbubWk6m at offset 0
+2025-09-03 11:00:26,180 - INFO - Retrieved total 3 tracks for album 3ISFqS96zxVoFpIbubWk6m
+2025-09-03 11:00:26,811 - DEBUG - Retrieved 7 tracks for album 3mlVZ7OTZgKJJAr275tHZX at offset 0
+2025-09-03 11:00:26,811 - INFO - Retrieved total 7 tracks for album 3mlVZ7OTZgKJJAr275tHZX
+2025-09-03 11:00:27,458 - DEBUG - Retrieved 1 tracks for album 0UnBZ8laFgLUq5Ty5vbikQ at offset 0
+2025-09-03 11:00:27,459 - INFO - Retrieved total 1 tracks for album 0UnBZ8laFgLUq5Ty5vbikQ
+2025-09-03 11:00:28,089 - DEBUG - Retrieved 11 tracks for album 59ZxtwIOD1wowkNvVHXqtP at offset 0
+2025-09-03 11:00:28,089 - INFO - Retrieved total 11 tracks for album 59ZxtwIOD1wowkNvVHXqtP
+2025-09-03 11:00:28,713 - DEBUG - Retrieved 1 tracks for album 5O0zUvdnJr0RbWzLFneN2i at offset 0
+2025-09-03 11:00:28,713 - INFO - Retrieved total 1 tracks for album 5O0zUvdnJr0RbWzLFneN2i
+2025-09-03 11:00:29,347 - DEBUG - Retrieved 12 tracks for album 5mojJwWgWNJcY3odUGgQc3 at offset 0
+2025-09-03 11:00:29,348 - INFO - Retrieved total 12 tracks for album 5mojJwWgWNJcY3odUGgQc3
+2025-09-03 11:00:30,041 - DEBUG - Retrieved 11 tracks for album 1RHa1VdX6lsLbeedgsV1cb at offset 0
+2025-09-03 11:00:30,041 - INFO - Retrieved total 11 tracks for album 1RHa1VdX6lsLbeedgsV1cb
+2025-09-03 11:00:30,693 - DEBUG - Retrieved 6 tracks for album 46VvKhK6C8GC2Ew7nAIK3Y at offset 0
+2025-09-03 11:00:30,693 - INFO - Retrieved total 6 tracks for album 46VvKhK6C8GC2Ew7nAIK3Y
+2025-09-03 11:00:31,332 - DEBUG - Retrieved 34 tracks for album 2MDU46hcBn3u94s46BOSdv at offset 0
+2025-09-03 11:00:31,332 - INFO - Retrieved total 34 tracks for album 2MDU46hcBn3u94s46BOSdv
+2025-09-03 11:00:31,979 - DEBUG - Retrieved 13 tracks for album 4MZnolldq7ciKKlbVDzLm5 at offset 0
+2025-09-03 11:00:31,979 - INFO - Retrieved total 13 tracks for album 4MZnolldq7ciKKlbVDzLm5
+2025-09-03 11:00:32,647 - DEBUG - Retrieved 19 tracks for album 7e7t0MCrNDcJZsPwUKjmOc at offset 0
+2025-09-03 11:00:32,647 - INFO - Retrieved total 19 tracks for album 7e7t0MCrNDcJZsPwUKjmOc
+2025-09-03 11:00:33,282 - DEBUG - Retrieved 1 tracks for album 0yZVETaEQhgGxNT3h45gJF at offset 0
+2025-09-03 11:00:33,282 - INFO - Retrieved total 1 tracks for album 0yZVETaEQhgGxNT3h45gJF
+2025-09-03 11:00:33,908 - DEBUG - Retrieved 13 tracks for album 22WXVMuH2Ruj7yr8CGiGZZ at offset 0
+2025-09-03 11:00:33,908 - INFO - Retrieved total 13 tracks for album 22WXVMuH2Ruj7yr8CGiGZZ
+2025-09-03 11:00:34,629 - DEBUG - Retrieved 7 tracks for album 32Nl49izVyngH22kD1lrkk at offset 0
+2025-09-03 11:00:34,629 - INFO - Retrieved total 7 tracks for album 32Nl49izVyngH22kD1lrkk
+2025-09-03 11:00:35,257 - DEBUG - Retrieved 1 tracks for album 48gEWN2OrlF8v02rYcDYoU at offset 0
+2025-09-03 11:00:35,257 - INFO - Retrieved total 1 tracks for album 48gEWN2OrlF8v02rYcDYoU
+2025-09-03 11:00:35,888 - DEBUG - Retrieved 2 tracks for album 6WjskgAd99KpgOgMnnvy5s at offset 0
+2025-09-03 11:00:35,888 - INFO - Retrieved total 2 tracks for album 6WjskgAd99KpgOgMnnvy5s
+2025-09-03 11:00:36,511 - DEBUG - Retrieved 1 tracks for album 4LkaRbpxiT4HFhoOmLBCEv at offset 0
+2025-09-03 11:00:36,511 - INFO - Retrieved total 1 tracks for album 4LkaRbpxiT4HFhoOmLBCEv
+2025-09-03 11:00:37,131 - DEBUG - Retrieved 1 tracks for album 5HtZb8vYuUU788VPRCXUxH at offset 0
+2025-09-03 11:00:37,132 - INFO - Retrieved total 1 tracks for album 5HtZb8vYuUU788VPRCXUxH
+2025-09-03 11:00:37,752 - DEBUG - Retrieved 6 tracks for album 70iQpz4rX77h7PbXSpaQra at offset 0
+2025-09-03 11:00:37,752 - INFO - Retrieved total 6 tracks for album 70iQpz4rX77h7PbXSpaQra
+2025-09-03 11:00:38,371 - DEBUG - Retrieved 9 tracks for album 2gabUrIWEhT9eeVjM749jX at offset 0
+2025-09-03 11:00:38,372 - INFO - Retrieved total 9 tracks for album 2gabUrIWEhT9eeVjM749jX
+2025-09-03 11:00:38,997 - DEBUG - Retrieved 1 tracks for album 09OCpQKLhqJB8Ro2Us3Kpk at offset 0
+2025-09-03 11:00:38,997 - INFO - Retrieved total 1 tracks for album 09OCpQKLhqJB8Ro2Us3Kpk
+2025-09-03 11:00:39,619 - DEBUG - Retrieved 1 tracks for album 4WcNgAg1DtYdjumpchYvLm at offset 0
+2025-09-03 11:00:39,619 - INFO - Retrieved total 1 tracks for album 4WcNgAg1DtYdjumpchYvLm
+2025-09-03 11:00:40,289 - DEBUG - Retrieved 50 tracks for album 6x0v3KbdHW71AOF6wL3KYE at offset 0
+2025-09-03 11:00:40,414 - DEBUG - Retrieved 5 tracks for album 6x0v3KbdHW71AOF6wL3KYE at offset 50
+2025-09-03 11:00:40,414 - INFO - Retrieved total 55 tracks for album 6x0v3KbdHW71AOF6wL3KYE
+2025-09-03 11:00:41,044 - DEBUG - Retrieved 6 tracks for album 223iwdcpZPEO9xnXJtrZMo at offset 0
+2025-09-03 11:00:41,045 - INFO - Retrieved total 6 tracks for album 223iwdcpZPEO9xnXJtrZMo
+2025-09-03 11:00:41,722 - DEBUG - Retrieved 10 tracks for album 0EZoxOrmBvdaYl7IY6LBW7 at offset 0
+2025-09-03 11:00:41,722 - INFO - Retrieved total 10 tracks for album 0EZoxOrmBvdaYl7IY6LBW7
+2025-09-03 11:00:42,339 - DEBUG - Retrieved 9 tracks for album 3hnuMKQGxPhmpz65TWYvJl at offset 0
+2025-09-03 11:00:42,340 - INFO - Retrieved total 9 tracks for album 3hnuMKQGxPhmpz65TWYvJl
+2025-09-03 11:00:42,973 - DEBUG - Retrieved 5 tracks for album 3DeFHwLhCLfhhg6GwDhMjX at offset 0
+2025-09-03 11:00:42,974 - INFO - Retrieved total 5 tracks for album 3DeFHwLhCLfhhg6GwDhMjX
+2025-09-03 11:00:43,640 - DEBUG - Retrieved 14 tracks for album 78qD6T34x0zDcg3PFyh4zl at offset 0
+2025-09-03 11:00:43,640 - INFO - Retrieved total 14 tracks for album 78qD6T34x0zDcg3PFyh4zl
+2025-09-03 11:00:44,268 - DEBUG - Retrieved 1 tracks for album 4jrWunUBkUjnBRtMfXYf6k at offset 0
+2025-09-03 11:00:44,268 - INFO - Retrieved total 1 tracks for album 4jrWunUBkUjnBRtMfXYf6k
+2025-09-03 11:00:44,919 - DEBUG - Retrieved 6 tracks for album 5idxwzY5HPlI5XRCwBvT64 at offset 0
+2025-09-03 11:00:44,919 - INFO - Retrieved total 6 tracks for album 5idxwzY5HPlI5XRCwBvT64
+2025-09-03 11:00:45,548 - DEBUG - Retrieved 1 tracks for album 5j8ynnz90avorVuCqi3v0j at offset 0
+2025-09-03 11:00:45,548 - INFO - Retrieved total 1 tracks for album 5j8ynnz90avorVuCqi3v0j
+2025-09-03 11:00:46,159 - DEBUG - Retrieved 2 tracks for album 6Qq8zoZLr3LuoDgaRrlemc at offset 0
+2025-09-03 11:00:46,160 - INFO - Retrieved total 2 tracks for album 6Qq8zoZLr3LuoDgaRrlemc
+2025-09-03 11:00:46,785 - DEBUG - Retrieved 10 tracks for album 23DiM7G7ovRlMW7LQk8Deb at offset 0
+2025-09-03 11:00:46,785 - INFO - Retrieved total 10 tracks for album 23DiM7G7ovRlMW7LQk8Deb
+2025-09-03 11:00:48,192 - DEBUG - Retrieved 11 tracks for album 6g8Zu43gbKXEHqYs0ZKTcT at offset 0
+2025-09-03 11:00:48,192 - INFO - Retrieved total 11 tracks for album 6g8Zu43gbKXEHqYs0ZKTcT
+2025-09-03 11:00:48,819 - DEBUG - Retrieved 4 tracks for album 61DpFmkJvRgVWfqIFs5aaL at offset 0
+2025-09-03 11:00:48,820 - INFO - Retrieved total 4 tracks for album 61DpFmkJvRgVWfqIFs5aaL
+2025-09-03 11:00:49,440 - DEBUG - Retrieved 10 tracks for album 1x8ms1uLU0DGu1F9iDjAnD at offset 0
+2025-09-03 11:00:49,440 - INFO - Retrieved total 10 tracks for album 1x8ms1uLU0DGu1F9iDjAnD
+2025-09-03 11:00:50,109 - DEBUG - Retrieved 18 tracks for album 4iBV4r0SqntFsRMsLWgT5o at offset 0
+2025-09-03 11:00:50,109 - INFO - Retrieved total 18 tracks for album 4iBV4r0SqntFsRMsLWgT5o
+2025-09-03 11:00:50,754 - DEBUG - Retrieved 20 tracks for album 43BmZbkNg089psxD6eOqYW at offset 0
+2025-09-03 11:00:50,754 - INFO - Retrieved total 20 tracks for album 43BmZbkNg089psxD6eOqYW
+2025-09-03 11:00:51,397 - DEBUG - Retrieved 1 tracks for album 19JhsessiLwazS8dlMRpjj at offset 0
+2025-09-03 11:00:51,398 - INFO - Retrieved total 1 tracks for album 19JhsessiLwazS8dlMRpjj
+2025-09-03 11:00:52,022 - DEBUG - Retrieved 8 tracks for album 2JgIGypHO489ni7EtpMmdz at offset 0
+2025-09-03 11:00:52,022 - INFO - Retrieved total 8 tracks for album 2JgIGypHO489ni7EtpMmdz
+2025-09-03 11:00:52,707 - DEBUG - Retrieved 30 tracks for album 7rGL3cyPxZCaxIN12UGJSl at offset 0
+2025-09-03 11:00:52,707 - INFO - Retrieved total 30 tracks for album 7rGL3cyPxZCaxIN12UGJSl
+2025-09-03 11:00:53,375 - DEBUG - Retrieved 11 tracks for album 4KeLliIRRumsKvA5XYbd9D at offset 0
+2025-09-03 11:00:53,375 - INFO - Retrieved total 11 tracks for album 4KeLliIRRumsKvA5XYbd9D
+2025-09-03 11:00:54,037 - DEBUG - Retrieved 6 tracks for album 5W3rVdgJYFJeeKPRGeKMu8 at offset 0
+2025-09-03 11:00:54,039 - INFO - Retrieved total 6 tracks for album 5W3rVdgJYFJeeKPRGeKMu8
+2025-09-03 11:00:54,670 - DEBUG - Retrieved 12 tracks for album 2C5oKE03phy4w8yHTkWTNW at offset 0
+2025-09-03 11:00:54,670 - INFO - Retrieved total 12 tracks for album 2C5oKE03phy4w8yHTkWTNW
+2025-09-03 11:00:55,308 - DEBUG - Retrieved 24 tracks for album 15XrNU8AkmvwmGkoi6sLSs at offset 0
+2025-09-03 11:00:55,308 - INFO - Retrieved total 24 tracks for album 15XrNU8AkmvwmGkoi6sLSs
+2025-09-03 11:00:55,976 - DEBUG - Retrieved 50 tracks for album 5hinviayLlHo8zNxyluJLX at offset 0
+2025-09-03 11:00:56,146 - DEBUG - Retrieved 17 tracks for album 5hinviayLlHo8zNxyluJLX at offset 50
+2025-09-03 11:00:56,146 - INFO - Retrieved total 67 tracks for album 5hinviayLlHo8zNxyluJLX
+2025-09-03 11:00:56,818 - DEBUG - Retrieved 50 tracks for album 7w8FVZqt9G4WZd6ZJKp3Hv at offset 0
+2025-09-03 11:00:56,983 - DEBUG - Retrieved 50 tracks for album 7w8FVZqt9G4WZd6ZJKp3Hv at offset 50
+2025-09-03 11:00:57,127 - DEBUG - Retrieved 5 tracks for album 7w8FVZqt9G4WZd6ZJKp3Hv at offset 100
+2025-09-03 11:00:57,127 - INFO - Retrieved total 105 tracks for album 7w8FVZqt9G4WZd6ZJKp3Hv
+2025-09-03 11:00:57,787 - DEBUG - Retrieved 18 tracks for album 31VtxaCj8zYO9syCDzU6lw at offset 0
+2025-09-03 11:00:57,787 - INFO - Retrieved total 18 tracks for album 31VtxaCj8zYO9syCDzU6lw
+2025-09-03 11:00:58,423 - DEBUG - Retrieved 19 tracks for album 3mbokW5xwqsb2mFmLcECT1 at offset 0
+2025-09-03 11:00:58,423 - INFO - Retrieved total 19 tracks for album 3mbokW5xwqsb2mFmLcECT1
+2025-09-03 11:00:59,043 - DEBUG - Retrieved 11 tracks for album 6WgSCcRfaXuBVfM2TpV0Kl at offset 0
+2025-09-03 11:00:59,043 - INFO - Retrieved total 11 tracks for album 6WgSCcRfaXuBVfM2TpV0Kl
+2025-09-03 11:00:59,664 - DEBUG - Retrieved 11 tracks for album 0FmrKQCa4HCz1b8XTZlhS4 at offset 0
+2025-09-03 11:00:59,664 - INFO - Retrieved total 11 tracks for album 0FmrKQCa4HCz1b8XTZlhS4
+2025-09-03 11:01:00,330 - DEBUG - Retrieved 9 tracks for album 72tw9FXt9VsabfFSzAHXLO at offset 0
+2025-09-03 11:01:00,331 - INFO - Retrieved total 9 tracks for album 72tw9FXt9VsabfFSzAHXLO
+2025-09-03 11:01:00,956 - DEBUG - Retrieved 1 tracks for album 0206iWZrpHDcPHJIz4W2WH at offset 0
+2025-09-03 11:01:00,956 - INFO - Retrieved total 1 tracks for album 0206iWZrpHDcPHJIz4W2WH
+2025-09-03 11:01:01,597 - DEBUG - Retrieved 10 tracks for album 2x12HtS4UoZDMY2YVNLlte at offset 0
+2025-09-03 11:01:01,597 - INFO - Retrieved total 10 tracks for album 2x12HtS4UoZDMY2YVNLlte
+2025-09-03 11:01:02,241 - DEBUG - Retrieved 15 tracks for album 5AgLnccLcpqgDWFO5stqx1 at offset 0
+2025-09-03 11:01:02,241 - INFO - Retrieved total 15 tracks for album 5AgLnccLcpqgDWFO5stqx1
+2025-09-03 11:01:02,906 - DEBUG - Retrieved 15 tracks for album 0HOElTW4QQHztHNmcsJUgL at offset 0
+2025-09-03 11:01:02,906 - INFO - Retrieved total 15 tracks for album 0HOElTW4QQHztHNmcsJUgL
+2025-09-03 11:01:03,554 - DEBUG - Retrieved 15 tracks for album 6PBBbXmYV7dKnaik0fjkOI at offset 0
+2025-09-03 11:01:03,554 - INFO - Retrieved total 15 tracks for album 6PBBbXmYV7dKnaik0fjkOI
+2025-09-03 11:01:04,203 - DEBUG - Retrieved 23 tracks for album 1vGrQ0is3Avh0bZSI7T6L1 at offset 0
+2025-09-03 11:01:04,203 - INFO - Retrieved total 23 tracks for album 1vGrQ0is3Avh0bZSI7T6L1
+2025-09-03 11:01:04,855 - DEBUG - Retrieved 10 tracks for album 3yqukzZVg4mPH1fV9rUReH at offset 0
+2025-09-03 11:01:04,856 - INFO - Retrieved total 10 tracks for album 3yqukzZVg4mPH1fV9rUReH
+2025-09-03 11:01:05,523 - DEBUG - Retrieved 8 tracks for album 1NqQAVZP3JVIdomidrso5q at offset 0
+2025-09-03 11:01:05,523 - INFO - Retrieved total 8 tracks for album 1NqQAVZP3JVIdomidrso5q
+2025-09-03 11:01:06,219 - DEBUG - Retrieved 40 tracks for album 0MePl4jdzXHOEO6eocYAEI at offset 0
+2025-09-03 11:01:06,219 - INFO - Retrieved total 40 tracks for album 0MePl4jdzXHOEO6eocYAEI
+2025-09-03 11:01:06,847 - DEBUG - Retrieved 10 tracks for album 5FbULznGOx0n98IlTfsPo7 at offset 0
+2025-09-03 11:01:06,847 - INFO - Retrieved total 10 tracks for album 5FbULznGOx0n98IlTfsPo7
+2025-09-03 11:01:07,494 - DEBUG - Retrieved 13 tracks for album 2LufBDsrUipQEE3tSKjLLc at offset 0
+2025-09-03 11:01:07,494 - INFO - Retrieved total 13 tracks for album 2LufBDsrUipQEE3tSKjLLc
+2025-09-03 11:01:08,128 - DEBUG - Retrieved 10 tracks for album 7A9sa0fRoifZ3qxFiIkPz1 at offset 0
+2025-09-03 11:01:08,128 - INFO - Retrieved total 10 tracks for album 7A9sa0fRoifZ3qxFiIkPz1
+2025-09-03 11:01:08,799 - DEBUG - Retrieved 9 tracks for album 2RG4VphteaM49VRa0bwtcP at offset 0
+2025-09-03 11:01:08,799 - INFO - Retrieved total 9 tracks for album 2RG4VphteaM49VRa0bwtcP
+2025-09-03 11:01:09,419 - DEBUG - Retrieved 1 tracks for album 2HunKPBb07d2qr06gfxL3x at offset 0
+2025-09-03 11:01:09,419 - INFO - Retrieved total 1 tracks for album 2HunKPBb07d2qr06gfxL3x
+2025-09-03 11:01:10,042 - DEBUG - Retrieved 1 tracks for album 4V40E3q7KqO52YmpgXa8P8 at offset 0
+2025-09-03 11:01:10,042 - INFO - Retrieved total 1 tracks for album 4V40E3q7KqO52YmpgXa8P8
+2025-09-03 11:01:10,684 - DEBUG - Retrieved 7 tracks for album 2rXVeHsgP7MUZGWJNVcVxn at offset 0
+2025-09-03 11:01:10,684 - INFO - Retrieved total 7 tracks for album 2rXVeHsgP7MUZGWJNVcVxn
+2025-09-03 11:01:11,306 - DEBUG - Retrieved 1 tracks for album 6YsogwSzbMYxCthoRReh9I at offset 0
+2025-09-03 11:01:11,307 - INFO - Retrieved total 1 tracks for album 6YsogwSzbMYxCthoRReh9I
+2025-09-03 11:01:11,923 - DEBUG - Retrieved 1 tracks for album 0PVDXSacGJQmwhEM0n6Ogw at offset 0
+2025-09-03 11:01:11,923 - INFO - Retrieved total 1 tracks for album 0PVDXSacGJQmwhEM0n6Ogw
+2025-09-03 11:01:12,550 - DEBUG - Retrieved 25 tracks for album 4vMGCvrkRkTedNMRrp96NS at offset 0
+2025-09-03 11:01:12,550 - INFO - Retrieved total 25 tracks for album 4vMGCvrkRkTedNMRrp96NS
+2025-09-03 11:01:13,190 - DEBUG - Retrieved 20 tracks for album 0Vjni9uyb5rpLtqy1WF9PT at offset 0
+2025-09-03 11:01:13,190 - INFO - Retrieved total 20 tracks for album 0Vjni9uyb5rpLtqy1WF9PT
+2025-09-03 11:01:13,814 - DEBUG - Retrieved 1 tracks for album 23xrJAkQ5xobwgu8uQnFnk at offset 0
+2025-09-03 11:01:13,814 - INFO - Retrieved total 1 tracks for album 23xrJAkQ5xobwgu8uQnFnk
+2025-09-03 11:01:14,435 - DEBUG - Retrieved 1 tracks for album 3y2g6ukf1ZhFikUu6YQd84 at offset 0
+2025-09-03 11:01:14,436 - INFO - Retrieved total 1 tracks for album 3y2g6ukf1ZhFikUu6YQd84
+2025-09-03 11:01:15,054 - DEBUG - Retrieved 3 tracks for album 4MIXvMJA1g6ji0V0iwzvDO at offset 0
+2025-09-03 11:01:15,055 - INFO - Retrieved total 3 tracks for album 4MIXvMJA1g6ji0V0iwzvDO
+2025-09-03 11:01:15,727 - DEBUG - Retrieved 1 tracks for album 6V2XgYhzP3WTn4I9PwZrCo at offset 0
+2025-09-03 11:01:15,727 - INFO - Retrieved total 1 tracks for album 6V2XgYhzP3WTn4I9PwZrCo
+2025-09-03 11:01:16,347 - DEBUG - Retrieved 1 tracks for album 5dqVWnumbriVUBaLzJuDPI at offset 0
+2025-09-03 11:01:16,347 - INFO - Retrieved total 1 tracks for album 5dqVWnumbriVUBaLzJuDPI
+2025-09-03 11:01:16,970 - DEBUG - Retrieved 1 tracks for album 0t8hRk649IhfvxwHJBowrY at offset 0
+2025-09-03 11:01:16,970 - INFO - Retrieved total 1 tracks for album 0t8hRk649IhfvxwHJBowrY
+2025-09-03 11:01:17,605 - DEBUG - Retrieved 13 tracks for album 7DJbCQ9GYdWZfIAgzxsSUb at offset 0
+2025-09-03 11:01:17,605 - INFO - Retrieved total 13 tracks for album 7DJbCQ9GYdWZfIAgzxsSUb
+2025-09-03 11:01:18,221 - DEBUG - Retrieved 3 tracks for album 7vWzpzURedysbct0F0Dt4k at offset 0
+2025-09-03 11:01:18,221 - INFO - Retrieved total 3 tracks for album 7vWzpzURedysbct0F0Dt4k
+2025-09-03 11:01:18,847 - DEBUG - Retrieved 2 tracks for album 0owuF2xP8ayi2VskN7WpJB at offset 0
+2025-09-03 11:01:18,847 - INFO - Retrieved total 2 tracks for album 0owuF2xP8ayi2VskN7WpJB
+2025-09-03 11:01:19,469 - DEBUG - Retrieved 1 tracks for album 578JlubHPj6P4ttzbV9fiG at offset 0
+2025-09-03 11:01:19,469 - INFO - Retrieved total 1 tracks for album 578JlubHPj6P4ttzbV9fiG
+2025-09-03 11:01:20,172 - DEBUG - Retrieved 1 tracks for album 4VZjI52RosT62nnUlmE212 at offset 0
+2025-09-03 11:01:20,172 - INFO - Retrieved total 1 tracks for album 4VZjI52RosT62nnUlmE212
+2025-09-03 11:01:21,293 - DEBUG - Retrieved 10 tracks for album 7mOrnQqDad3RgYQsJGaaqk at offset 0
+2025-09-03 11:01:21,293 - INFO - Retrieved total 10 tracks for album 7mOrnQqDad3RgYQsJGaaqk
+2025-09-03 11:01:21,950 - DEBUG - Retrieved 16 tracks for album 6FFHZZvoagWTsyp1M80gaR at offset 0
+2025-09-03 11:01:21,950 - INFO - Retrieved total 16 tracks for album 6FFHZZvoagWTsyp1M80gaR
+2025-09-03 11:01:22,587 - DEBUG - Retrieved 21 tracks for album 2apmGMKFppnLu7eccTQwM2 at offset 0
+2025-09-03 11:01:22,587 - INFO - Retrieved total 21 tracks for album 2apmGMKFppnLu7eccTQwM2
+2025-09-03 11:01:23,204 - DEBUG - Retrieved 1 tracks for album 7H3VIXj4rmfxnSgLsZk78z at offset 0
+2025-09-03 11:01:23,204 - INFO - Retrieved total 1 tracks for album 7H3VIXj4rmfxnSgLsZk78z
+2025-09-03 11:01:23,865 - DEBUG - Retrieved 16 tracks for album 1086CJAWs5VXxLiRyxergn at offset 0
+2025-09-03 11:01:23,865 - INFO - Retrieved total 16 tracks for album 1086CJAWs5VXxLiRyxergn
+2025-09-03 11:01:24,490 - DEBUG - Retrieved 12 tracks for album 0OMZKga3BwyOxjXUx7CPHh at offset 0
+2025-09-03 11:01:24,491 - INFO - Retrieved total 12 tracks for album 0OMZKga3BwyOxjXUx7CPHh
+2025-09-03 11:01:25,130 - DEBUG - Retrieved 10 tracks for album 3L3tHhBI9SLSNKwwX1S9lK at offset 0
+2025-09-03 11:01:25,130 - INFO - Retrieved total 10 tracks for album 3L3tHhBI9SLSNKwwX1S9lK
+2025-09-03 11:01:25,761 - DEBUG - Retrieved 7 tracks for album 2NSik2TMnCJPTYSQAhupOH at offset 0
+2025-09-03 11:01:25,761 - INFO - Retrieved total 7 tracks for album 2NSik2TMnCJPTYSQAhupOH
+2025-09-03 11:01:26,372 - DEBUG - Retrieved 1 tracks for album 2tWHLSEJHYd34YRb8eyHdX at offset 0
+2025-09-03 11:01:26,373 - INFO - Retrieved total 1 tracks for album 2tWHLSEJHYd34YRb8eyHdX
+2025-09-03 11:01:26,994 - DEBUG - Retrieved 1 tracks for album 2iGTT7AA7PPalt5kORsmsn at offset 0
+2025-09-03 11:01:26,994 - INFO - Retrieved total 1 tracks for album 2iGTT7AA7PPalt5kORsmsn
+2025-09-03 11:01:27,621 - DEBUG - Retrieved 9 tracks for album 6ozdNoxkJcAk7J7IxFtZPl at offset 0
+2025-09-03 11:01:27,621 - INFO - Retrieved total 9 tracks for album 6ozdNoxkJcAk7J7IxFtZPl
+2025-09-03 11:01:28,246 - DEBUG - Retrieved 3 tracks for album 6iUaSm8AsBSW5Hb8IXsR2J at offset 0
+2025-09-03 11:01:28,246 - INFO - Retrieved total 3 tracks for album 6iUaSm8AsBSW5Hb8IXsR2J
+2025-09-03 11:01:28,873 - DEBUG - Retrieved 1 tracks for album 1XBctQsY0Oza1PwsVT93os at offset 0
+2025-09-03 11:01:28,873 - INFO - Retrieved total 1 tracks for album 1XBctQsY0Oza1PwsVT93os
+2025-09-03 11:01:29,519 - DEBUG - Retrieved 17 tracks for album 0VenBjpc22ykXtXhCPGxOM at offset 0
+2025-09-03 11:01:29,519 - INFO - Retrieved total 17 tracks for album 0VenBjpc22ykXtXhCPGxOM
+2025-09-03 11:01:30,222 - DEBUG - Retrieved 14 tracks for album 4jV5DFEggX8yPy0CPQ42il at offset 0
+2025-09-03 11:01:30,222 - INFO - Retrieved total 14 tracks for album 4jV5DFEggX8yPy0CPQ42il
+2025-09-03 11:01:30,862 - DEBUG - Retrieved 4 tracks for album 2f5wy8niBi9JCTapuPBIRU at offset 0
+2025-09-03 11:01:30,862 - INFO - Retrieved total 4 tracks for album 2f5wy8niBi9JCTapuPBIRU
+2025-09-03 11:01:31,504 - DEBUG - Retrieved 13 tracks for album 0NYgLh5er227hhqrg1fU3l at offset 0
+2025-09-03 11:01:31,505 - INFO - Retrieved total 13 tracks for album 0NYgLh5er227hhqrg1fU3l
+2025-09-03 11:01:32,133 - DEBUG - Retrieved 1 tracks for album 2WTW41lq0cDQjdsXhRhyqH at offset 0
+2025-09-03 11:01:32,133 - INFO - Retrieved total 1 tracks for album 2WTW41lq0cDQjdsXhRhyqH
+2025-09-03 11:01:32,754 - DEBUG - Retrieved 6 tracks for album 5Ogp1XkplgR6hO099uEjIL at offset 0
+2025-09-03 11:01:32,754 - INFO - Retrieved total 6 tracks for album 5Ogp1XkplgR6hO099uEjIL
+2025-09-03 11:01:33,389 - DEBUG - Retrieved 6 tracks for album 6VTtYJ1gXCbSqAa730Gw7O at offset 0
+2025-09-03 11:01:33,389 - INFO - Retrieved total 6 tracks for album 6VTtYJ1gXCbSqAa730Gw7O
+2025-09-03 11:01:34,014 - DEBUG - Retrieved 1 tracks for album 22M4UMtjicyvAs4fwX91AG at offset 0
+2025-09-03 11:01:34,014 - INFO - Retrieved total 1 tracks for album 22M4UMtjicyvAs4fwX91AG
+2025-09-03 11:01:34,673 - DEBUG - Retrieved 10 tracks for album 2M2jnNo8J75RsNoJlBaPdM at offset 0
+2025-09-03 11:01:34,673 - INFO - Retrieved total 10 tracks for album 2M2jnNo8J75RsNoJlBaPdM
+2025-09-03 11:01:35,298 - DEBUG - Retrieved 1 tracks for album 4Df2AQ76uIj9pGGZUU5Ola at offset 0
+2025-09-03 11:01:35,298 - INFO - Retrieved total 1 tracks for album 4Df2AQ76uIj9pGGZUU5Ola
+2025-09-03 11:01:35,925 - DEBUG - Retrieved 1 tracks for album 3DkPKOagTLbYVNcIkNtYeP at offset 0
+2025-09-03 11:01:35,925 - INFO - Retrieved total 1 tracks for album 3DkPKOagTLbYVNcIkNtYeP
+2025-09-03 11:01:36,558 - DEBUG - Retrieved 6 tracks for album 5Ve5vyTkibmd3hcZfKXKbI at offset 0
+2025-09-03 11:01:36,558 - INFO - Retrieved total 6 tracks for album 5Ve5vyTkibmd3hcZfKXKbI
+2025-09-03 11:01:37,198 - DEBUG - Retrieved 1 tracks for album 2fXn6a7SYYnSNyuWj0CvnX at offset 0
+2025-09-03 11:01:37,198 - INFO - Retrieved total 1 tracks for album 2fXn6a7SYYnSNyuWj0CvnX
+2025-09-03 11:01:37,838 - DEBUG - Retrieved 1 tracks for album 5fQAphYj9IQOSLfClJ1UfL at offset 0
+2025-09-03 11:01:37,839 - INFO - Retrieved total 1 tracks for album 5fQAphYj9IQOSLfClJ1UfL
+2025-09-03 11:01:38,500 - DEBUG - Retrieved 1 tracks for album 0D2d7QRUHi0mRvDT2QhVeO at offset 0
+2025-09-03 11:01:38,500 - INFO - Retrieved total 1 tracks for album 0D2d7QRUHi0mRvDT2QhVeO
+2025-09-03 11:01:39,123 - DEBUG - Retrieved 1 tracks for album 5aXa5x6WchBCy1FPBFa1us at offset 0
+2025-09-03 11:01:39,123 - INFO - Retrieved total 1 tracks for album 5aXa5x6WchBCy1FPBFa1us
+2025-09-03 11:01:39,777 - DEBUG - Retrieved 50 tracks for album 11iomShUXL8myjWx0K9Llj at offset 0
+2025-09-03 11:01:39,986 - DEBUG - Retrieved 50 tracks for album 11iomShUXL8myjWx0K9Llj at offset 50
+2025-09-03 11:01:40,115 - DEBUG - Retrieved 1 tracks for album 11iomShUXL8myjWx0K9Llj at offset 100
+2025-09-03 11:01:40,115 - INFO - Retrieved total 101 tracks for album 11iomShUXL8myjWx0K9Llj
+2025-09-03 11:01:40,894 - DEBUG - Retrieved 11 tracks for album 2ehHcC26sfvWAQhFTkk6dW at offset 0
+2025-09-03 11:01:40,894 - INFO - Retrieved total 11 tracks for album 2ehHcC26sfvWAQhFTkk6dW
+2025-09-03 11:01:41,534 - DEBUG - Retrieved 10 tracks for album 6ZhdHMiojS2Hh8r9BbqyMR at offset 0
+2025-09-03 11:01:41,534 - INFO - Retrieved total 10 tracks for album 6ZhdHMiojS2Hh8r9BbqyMR
+2025-09-03 11:01:42,166 - DEBUG - Retrieved 2 tracks for album 33bWo4vFIyoC62phzfjEKy at offset 0
+2025-09-03 11:01:42,166 - INFO - Retrieved total 2 tracks for album 33bWo4vFIyoC62phzfjEKy
+2025-09-03 11:01:42,807 - DEBUG - Retrieved 2 tracks for album 4wl567IqQQlBNScJa5C9iE at offset 0
+2025-09-03 11:01:42,807 - INFO - Retrieved total 2 tracks for album 4wl567IqQQlBNScJa5C9iE
+2025-09-03 11:01:43,472 - DEBUG - Retrieved 15 tracks for album 3VCKDAVvR8euuKfgbR0Ryj at offset 0
+2025-09-03 11:01:43,472 - INFO - Retrieved total 15 tracks for album 3VCKDAVvR8euuKfgbR0Ryj
+2025-09-03 11:01:44,111 - DEBUG - Retrieved 1 tracks for album 1IiRjbcAkXMkIfd3HJ9M01 at offset 0
+2025-09-03 11:01:44,111 - INFO - Retrieved total 1 tracks for album 1IiRjbcAkXMkIfd3HJ9M01
+2025-09-03 11:01:44,824 - DEBUG - Retrieved 12 tracks for album 5jWu8mnQdqvn6o1Y1hfgH9 at offset 0
+2025-09-03 11:01:44,824 - INFO - Retrieved total 12 tracks for album 5jWu8mnQdqvn6o1Y1hfgH9
+2025-09-03 11:01:45,455 - DEBUG - Retrieved 1 tracks for album 2RADneMo8givvCbM6k6yPR at offset 0
+2025-09-03 11:01:45,455 - INFO - Retrieved total 1 tracks for album 2RADneMo8givvCbM6k6yPR
+2025-09-03 11:01:46,103 - DEBUG - Retrieved 12 tracks for album 3e53TOZWQfwBfHtjspGw34 at offset 0
+2025-09-03 11:01:46,104 - INFO - Retrieved total 12 tracks for album 3e53TOZWQfwBfHtjspGw34
+2025-09-03 11:01:46,788 - DEBUG - Retrieved 13 tracks for album 4RZFJXFYLHs9VhATqZ2nan at offset 0
+2025-09-03 11:01:46,788 - INFO - Retrieved total 13 tracks for album 4RZFJXFYLHs9VhATqZ2nan
+2025-09-03 11:01:47,401 - DEBUG - Retrieved 1 tracks for album 5byNIwsFgogaDayhn5QWNO at offset 0
+2025-09-03 11:01:47,401 - INFO - Retrieved total 1 tracks for album 5byNIwsFgogaDayhn5QWNO
+2025-09-03 11:01:48,030 - DEBUG - Retrieved 1 tracks for album 7u8Wf3K3VR72pVRZ1b4dwN at offset 0
+2025-09-03 11:01:48,030 - INFO - Retrieved total 1 tracks for album 7u8Wf3K3VR72pVRZ1b4dwN
+2025-09-03 11:01:48,681 - DEBUG - Retrieved 13 tracks for album 1IMtIoqVIyoIIh212qPQro at offset 0
+2025-09-03 11:01:48,681 - INFO - Retrieved total 13 tracks for album 1IMtIoqVIyoIIh212qPQro
+2025-09-03 11:01:49,351 - DEBUG - Retrieved 2 tracks for album 3athIKaWHtj2qukaP597N5 at offset 0
+2025-09-03 11:01:49,352 - INFO - Retrieved total 2 tracks for album 3athIKaWHtj2qukaP597N5
+2025-09-03 11:01:49,992 - DEBUG - Retrieved 3 tracks for album 6IPnW1tlA4tZ2RNP77STlv at offset 0
+2025-09-03 11:01:49,992 - INFO - Retrieved total 3 tracks for album 6IPnW1tlA4tZ2RNP77STlv
+2025-09-03 11:01:50,623 - DEBUG - Retrieved 1 tracks for album 503SNJJwoBdFR8hfmhA5Ck at offset 0
+2025-09-03 11:01:50,623 - INFO - Retrieved total 1 tracks for album 503SNJJwoBdFR8hfmhA5Ck
+2025-09-03 11:01:51,270 - DEBUG - Retrieved 12 tracks for album 2RDUJixbxpkSdNdDLR4LL8 at offset 0
+2025-09-03 11:01:51,270 - INFO - Retrieved total 12 tracks for album 2RDUJixbxpkSdNdDLR4LL8
+2025-09-03 11:01:51,886 - DEBUG - Retrieved 2 tracks for album 3PZhCt0gqzjDJLC8yKUohe at offset 0
+2025-09-03 11:01:51,886 - INFO - Retrieved total 2 tracks for album 3PZhCt0gqzjDJLC8yKUohe
+2025-09-03 11:01:52,558 - DEBUG - Retrieved 1 tracks for album 1KHdnxIQ4sqezofOcYQyjP at offset 0
+2025-09-03 11:01:52,559 - INFO - Retrieved total 1 tracks for album 1KHdnxIQ4sqezofOcYQyjP
+2025-09-03 11:01:53,220 - DEBUG - Retrieved 1 tracks for album 3VGh9KUcS8f348pAwwPiev at offset 0
+2025-09-03 11:01:53,221 - INFO - Retrieved total 1 tracks for album 3VGh9KUcS8f348pAwwPiev
+2025-09-03 11:01:54,408 - DEBUG - Retrieved 1 tracks for album 1lZSjnbr6lpuUYhAgKFhs7 at offset 0
+2025-09-03 11:01:54,408 - INFO - Retrieved total 1 tracks for album 1lZSjnbr6lpuUYhAgKFhs7
+2025-09-03 11:01:55,066 - DEBUG - Retrieved 15 tracks for album 4uAeRbohuLtxUkXr7bn0dl at offset 0
+2025-09-03 11:01:55,066 - INFO - Retrieved total 15 tracks for album 4uAeRbohuLtxUkXr7bn0dl
+2025-09-03 11:01:55,850 - DEBUG - Retrieved 13 tracks for album 4sShdTo9jO2RGLgDkZBgN8 at offset 0
+2025-09-03 11:01:55,851 - INFO - Retrieved total 13 tracks for album 4sShdTo9jO2RGLgDkZBgN8
+2025-09-03 11:01:56,504 - DEBUG - Retrieved 11 tracks for album 4js8lX2b3DBIfixMCPABC4 at offset 0
+2025-09-03 11:01:56,504 - INFO - Retrieved total 11 tracks for album 4js8lX2b3DBIfixMCPABC4
+2025-09-03 11:01:57,140 - DEBUG - Retrieved 11 tracks for album 5pCRW9AT4BgoMOS52pRoJq at offset 0
+2025-09-03 11:01:57,141 - INFO - Retrieved total 11 tracks for album 5pCRW9AT4BgoMOS52pRoJq
+2025-09-03 11:01:57,892 - DEBUG - Retrieved 12 tracks for album 65A1nyTny4DLoVOHHphgjn at offset 0
+2025-09-03 11:01:57,892 - INFO - Retrieved total 12 tracks for album 65A1nyTny4DLoVOHHphgjn
+2025-09-03 11:01:58,524 - DEBUG - Retrieved 4 tracks for album 3sQS3qy5lYAOuzuBoxw2eY at offset 0
+2025-09-03 11:01:58,524 - INFO - Retrieved total 4 tracks for album 3sQS3qy5lYAOuzuBoxw2eY
+2025-09-03 11:01:59,201 - DEBUG - Retrieved 15 tracks for album 6p9LqWLWDOuW2WiUt9YKUZ at offset 0
+2025-09-03 11:01:59,201 - INFO - Retrieved total 15 tracks for album 6p9LqWLWDOuW2WiUt9YKUZ
+2025-09-03 11:01:59,846 - DEBUG - Retrieved 11 tracks for album 3W2BTPUHJX51hweWPNRenv at offset 0
+2025-09-03 11:01:59,846 - INFO - Retrieved total 11 tracks for album 3W2BTPUHJX51hweWPNRenv
+2025-09-03 11:02:00,564 - DEBUG - Retrieved 1 tracks for album 5b92Q0wcU49AnhBmu3IxOx at offset 0
+2025-09-03 11:02:00,564 - INFO - Retrieved total 1 tracks for album 5b92Q0wcU49AnhBmu3IxOx
+2025-09-03 11:02:01,199 - DEBUG - Retrieved 17 tracks for album 5v7Icroz1sQsK2sQyLrWzE at offset 0
+2025-09-03 11:02:01,199 - INFO - Retrieved total 17 tracks for album 5v7Icroz1sQsK2sQyLrWzE
+2025-09-03 11:02:01,825 - DEBUG - Retrieved 1 tracks for album 02HCepjbnNOAy8fgYaJtG6 at offset 0
+2025-09-03 11:02:01,825 - INFO - Retrieved total 1 tracks for album 02HCepjbnNOAy8fgYaJtG6
+2025-09-03 11:02:02,475 - DEBUG - Retrieved 9 tracks for album 2T9P5dSm786uuxA5tkI1Xb at offset 0
+2025-09-03 11:02:02,475 - INFO - Retrieved total 9 tracks for album 2T9P5dSm786uuxA5tkI1Xb
+2025-09-03 11:02:03,132 - DEBUG - Retrieved 15 tracks for album 5i2qu2FGIYy2BMhHDKST43 at offset 0
+2025-09-03 11:02:03,132 - INFO - Retrieved total 15 tracks for album 5i2qu2FGIYy2BMhHDKST43
+2025-09-03 11:02:03,743 - DEBUG - Retrieved 1 tracks for album 3VHSMAMTMIaPuhwXPg032f at offset 0
+2025-09-03 11:02:03,743 - INFO - Retrieved total 1 tracks for album 3VHSMAMTMIaPuhwXPg032f
+2025-09-03 11:02:04,386 - DEBUG - Retrieved 26 tracks for album 7txdao9C0jYls2zBxFojzJ at offset 0
+2025-09-03 11:02:04,387 - INFO - Retrieved total 26 tracks for album 7txdao9C0jYls2zBxFojzJ
+2025-09-03 11:02:05,027 - DEBUG - Retrieved 16 tracks for album 19DGbjQW4oJmS1TLmr7OH3 at offset 0
+2025-09-03 11:02:05,028 - INFO - Retrieved total 16 tracks for album 19DGbjQW4oJmS1TLmr7OH3
+2025-09-03 11:02:05,671 - DEBUG - Retrieved 15 tracks for album 6NUEU1vyIctdAg8IHot8Wy at offset 0
+2025-09-03 11:02:05,671 - INFO - Retrieved total 15 tracks for album 6NUEU1vyIctdAg8IHot8Wy
+2025-09-03 11:02:06,339 - DEBUG - Retrieved 15 tracks for album 09KOjaflTBRE28GVvXqkYC at offset 0
+2025-09-03 11:02:06,340 - INFO - Retrieved total 15 tracks for album 09KOjaflTBRE28GVvXqkYC
+2025-09-03 11:02:07,007 - DEBUG - Retrieved 10 tracks for album 4sQGLSnIbYXHipTFyxPsMs at offset 0
+2025-09-03 11:02:07,008 - INFO - Retrieved total 10 tracks for album 4sQGLSnIbYXHipTFyxPsMs
+2025-09-03 11:02:07,642 - DEBUG - Retrieved 12 tracks for album 4Kd33JPxTOcjTM29FrKoyT at offset 0
+2025-09-03 11:02:07,642 - INFO - Retrieved total 12 tracks for album 4Kd33JPxTOcjTM29FrKoyT
+2025-09-03 11:02:08,284 - DEBUG - Retrieved 10 tracks for album 3DcqxxwxranqrA4zTGmzmo at offset 0
+2025-09-03 11:02:08,284 - INFO - Retrieved total 10 tracks for album 3DcqxxwxranqrA4zTGmzmo
+2025-09-03 11:02:08,942 - DEBUG - Retrieved 19 tracks for album 64nhe9s692yKECAoMcEQ8U at offset 0
+2025-09-03 11:02:08,942 - INFO - Retrieved total 19 tracks for album 64nhe9s692yKECAoMcEQ8U
+2025-09-03 11:02:09,573 - DEBUG - Retrieved 1 tracks for album 5M43QFCSFCRKbILn3nDRPW at offset 0
+2025-09-03 11:02:09,573 - INFO - Retrieved total 1 tracks for album 5M43QFCSFCRKbILn3nDRPW
+2025-09-03 11:02:10,237 - DEBUG - Retrieved 12 tracks for album 2liHjGjIgWvjrfBgKGBYuF at offset 0
+2025-09-03 11:02:10,237 - INFO - Retrieved total 12 tracks for album 2liHjGjIgWvjrfBgKGBYuF
+2025-09-03 11:02:10,858 - DEBUG - Retrieved 1 tracks for album 2NYFLe34RWm5m8bZPDET2G at offset 0
+2025-09-03 11:02:10,858 - INFO - Retrieved total 1 tracks for album 2NYFLe34RWm5m8bZPDET2G
+2025-09-03 11:02:11,492 - DEBUG - Retrieved 2 tracks for album 45k1cbcPYPSmCFThpFBHQG at offset 0
+2025-09-03 11:02:11,492 - INFO - Retrieved total 2 tracks for album 45k1cbcPYPSmCFThpFBHQG
+2025-09-03 11:02:12,141 - DEBUG - Retrieved 16 tracks for album 06q6BDUpP6OS8Xnx3YC2M0 at offset 0
+2025-09-03 11:02:12,141 - INFO - Retrieved total 16 tracks for album 06q6BDUpP6OS8Xnx3YC2M0
+2025-09-03 11:02:12,769 - DEBUG - Retrieved 2 tracks for album 3f1DEK9vqp8w3NL8w5F1s0 at offset 0
+2025-09-03 11:02:12,769 - INFO - Retrieved total 2 tracks for album 3f1DEK9vqp8w3NL8w5F1s0
+2025-09-03 11:02:13,480 - DEBUG - Retrieved 5 tracks for album 6D36bEVEUJueIpSqdaotyQ at offset 0
+2025-09-03 11:02:13,480 - INFO - Retrieved total 5 tracks for album 6D36bEVEUJueIpSqdaotyQ
+2025-09-03 11:02:14,107 - DEBUG - Retrieved 12 tracks for album 6DUyohk95eun9LArJtHyF7 at offset 0
+2025-09-03 11:02:14,107 - INFO - Retrieved total 12 tracks for album 6DUyohk95eun9LArJtHyF7
+2025-09-03 11:02:14,727 - DEBUG - Retrieved 1 tracks for album 2pEZkJlkzLMBXPUPWyQJxn at offset 0
+2025-09-03 11:02:14,727 - INFO - Retrieved total 1 tracks for album 2pEZkJlkzLMBXPUPWyQJxn
+2025-09-03 11:02:15,395 - DEBUG - Retrieved 10 tracks for album 4Osn25pyDyMp1gC4oq4EKp at offset 0
+2025-09-03 11:02:15,395 - INFO - Retrieved total 10 tracks for album 4Osn25pyDyMp1gC4oq4EKp
+2025-09-03 11:02:16,024 - DEBUG - Retrieved 1 tracks for album 4oFJhn9mCaB0E8mdq8qqlt at offset 0
+2025-09-03 11:02:16,024 - INFO - Retrieved total 1 tracks for album 4oFJhn9mCaB0E8mdq8qqlt
+2025-09-03 11:02:16,818 - DEBUG - Retrieved 50 tracks for album 07vws4IfJ8kcaFJOUpx3xx at offset 0
+2025-09-03 11:02:16,949 - DEBUG - Retrieved 30 tracks for album 07vws4IfJ8kcaFJOUpx3xx at offset 50
+2025-09-03 11:02:16,949 - INFO - Retrieved total 80 tracks for album 07vws4IfJ8kcaFJOUpx3xx
+2025-09-03 11:02:17,597 - DEBUG - Retrieved 13 tracks for album 00n360LQyiIRSXjPA54HHf at offset 0
+2025-09-03 11:02:17,597 - INFO - Retrieved total 13 tracks for album 00n360LQyiIRSXjPA54HHf
+2025-09-03 11:02:18,225 - DEBUG - Retrieved 12 tracks for album 1aU3Cf4FVRcJKLnaAhkMEj at offset 0
+2025-09-03 11:02:18,225 - INFO - Retrieved total 12 tracks for album 1aU3Cf4FVRcJKLnaAhkMEj
+2025-09-03 11:02:18,932 - DEBUG - Retrieved 6 tracks for album 6GTcFArnGzdIYivzREj6ZJ at offset 0
+2025-09-03 11:02:18,932 - INFO - Retrieved total 6 tracks for album 6GTcFArnGzdIYivzREj6ZJ
+2025-09-03 11:02:19,602 - DEBUG - Retrieved 4 tracks for album 3zM9qW391LDFXW8xoeiFKj at offset 0
+2025-09-03 11:02:19,602 - INFO - Retrieved total 4 tracks for album 3zM9qW391LDFXW8xoeiFKj
+2025-09-03 11:02:20,274 - DEBUG - Retrieved 3 tracks for album 4KSynZGuLdazOWqkVR9BJP at offset 0
+2025-09-03 11:02:20,274 - INFO - Retrieved total 3 tracks for album 4KSynZGuLdazOWqkVR9BJP
+2025-09-03 11:02:20,954 - DEBUG - Retrieved 3 tracks for album 4Z4D92KlKggXkN7rauBRtO at offset 0
+2025-09-03 11:02:20,954 - INFO - Retrieved total 3 tracks for album 4Z4D92KlKggXkN7rauBRtO
+2025-09-03 11:02:21,575 - DEBUG - Retrieved 10 tracks for album 2ehZxvxfSq4uvjSs66vgXN at offset 0
+2025-09-03 11:02:21,575 - INFO - Retrieved total 10 tracks for album 2ehZxvxfSq4uvjSs66vgXN
+2025-09-03 11:02:22,215 - DEBUG - Retrieved 5 tracks for album 2lupCgZBILVLAwirR03ocb at offset 0
+2025-09-03 11:02:22,215 - INFO - Retrieved total 5 tracks for album 2lupCgZBILVLAwirR03ocb
+2025-09-03 11:02:22,848 - DEBUG - Retrieved 12 tracks for album 47xPNFRk2yCpdBtYSGTYH5 at offset 0
+2025-09-03 11:02:22,848 - INFO - Retrieved total 12 tracks for album 47xPNFRk2yCpdBtYSGTYH5
+2025-09-03 11:02:23,473 - DEBUG - Retrieved 9 tracks for album 0QUTd2tL2hc7rT1rpOsXhB at offset 0
+2025-09-03 11:02:23,473 - INFO - Retrieved total 9 tracks for album 0QUTd2tL2hc7rT1rpOsXhB
+2025-09-03 11:02:24,091 - DEBUG - Retrieved 1 tracks for album 6w9uKHX2ulCp5QRYX1mhHz at offset 0
+2025-09-03 11:02:24,092 - INFO - Retrieved total 1 tracks for album 6w9uKHX2ulCp5QRYX1mhHz
+2025-09-03 11:02:24,708 - DEBUG - Retrieved 1 tracks for album 21o778HGz0Rmyd8oQFXpmd at offset 0
+2025-09-03 11:02:24,708 - INFO - Retrieved total 1 tracks for album 21o778HGz0Rmyd8oQFXpmd
+2025-09-03 11:02:25,385 - DEBUG - Retrieved 10 tracks for album 4nizZ6jdrekGP9wDArmDlU at offset 0
+2025-09-03 11:02:25,385 - INFO - Retrieved total 10 tracks for album 4nizZ6jdrekGP9wDArmDlU
+2025-09-03 11:02:26,016 - DEBUG - Retrieved 1 tracks for album 3DSMcNv20oW83iQYjMLWkm at offset 0
+2025-09-03 11:02:26,017 - INFO - Retrieved total 1 tracks for album 3DSMcNv20oW83iQYjMLWkm
+2025-09-03 11:02:26,641 - DEBUG - Retrieved 3 tracks for album 2fGLkavM8xRyLc74aO5xlw at offset 0
+2025-09-03 11:02:26,641 - INFO - Retrieved total 3 tracks for album 2fGLkavM8xRyLc74aO5xlw
+2025-09-03 11:02:27,892 - DEBUG - Retrieved 12 tracks for album 64J8girYqmK86ebqBayrjQ at offset 0
+2025-09-03 11:02:27,892 - INFO - Retrieved total 12 tracks for album 64J8girYqmK86ebqBayrjQ
+2025-09-03 11:02:28,563 - DEBUG - Retrieved 40 tracks for album 1dQDdZKvdJ5gNhUF56S8Qu at offset 0
+2025-09-03 11:02:28,564 - INFO - Retrieved total 40 tracks for album 1dQDdZKvdJ5gNhUF56S8Qu
+2025-09-03 11:02:29,192 - DEBUG - Retrieved 20 tracks for album 5xfPV8byJVCmeqe1LeVFqz at offset 0
+2025-09-03 11:02:29,192 - INFO - Retrieved total 20 tracks for album 5xfPV8byJVCmeqe1LeVFqz
+2025-09-03 11:02:29,867 - DEBUG - Retrieved 11 tracks for album 2pjTa9ph0ycbcJlpH4UAyP at offset 0
+2025-09-03 11:02:29,868 - INFO - Retrieved total 11 tracks for album 2pjTa9ph0ycbcJlpH4UAyP
+2025-09-03 11:02:30,525 - DEBUG - Retrieved 11 tracks for album 0O3bdEWuD0AFkstEtfQOF3 at offset 0
+2025-09-03 11:02:30,525 - INFO - Retrieved total 11 tracks for album 0O3bdEWuD0AFkstEtfQOF3
+2025-09-03 11:02:31,225 - DEBUG - Retrieved 14 tracks for album 3NDwrDoBKwmBQYz4emr9P7 at offset 0
+2025-09-03 11:02:31,225 - INFO - Retrieved total 14 tracks for album 3NDwrDoBKwmBQYz4emr9P7
+2025-09-03 11:02:31,883 - DEBUG - Retrieved 11 tracks for album 1JDkIxq4xRW7ySH89sGflc at offset 0
+2025-09-03 11:02:31,883 - INFO - Retrieved total 11 tracks for album 1JDkIxq4xRW7ySH89sGflc
+2025-09-03 11:02:32,496 - DEBUG - Retrieved 1 tracks for album 3ekHjEGoPGSQgmvZwZ2WIT at offset 0
+2025-09-03 11:02:32,496 - INFO - Retrieved total 1 tracks for album 3ekHjEGoPGSQgmvZwZ2WIT
+2025-09-03 11:02:33,118 - DEBUG - Retrieved 7 tracks for album 5Lyz7ZD1UaPq6WoEqTOqom at offset 0
+2025-09-03 11:02:33,118 - INFO - Retrieved total 7 tracks for album 5Lyz7ZD1UaPq6WoEqTOqom
+2025-09-03 11:02:33,745 - DEBUG - Retrieved 7 tracks for album 3Cnj43AyRQy21WQWsngNDs at offset 0
+2025-09-03 11:02:33,746 - INFO - Retrieved total 7 tracks for album 3Cnj43AyRQy21WQWsngNDs
+2025-09-03 11:02:34,376 - DEBUG - Retrieved 14 tracks for album 6yrXqvS9A8uMHFoh0S9peN at offset 0
+2025-09-03 11:02:34,376 - INFO - Retrieved total 14 tracks for album 6yrXqvS9A8uMHFoh0S9peN
+2025-09-03 11:02:34,999 - DEBUG - Retrieved 5 tracks for album 6evGYGWC69zmq7BMmC62B4 at offset 0
+2025-09-03 11:02:34,999 - INFO - Retrieved total 5 tracks for album 6evGYGWC69zmq7BMmC62B4
+2025-09-03 11:02:35,658 - DEBUG - Retrieved 7 tracks for album 4vIJFprkZ7vyN6nhcBgQmG at offset 0
+2025-09-03 11:02:35,659 - INFO - Retrieved total 7 tracks for album 4vIJFprkZ7vyN6nhcBgQmG
+2025-09-03 11:02:36,282 - DEBUG - Retrieved 10 tracks for album 7cjqOoWOgTfdrmTeUjvh4u at offset 0
+2025-09-03 11:02:36,282 - INFO - Retrieved total 10 tracks for album 7cjqOoWOgTfdrmTeUjvh4u
+2025-09-03 11:02:36,913 - DEBUG - Retrieved 16 tracks for album 011bYGBcBqKxVitz2muIiW at offset 0
+2025-09-03 11:02:36,913 - INFO - Retrieved total 16 tracks for album 011bYGBcBqKxVitz2muIiW
+2025-09-03 11:02:37,569 - DEBUG - Retrieved 14 tracks for album 265KYdkbI8k2CMPqeOAJoZ at offset 0
+2025-09-03 11:02:37,570 - INFO - Retrieved total 14 tracks for album 265KYdkbI8k2CMPqeOAJoZ
+2025-09-03 11:02:38,226 - DEBUG - Retrieved 24 tracks for album 4W4gNYa4tt3t8V6FmONWEK at offset 0
+2025-09-03 11:02:38,226 - INFO - Retrieved total 24 tracks for album 4W4gNYa4tt3t8V6FmONWEK
+2025-09-03 11:02:38,952 - DEBUG - Retrieved 12 tracks for album 0QQvOpAflQyVHlqxCqneuv at offset 0
+2025-09-03 11:02:38,952 - INFO - Retrieved total 12 tracks for album 0QQvOpAflQyVHlqxCqneuv
+2025-09-03 11:02:39,603 - DEBUG - Retrieved 21 tracks for album 4sb0eMpDn3upAFfyi4q2rw at offset 0
+2025-09-03 11:02:39,603 - INFO - Retrieved total 21 tracks for album 4sb0eMpDn3upAFfyi4q2rw
+2025-09-03 11:02:40,238 - DEBUG - Retrieved 20 tracks for album 4LULknXrsawcyLsSMKTG2q at offset 0
+2025-09-03 11:02:40,238 - INFO - Retrieved total 20 tracks for album 4LULknXrsawcyLsSMKTG2q
+2025-09-03 11:02:40,864 - DEBUG - Retrieved 6 tracks for album 7zAePa9tPWsyggIVQPHUOq at offset 0
+2025-09-03 11:02:40,864 - INFO - Retrieved total 6 tracks for album 7zAePa9tPWsyggIVQPHUOq
+2025-09-03 11:02:41,513 - DEBUG - Retrieved 1 tracks for album 0fniUtJNAYz6eSOE9HJe32 at offset 0
+2025-09-03 11:02:41,513 - INFO - Retrieved total 1 tracks for album 0fniUtJNAYz6eSOE9HJe32
+2025-09-03 11:02:42,136 - DEBUG - Retrieved 10 tracks for album 1dnIa7pBeqbuCMebZHS8IQ at offset 0
+2025-09-03 11:02:42,136 - INFO - Retrieved total 10 tracks for album 1dnIa7pBeqbuCMebZHS8IQ
+2025-09-03 11:02:42,782 - DEBUG - Retrieved 19 tracks for album 3n3dFmQjPGQsnAcLK9lu6I at offset 0
+2025-09-03 11:02:42,782 - INFO - Retrieved total 19 tracks for album 3n3dFmQjPGQsnAcLK9lu6I
+2025-09-03 11:02:43,406 - DEBUG - Retrieved 1 tracks for album 5itYNW6UW1VvJO7j9dRn2S at offset 0
+2025-09-03 11:02:43,406 - INFO - Retrieved total 1 tracks for album 5itYNW6UW1VvJO7j9dRn2S
+2025-09-03 11:02:44,052 - DEBUG - Retrieved 1 tracks for album 54R5dT9BWKnR2RX9gOFzDK at offset 0
+2025-09-03 11:02:44,052 - INFO - Retrieved total 1 tracks for album 54R5dT9BWKnR2RX9gOFzDK
+2025-09-03 11:02:44,691 - DEBUG - Retrieved 18 tracks for album 21HMAUrbbYSj9NiPPlGumy at offset 0
+2025-09-03 11:02:44,691 - INFO - Retrieved total 18 tracks for album 21HMAUrbbYSj9NiPPlGumy
+2025-09-03 11:02:45,360 - DEBUG - Retrieved 25 tracks for album 6WDWAf8JiMoaLyhMrT9eMF at offset 0
+2025-09-03 11:02:45,360 - INFO - Retrieved total 25 tracks for album 6WDWAf8JiMoaLyhMrT9eMF
+2025-09-03 11:02:46,014 - DEBUG - Retrieved 15 tracks for album 4mbkkOGZS6inHP2di2jaqS at offset 0
+2025-09-03 11:02:46,015 - INFO - Retrieved total 15 tracks for album 4mbkkOGZS6inHP2di2jaqS
+2025-09-03 11:02:46,685 - DEBUG - Retrieved 27 tracks for album 7nSS8VKmoybBNCGTzUAbYp at offset 0
+2025-09-03 11:02:46,685 - INFO - Retrieved total 27 tracks for album 7nSS8VKmoybBNCGTzUAbYp
+2025-09-03 11:02:47,315 - DEBUG - Retrieved 8 tracks for album 1okVYV2KKwSNnQeSgdAW3S at offset 0
+2025-09-03 11:02:47,315 - INFO - Retrieved total 8 tracks for album 1okVYV2KKwSNnQeSgdAW3S
+2025-09-03 11:02:47,960 - DEBUG - Retrieved 12 tracks for album 2SWS1mVZSCUVHSO7ITJBpt at offset 0
+2025-09-03 11:02:47,960 - INFO - Retrieved total 12 tracks for album 2SWS1mVZSCUVHSO7ITJBpt
+2025-09-03 11:02:48,606 - DEBUG - Retrieved 1 tracks for album 2R68ltOO6UlAdkvv9rBKNt at offset 0
+2025-09-03 11:02:48,606 - INFO - Retrieved total 1 tracks for album 2R68ltOO6UlAdkvv9rBKNt
+2025-09-03 11:02:49,266 - DEBUG - Retrieved 22 tracks for album 3pLWUPl8R8nqpPfSeFeHjX at offset 0
+2025-09-03 11:02:49,266 - INFO - Retrieved total 22 tracks for album 3pLWUPl8R8nqpPfSeFeHjX
+2025-09-03 11:02:49,917 - DEBUG - Retrieved 1 tracks for album 73gCwVDf6WhDmZf2wEccUg at offset 0
+2025-09-03 11:02:49,917 - INFO - Retrieved total 1 tracks for album 73gCwVDf6WhDmZf2wEccUg
+2025-09-03 11:02:50,553 - DEBUG - Retrieved 38 tracks for album 31bJMOBOvKNwuflrg0p5rR at offset 0
+2025-09-03 11:02:50,553 - INFO - Retrieved total 38 tracks for album 31bJMOBOvKNwuflrg0p5rR
+2025-09-03 11:02:51,181 - DEBUG - Retrieved 11 tracks for album 3Z6RuwMcmDMgBJsZ01Ouhf at offset 0
+2025-09-03 11:02:51,181 - INFO - Retrieved total 11 tracks for album 3Z6RuwMcmDMgBJsZ01Ouhf
+2025-09-03 11:02:51,798 - DEBUG - Retrieved 12 tracks for album 2qD3kViVvF2abnNYNypG0D at offset 0
+2025-09-03 11:02:51,798 - INFO - Retrieved total 12 tracks for album 2qD3kViVvF2abnNYNypG0D
+2025-09-03 11:02:52,439 - DEBUG - Retrieved 1 tracks for album 55z0ZQeTNgFdZuCWEITaJL at offset 0
+2025-09-03 11:02:52,439 - INFO - Retrieved total 1 tracks for album 55z0ZQeTNgFdZuCWEITaJL
+2025-09-03 11:02:53,097 - DEBUG - Retrieved 50 tracks for album 1G0puvvRL0HUnD9NHFAq7j at offset 0
+2025-09-03 11:02:53,363 - DEBUG - Retrieved 20 tracks for album 1G0puvvRL0HUnD9NHFAq7j at offset 50
+2025-09-03 11:02:53,363 - INFO - Retrieved total 70 tracks for album 1G0puvvRL0HUnD9NHFAq7j
+2025-09-03 11:02:54,131 - DEBUG - Retrieved 1 tracks for album 2sSVuI9NUlDrAsXWH11DmS at offset 0
+2025-09-03 11:02:54,132 - INFO - Retrieved total 1 tracks for album 2sSVuI9NUlDrAsXWH11DmS
+2025-09-03 11:02:54,763 - DEBUG - Retrieved 12 tracks for album 0PjQ1BozKZ2dFVA2fPf1IH at offset 0
+2025-09-03 11:02:54,763 - INFO - Retrieved total 12 tracks for album 0PjQ1BozKZ2dFVA2fPf1IH
+2025-09-03 11:02:55,397 - DEBUG - Retrieved 4 tracks for album 4AQ6cJ8tLaaOSJdZWkFN7v at offset 0
+2025-09-03 11:02:55,397 - INFO - Retrieved total 4 tracks for album 4AQ6cJ8tLaaOSJdZWkFN7v
+2025-09-03 11:02:56,020 - DEBUG - Retrieved 12 tracks for album 6NSsF7Szxswj1yhmzGIl02 at offset 0
+2025-09-03 11:02:56,020 - INFO - Retrieved total 12 tracks for album 6NSsF7Szxswj1yhmzGIl02
+2025-09-03 11:02:56,654 - DEBUG - Retrieved 12 tracks for album 6Ve8ICkRtycWJJcTd7MZmO at offset 0
+2025-09-03 11:02:56,654 - INFO - Retrieved total 12 tracks for album 6Ve8ICkRtycWJJcTd7MZmO
+2025-09-03 11:02:57,271 - DEBUG - Retrieved 10 tracks for album 6KNAUuLDoXeViFmS63rqia at offset 0
+2025-09-03 11:02:57,271 - INFO - Retrieved total 10 tracks for album 6KNAUuLDoXeViFmS63rqia
+2025-09-03 11:02:57,879 - DEBUG - Retrieved 1 tracks for album 4TcDRfyMfqxaF2wqKxiOl9 at offset 0
+2025-09-03 11:02:57,880 - INFO - Retrieved total 1 tracks for album 4TcDRfyMfqxaF2wqKxiOl9
+2025-09-03 11:02:58,619 - DEBUG - Retrieved 1 tracks for album 3Y7ZGhLkNtaXkQ9ATG2TVM at offset 0
+2025-09-03 11:02:58,619 - INFO - Retrieved total 1 tracks for album 3Y7ZGhLkNtaXkQ9ATG2TVM
+2025-09-03 11:02:59,242 - DEBUG - Retrieved 9 tracks for album 0NhxrRNe6mhnwR0jo7yTY4 at offset 0
+2025-09-03 11:02:59,243 - INFO - Retrieved total 9 tracks for album 0NhxrRNe6mhnwR0jo7yTY4
+2025-09-03 11:02:59,894 - DEBUG - Retrieved 1 tracks for album 3oisuahdQVPrXVThbPTqvB at offset 0
+2025-09-03 11:02:59,894 - INFO - Retrieved total 1 tracks for album 3oisuahdQVPrXVThbPTqvB
+2025-09-03 11:03:01,078 - DEBUG - Retrieved 17 tracks for album 7sHrPadM39466NY7DW3s4r at offset 0
+2025-09-03 11:03:01,078 - INFO - Retrieved total 17 tracks for album 7sHrPadM39466NY7DW3s4r
+2025-09-03 11:03:01,714 - DEBUG - Retrieved 30 tracks for album 5ggZPfkYe7hGQCu5cYkfK2 at offset 0
+2025-09-03 11:03:01,715 - INFO - Retrieved total 30 tracks for album 5ggZPfkYe7hGQCu5cYkfK2
+2025-09-03 11:03:02,400 - DEBUG - Retrieved 28 tracks for album 0YyClG3zi0IkKpV72rQQFH at offset 0
+2025-09-03 11:03:02,401 - INFO - Retrieved total 28 tracks for album 0YyClG3zi0IkKpV72rQQFH
+2025-09-03 11:03:03,028 - DEBUG - Retrieved 17 tracks for album 1bz0yyAMDfGxcxH1Y4W048 at offset 0
+2025-09-03 11:03:03,028 - INFO - Retrieved total 17 tracks for album 1bz0yyAMDfGxcxH1Y4W048
+2025-09-03 11:03:03,640 - DEBUG - Retrieved 5 tracks for album 3YQRfcAxfqX4KJt4o0yCTm at offset 0
+2025-09-03 11:03:03,640 - INFO - Retrieved total 5 tracks for album 3YQRfcAxfqX4KJt4o0yCTm
+2025-09-03 11:03:04,326 - DEBUG - Retrieved 50 tracks for album 2mZjideTVafHl8TLX9hmMb at offset 0
+2025-09-03 11:03:04,488 - DEBUG - Retrieved 50 tracks for album 2mZjideTVafHl8TLX9hmMb at offset 50
+2025-09-03 11:03:04,606 - INFO - No tracks found for album 2mZjideTVafHl8TLX9hmMb at offset 100
+2025-09-03 11:03:04,607 - INFO - Retrieved total 100 tracks for album 2mZjideTVafHl8TLX9hmMb
+2025-09-03 11:03:05,244 - DEBUG - Retrieved 33 tracks for album 5bl0ggdoV1nNEGuVkUG9c3 at offset 0
+2025-09-03 11:03:05,244 - INFO - Retrieved total 33 tracks for album 5bl0ggdoV1nNEGuVkUG9c3
+2025-09-03 11:03:05,859 - DEBUG - Retrieved 14 tracks for album 3LdQddunkiZUWpAxPP6UcT at offset 0
+2025-09-03 11:03:05,859 - INFO - Retrieved total 14 tracks for album 3LdQddunkiZUWpAxPP6UcT
+2025-09-03 11:03:06,521 - DEBUG - Retrieved 30 tracks for album 3eFlAdoWlWsCsT02tPhRLk at offset 0
+2025-09-03 11:03:06,521 - INFO - Retrieved total 30 tracks for album 3eFlAdoWlWsCsT02tPhRLk
+2025-09-03 11:03:07,155 - DEBUG - Retrieved 21 tracks for album 4b0RqzBTlcQhXhyulji1Oc at offset 0
+2025-09-03 11:03:07,155 - INFO - Retrieved total 21 tracks for album 4b0RqzBTlcQhXhyulji1Oc
+2025-09-03 11:03:07,770 - DEBUG - Retrieved 3 tracks for album 3BeLBOwSICK1fyhaYAhYIH at offset 0
+2025-09-03 11:03:07,770 - INFO - Retrieved total 3 tracks for album 3BeLBOwSICK1fyhaYAhYIH
+2025-09-03 11:03:08,430 - DEBUG - Retrieved 27 tracks for album 4CL407SBJAwteXLSTuGYhK at offset 0
+2025-09-03 11:03:08,430 - INFO - Retrieved total 27 tracks for album 4CL407SBJAwteXLSTuGYhK
+2025-09-03 11:03:09,098 - DEBUG - Retrieved 20 tracks for album 1h9WPHbVb58ry5RXwOTunW at offset 0
+2025-09-03 11:03:09,098 - INFO - Retrieved total 20 tracks for album 1h9WPHbVb58ry5RXwOTunW
+2025-09-03 11:03:09,771 - DEBUG - Retrieved 40 tracks for album 1r2Ga1CGXMITs3T2D0ilkg at offset 0
+2025-09-03 11:03:09,771 - INFO - Retrieved total 40 tracks for album 1r2Ga1CGXMITs3T2D0ilkg
+2025-09-03 11:03:10,460 - DEBUG - Retrieved 23 tracks for album 1ExDe4fIz9qX6tkHUWjzEw at offset 0
+2025-09-03 11:03:10,461 - INFO - Retrieved total 23 tracks for album 1ExDe4fIz9qX6tkHUWjzEw
+2025-09-03 11:03:11,116 - DEBUG - Retrieved 16 tracks for album 0w7sDS0APyRmH0HBPtiE8E at offset 0
+2025-09-03 11:03:11,116 - INFO - Retrieved total 16 tracks for album 0w7sDS0APyRmH0HBPtiE8E
+2025-09-03 11:03:11,760 - DEBUG - Retrieved 17 tracks for album 5sGyPalpUY2tzwsSdq0EMg at offset 0
+2025-09-03 11:03:11,761 - INFO - Retrieved total 17 tracks for album 5sGyPalpUY2tzwsSdq0EMg
+2025-09-03 11:03:12,434 - DEBUG - Retrieved 50 tracks for album 5wJIyaro488CBphiDI8bu5 at offset 0
+2025-09-03 11:03:12,559 - DEBUG - Retrieved 4 tracks for album 5wJIyaro488CBphiDI8bu5 at offset 50
+2025-09-03 11:03:12,560 - INFO - Retrieved total 54 tracks for album 5wJIyaro488CBphiDI8bu5
+2025-09-03 11:03:13,242 - DEBUG - Retrieved 19 tracks for album 4qYSyA9eRrQwwf0fkuIFdV at offset 0
+2025-09-03 11:03:13,242 - INFO - Retrieved total 19 tracks for album 4qYSyA9eRrQwwf0fkuIFdV
+2025-09-03 11:03:13,899 - DEBUG - Retrieved 37 tracks for album 6FUzzzmdHBtEpNEmTxI73M at offset 0
+2025-09-03 11:03:13,899 - INFO - Retrieved total 37 tracks for album 6FUzzzmdHBtEpNEmTxI73M
+2025-09-03 11:03:14,558 - DEBUG - Retrieved 13 tracks for album 20O6lfaDAoMhUj5TAvVbb6 at offset 0
+2025-09-03 11:03:14,558 - INFO - Retrieved total 13 tracks for album 20O6lfaDAoMhUj5TAvVbb6
+2025-09-03 11:03:15,257 - DEBUG - Retrieved 50 tracks for album 1tIioq32KjWlt5vvk5rhqX at offset 0
+2025-09-03 11:03:15,537 - DEBUG - Retrieved 50 tracks for album 1tIioq32KjWlt5vvk5rhqX at offset 50
+2025-09-03 11:03:15,657 - INFO - No tracks found for album 1tIioq32KjWlt5vvk5rhqX at offset 100
+2025-09-03 11:03:15,657 - INFO - Retrieved total 100 tracks for album 1tIioq32KjWlt5vvk5rhqX
+2025-09-03 11:03:16,309 - DEBUG - Retrieved 39 tracks for album 4he7R24eqd1EbF9kegiAK8 at offset 0
+2025-09-03 11:03:16,309 - INFO - Retrieved total 39 tracks for album 4he7R24eqd1EbF9kegiAK8
+2025-09-03 11:03:17,008 - DEBUG - Retrieved 30 tracks for album 1ju7XKdtyEL3nD4jWfStgO at offset 0
+2025-09-03 11:03:17,008 - INFO - Retrieved total 30 tracks for album 1ju7XKdtyEL3nD4jWfStgO
+2025-09-03 11:03:17,617 - DEBUG - Retrieved 1 tracks for album 1toeQMz2PESltZTGE1Q7cF at offset 0
+2025-09-03 11:03:17,617 - INFO - Retrieved total 1 tracks for album 1toeQMz2PESltZTGE1Q7cF
+2025-09-03 11:03:18,246 - DEBUG - Retrieved 23 tracks for album 422oici7J74dwzOiM5uB11 at offset 0
+2025-09-03 11:03:18,247 - INFO - Retrieved total 23 tracks for album 422oici7J74dwzOiM5uB11
+2025-09-03 11:03:18,975 - DEBUG - Retrieved 46 tracks for album 6PC5vxnYj1OPeNuKSQviGu at offset 0
+2025-09-03 11:03:18,975 - INFO - Retrieved total 46 tracks for album 6PC5vxnYj1OPeNuKSQviGu
+2025-09-03 11:03:19,629 - DEBUG - Retrieved 30 tracks for album 6OzytkPNOWtUIl1Nw899HV at offset 0
+2025-09-03 11:03:19,629 - INFO - Retrieved total 30 tracks for album 6OzytkPNOWtUIl1Nw899HV
+2025-09-03 11:03:20,279 - DEBUG - Retrieved 20 tracks for album 0RXtGv08trF7yklCuyPPcf at offset 0
+2025-09-03 11:03:20,280 - INFO - Retrieved total 20 tracks for album 0RXtGv08trF7yklCuyPPcf
+2025-09-03 11:03:20,919 - DEBUG - Retrieved 35 tracks for album 5tpcYRaZJGVR0HMhcuim4B at offset 0
+2025-09-03 11:03:20,919 - INFO - Retrieved total 35 tracks for album 5tpcYRaZJGVR0HMhcuim4B
+2025-09-03 11:03:21,628 - DEBUG - Retrieved 19 tracks for album 7LrzrJKyZDZ0pQVrS62zZm at offset 0
+2025-09-03 11:03:21,628 - INFO - Retrieved total 19 tracks for album 7LrzrJKyZDZ0pQVrS62zZm
+2025-09-03 11:03:22,358 - DEBUG - Retrieved 25 tracks for album 6EtSefhfSVVC4edzfUq2wZ at offset 0
+2025-09-03 11:03:22,358 - INFO - Retrieved total 25 tracks for album 6EtSefhfSVVC4edzfUq2wZ
+2025-09-03 11:03:23,000 - DEBUG - Retrieved 22 tracks for album 0tSfKzf6tNQq4TNIEF2YWE at offset 0
+2025-09-03 11:03:23,000 - INFO - Retrieved total 22 tracks for album 0tSfKzf6tNQq4TNIEF2YWE
+2025-09-03 11:03:23,649 - DEBUG - Retrieved 21 tracks for album 6hZXDOin1UHV5lzNO87sBO at offset 0
+2025-09-03 11:03:23,649 - INFO - Retrieved total 21 tracks for album 6hZXDOin1UHV5lzNO87sBO
+2025-09-03 11:03:24,327 - DEBUG - Retrieved 25 tracks for album 1zYCcUeQRdselyn7GxZnrM at offset 0
+2025-09-03 11:03:24,328 - INFO - Retrieved total 25 tracks for album 1zYCcUeQRdselyn7GxZnrM
+2025-09-03 11:03:24,952 - DEBUG - Retrieved 1 tracks for album 5YatynoF90nzTw6nYPDOc2 at offset 0
+2025-09-03 11:03:24,952 - INFO - Retrieved total 1 tracks for album 5YatynoF90nzTw6nYPDOc2
+2025-09-03 11:03:25,859 - DEBUG - Retrieved 1 tracks for album 3P00kZzbZgBqJ6KoGIMPmt at offset 0
+2025-09-03 11:03:25,859 - INFO - Retrieved total 1 tracks for album 3P00kZzbZgBqJ6KoGIMPmt
+2025-09-03 11:03:26,492 - DEBUG - Retrieved 1 tracks for album 6VX1nF2UfxqztkJEeSx2PL at offset 0
+2025-09-03 11:03:26,493 - INFO - Retrieved total 1 tracks for album 6VX1nF2UfxqztkJEeSx2PL
+2025-09-03 11:03:27,121 - DEBUG - Retrieved 1 tracks for album 16rOEocM0aXfciRFo4Xo3l at offset 0
+2025-09-03 11:03:27,121 - INFO - Retrieved total 1 tracks for album 16rOEocM0aXfciRFo4Xo3l
+2025-09-03 11:03:27,778 - DEBUG - Retrieved 30 tracks for album 0lnEUilmSkdZTkZOtWtDAL at offset 0
+2025-09-03 11:03:27,779 - INFO - Retrieved total 30 tracks for album 0lnEUilmSkdZTkZOtWtDAL
+2025-09-03 11:03:28,424 - DEBUG - Retrieved 1 tracks for album 3SqsjQVeb0cVDYOB4oTI5Z at offset 0
+2025-09-03 11:03:28,424 - INFO - Retrieved total 1 tracks for album 3SqsjQVeb0cVDYOB4oTI5Z
+2025-09-03 11:03:29,088 - DEBUG - Retrieved 1 tracks for album 6rDQftCbTgnnAhhiJxG77K at offset 0
+2025-09-03 11:03:29,088 - INFO - Retrieved total 1 tracks for album 6rDQftCbTgnnAhhiJxG77K
+2025-09-03 11:03:29,715 - DEBUG - Retrieved 1 tracks for album 2lOLVXTXQpAekyeKlduTjP at offset 0
+2025-09-03 11:03:29,715 - INFO - Retrieved total 1 tracks for album 2lOLVXTXQpAekyeKlduTjP
+2025-09-03 11:03:30,345 - DEBUG - Retrieved 9 tracks for album 42GsP9L0RiFzbxrfbC4yqg at offset 0
+2025-09-03 11:03:30,345 - INFO - Retrieved total 9 tracks for album 42GsP9L0RiFzbxrfbC4yqg
+2025-09-03 11:03:30,968 - DEBUG - Retrieved 1 tracks for album 1UtFYesAEQ2MbzRt09OgZz at offset 0
+2025-09-03 11:03:30,968 - INFO - Retrieved total 1 tracks for album 1UtFYesAEQ2MbzRt09OgZz
+2025-09-03 11:03:31,674 - DEBUG - Retrieved 11 tracks for album 6DU6MiC9R23Db8Wvxt7VoG at offset 0
+2025-09-03 11:03:31,674 - INFO - Retrieved total 11 tracks for album 6DU6MiC9R23Db8Wvxt7VoG
+2025-09-03 11:03:32,314 - DEBUG - Retrieved 14 tracks for album 3YAIqKTlyIe5zSplv0T6uY at offset 0
+2025-09-03 11:03:32,314 - INFO - Retrieved total 14 tracks for album 3YAIqKTlyIe5zSplv0T6uY
+2025-09-03 11:03:32,955 - DEBUG - Retrieved 10 tracks for album 2Nq3G0rhXyMJPkGovt35up at offset 0
+2025-09-03 11:03:32,955 - INFO - Retrieved total 10 tracks for album 2Nq3G0rhXyMJPkGovt35up
+2025-09-03 11:03:33,604 - DEBUG - Retrieved 1 tracks for album 7HLLwqI59c7FbFgpANzjwi at offset 0
+2025-09-03 11:03:33,604 - INFO - Retrieved total 1 tracks for album 7HLLwqI59c7FbFgpANzjwi
+2025-09-03 11:03:34,285 - DEBUG - Retrieved 4 tracks for album 63fj7onMfykqzMtkrGCkC9 at offset 0
+2025-09-03 11:03:34,285 - INFO - Retrieved total 4 tracks for album 63fj7onMfykqzMtkrGCkC9
+2025-09-03 11:03:35,553 - DEBUG - Retrieved 12 tracks for album 4eEJooUkzenp7lZTtfbIP7 at offset 0
+2025-09-03 11:03:35,553 - INFO - Retrieved total 12 tracks for album 4eEJooUkzenp7lZTtfbIP7
+2025-09-03 11:03:36,218 - DEBUG - Retrieved 40 tracks for album 26bQ8ka40C7SjHhqyNrqoj at offset 0
+2025-09-03 11:03:36,218 - INFO - Retrieved total 40 tracks for album 26bQ8ka40C7SjHhqyNrqoj
+2025-09-03 11:03:36,879 - DEBUG - Retrieved 50 tracks for album 0bgjJ99UFbk0yBOzjJl7cq at offset 0
+2025-09-03 11:03:37,007 - INFO - No tracks found for album 0bgjJ99UFbk0yBOzjJl7cq at offset 50
+2025-09-03 11:03:37,008 - INFO - Retrieved total 50 tracks for album 0bgjJ99UFbk0yBOzjJl7cq
+2025-09-03 11:03:37,653 - DEBUG - Retrieved 25 tracks for album 0m8zvPL66y78Hpt2ynfdA8 at offset 0
+2025-09-03 11:03:37,654 - INFO - Retrieved total 25 tracks for album 0m8zvPL66y78Hpt2ynfdA8
+2025-09-03 11:03:38,310 - DEBUG - Retrieved 50 tracks for album 4ns1kZULvCgk2Xgo0YD5ep at offset 0
+2025-09-03 11:03:38,556 - DEBUG - Retrieved 30 tracks for album 4ns1kZULvCgk2Xgo0YD5ep at offset 50
+2025-09-03 11:03:38,556 - INFO - Retrieved total 80 tracks for album 4ns1kZULvCgk2Xgo0YD5ep
+2025-09-03 11:03:39,239 - DEBUG - Retrieved 50 tracks for album 1W96dST1KFsd1tZTO3eEGS at offset 0
+2025-09-03 11:03:39,417 - DEBUG - Retrieved 27 tracks for album 1W96dST1KFsd1tZTO3eEGS at offset 50
+2025-09-03 11:03:39,417 - INFO - Retrieved total 77 tracks for album 1W96dST1KFsd1tZTO3eEGS
+2025-09-03 11:03:40,058 - DEBUG - Retrieved 15 tracks for album 0rkBDkzhmUA3CV3DDZuiyN at offset 0
+2025-09-03 11:03:40,058 - INFO - Retrieved total 15 tracks for album 0rkBDkzhmUA3CV3DDZuiyN
+2025-09-03 11:03:40,786 - DEBUG - Retrieved 40 tracks for album 3bk8Cd4tlDb1icXenfZDc8 at offset 0
+2025-09-03 11:03:40,786 - INFO - Retrieved total 40 tracks for album 3bk8Cd4tlDb1icXenfZDc8
+2025-09-03 11:03:41,478 - DEBUG - Retrieved 50 tracks for album 5PrqqJUnENaTyCPBinevsy at offset 0
+2025-09-03 11:03:41,760 - DEBUG - Retrieved 21 tracks for album 5PrqqJUnENaTyCPBinevsy at offset 50
+2025-09-03 11:03:41,760 - INFO - Retrieved total 71 tracks for album 5PrqqJUnENaTyCPBinevsy
+2025-09-03 11:03:42,462 - DEBUG - Retrieved 50 tracks for album 3YWQKQUjiWfQKmtWgzYhCO at offset 0
+2025-09-03 11:03:42,592 - DEBUG - Retrieved 30 tracks for album 3YWQKQUjiWfQKmtWgzYhCO at offset 50
+2025-09-03 11:03:42,592 - INFO - Retrieved total 80 tracks for album 3YWQKQUjiWfQKmtWgzYhCO
+2025-09-03 11:03:43,251 - DEBUG - Retrieved 50 tracks for album 5LuljJVnAIJCp6TRThxr3u at offset 0
+2025-09-03 11:03:43,360 - INFO - No tracks found for album 5LuljJVnAIJCp6TRThxr3u at offset 50
+2025-09-03 11:03:43,360 - INFO - Retrieved total 50 tracks for album 5LuljJVnAIJCp6TRThxr3u
+2025-09-03 11:03:44,035 - DEBUG - Retrieved 10 tracks for album 2SFBVTkcQ3yrj1jIBpkWpd at offset 0
+2025-09-03 11:03:44,036 - INFO - Retrieved total 10 tracks for album 2SFBVTkcQ3yrj1jIBpkWpd
+2025-09-03 11:03:44,737 - DEBUG - Retrieved 50 tracks for album 4rbKaVsqasiOy3gb26spQG at offset 0
+2025-09-03 11:03:44,875 - DEBUG - Retrieved 30 tracks for album 4rbKaVsqasiOy3gb26spQG at offset 50
+2025-09-03 11:03:44,875 - INFO - Retrieved total 80 tracks for album 4rbKaVsqasiOy3gb26spQG
+2025-09-03 11:03:45,535 - DEBUG - Retrieved 50 tracks for album 3gtYBiV37RaX5VU3EFXsNX at offset 0
+2025-09-03 11:03:45,689 - DEBUG - Retrieved 30 tracks for album 3gtYBiV37RaX5VU3EFXsNX at offset 50
+2025-09-03 11:03:45,689 - INFO - Retrieved total 80 tracks for album 3gtYBiV37RaX5VU3EFXsNX
+2025-09-03 11:03:46,418 - DEBUG - Retrieved 50 tracks for album 6IQlS8N8wywgpYdw04Jt5f at offset 0
+2025-09-03 11:03:46,580 - DEBUG - Retrieved 30 tracks for album 6IQlS8N8wywgpYdw04Jt5f at offset 50
+2025-09-03 11:03:46,580 - INFO - Retrieved total 80 tracks for album 6IQlS8N8wywgpYdw04Jt5f
+2025-09-03 11:03:47,229 - DEBUG - Retrieved 50 tracks for album 6uhAa6rO1FE1fgmJO21YES at offset 0
+2025-09-03 11:03:47,394 - DEBUG - Retrieved 30 tracks for album 6uhAa6rO1FE1fgmJO21YES at offset 50
+2025-09-03 11:03:47,395 - INFO - Retrieved total 80 tracks for album 6uhAa6rO1FE1fgmJO21YES
+2025-09-03 11:03:48,096 - DEBUG - Retrieved 42 tracks for album 6xU0K7Dlx7d2ihpP9wt6X6 at offset 0
+2025-09-03 11:03:48,096 - INFO - Retrieved total 42 tracks for album 6xU0K7Dlx7d2ihpP9wt6X6
+2025-09-03 11:03:48,745 - DEBUG - Retrieved 50 tracks for album 5jxqQbXsuM8uvI099kH3Bs at offset 0
+2025-09-03 11:03:48,933 - DEBUG - Retrieved 30 tracks for album 5jxqQbXsuM8uvI099kH3Bs at offset 50
+2025-09-03 11:03:48,933 - INFO - Retrieved total 80 tracks for album 5jxqQbXsuM8uvI099kH3Bs
+2025-09-03 11:03:49,613 - DEBUG - Retrieved 50 tracks for album 4W7BVZrJ7Up7hqV8qM3s5g at offset 0
+2025-09-03 11:03:49,792 - DEBUG - Retrieved 47 tracks for album 4W7BVZrJ7Up7hqV8qM3s5g at offset 50
+2025-09-03 11:03:49,792 - INFO - Retrieved total 97 tracks for album 4W7BVZrJ7Up7hqV8qM3s5g
+2025-09-03 11:03:50,428 - DEBUG - Retrieved 21 tracks for album 1o2N59k58i7YOG6qdR7Qv9 at offset 0
+2025-09-03 11:03:50,429 - INFO - Retrieved total 21 tracks for album 1o2N59k58i7YOG6qdR7Qv9
+2025-09-03 11:03:51,109 - DEBUG - Retrieved 50 tracks for album 4VpkN7SctKcjktUGNVGHfk at offset 0
+2025-09-03 11:03:51,258 - DEBUG - Retrieved 24 tracks for album 4VpkN7SctKcjktUGNVGHfk at offset 50
+2025-09-03 11:03:51,259 - INFO - Retrieved total 74 tracks for album 4VpkN7SctKcjktUGNVGHfk
+2025-09-03 11:03:51,881 - DEBUG - Retrieved 12 tracks for album 2KZIJx4RtZ1seAa6pa6ugl at offset 0
+2025-09-03 11:03:51,881 - INFO - Retrieved total 12 tracks for album 2KZIJx4RtZ1seAa6pa6ugl
+2025-09-03 11:03:52,518 - DEBUG - Retrieved 24 tracks for album 16RjMIDd3s4ktAW5s5c2Hp at offset 0
+2025-09-03 11:03:52,518 - INFO - Retrieved total 24 tracks for album 16RjMIDd3s4ktAW5s5c2Hp
+2025-09-03 11:03:53,177 - DEBUG - Retrieved 15 tracks for album 5406Xif8lg1YgerzSMS8Fg at offset 0
+2025-09-03 11:03:53,177 - INFO - Retrieved total 15 tracks for album 5406Xif8lg1YgerzSMS8Fg
+2025-09-03 11:03:53,828 - DEBUG - Retrieved 50 tracks for album 77uVmYk1xzy36ulG2QG46W at offset 0
+2025-09-03 11:03:54,013 - DEBUG - Retrieved 50 tracks for album 77uVmYk1xzy36ulG2QG46W at offset 50
+2025-09-03 11:03:54,154 - INFO - No tracks found for album 77uVmYk1xzy36ulG2QG46W at offset 100
+2025-09-03 11:03:54,155 - INFO - Retrieved total 100 tracks for album 77uVmYk1xzy36ulG2QG46W
+2025-09-03 11:03:54,793 - DEBUG - Retrieved 10 tracks for album 5209MSqoKOtd5iiIwnIAA9 at offset 0
+2025-09-03 11:03:54,793 - INFO - Retrieved total 10 tracks for album 5209MSqoKOtd5iiIwnIAA9
+2025-09-03 11:03:55,546 - DEBUG - Retrieved 50 tracks for album 4Hv8Vy1ZYqyxiku73K6skq at offset 0
+2025-09-03 11:03:55,693 - DEBUG - Retrieved 15 tracks for album 4Hv8Vy1ZYqyxiku73K6skq at offset 50
+2025-09-03 11:03:55,693 - INFO - Retrieved total 65 tracks for album 4Hv8Vy1ZYqyxiku73K6skq
+2025-09-03 11:03:56,364 - DEBUG - Retrieved 50 tracks for album 33eKmf12lj2OUKUM5T97qu at offset 0
+2025-09-03 11:03:56,504 - INFO - No tracks found for album 33eKmf12lj2OUKUM5T97qu at offset 50
+2025-09-03 11:03:56,504 - INFO - Retrieved total 50 tracks for album 33eKmf12lj2OUKUM5T97qu
+2025-09-03 11:03:57,137 - DEBUG - Retrieved 15 tracks for album 0NyZ7vxUIT9ab1NrETUuTL at offset 0
+2025-09-03 11:03:57,137 - INFO - Retrieved total 15 tracks for album 0NyZ7vxUIT9ab1NrETUuTL
+2025-09-03 11:03:57,805 - DEBUG - Retrieved 50 tracks for album 1dpaXa3iytEEFJhHNO6edg at offset 0
+2025-09-03 11:03:57,958 - DEBUG - Retrieved 8 tracks for album 1dpaXa3iytEEFJhHNO6edg at offset 50
+2025-09-03 11:03:57,958 - INFO - Retrieved total 58 tracks for album 1dpaXa3iytEEFJhHNO6edg
+2025-09-03 11:03:58,600 - DEBUG - Retrieved 12 tracks for album 70ZSfLoGoX9EPgvWLDWeVq at offset 0
+2025-09-03 11:03:58,601 - INFO - Retrieved total 12 tracks for album 70ZSfLoGoX9EPgvWLDWeVq
+2025-09-03 11:03:59,235 - DEBUG - Retrieved 22 tracks for album 6PJUkdPTw8tDqKn3sojJs6 at offset 0
+2025-09-03 11:03:59,235 - INFO - Retrieved total 22 tracks for album 6PJUkdPTw8tDqKn3sojJs6
+2025-09-03 11:03:59,932 - DEBUG - Retrieved 50 tracks for album 6wFmDtoBUZpOXiVfA7i72u at offset 0
+2025-09-03 11:04:00,042 - INFO - No tracks found for album 6wFmDtoBUZpOXiVfA7i72u at offset 50
+2025-09-03 11:04:00,042 - INFO - Retrieved total 50 tracks for album 6wFmDtoBUZpOXiVfA7i72u
+2025-09-03 11:04:00,708 - DEBUG - Retrieved 50 tracks for album 52axypVWKR4gA1U8tNS1Jl at offset 0
+2025-09-03 11:04:00,886 - DEBUG - Retrieved 32 tracks for album 52axypVWKR4gA1U8tNS1Jl at offset 50
+2025-09-03 11:04:00,886 - INFO - Retrieved total 82 tracks for album 52axypVWKR4gA1U8tNS1Jl
+2025-09-03 11:04:01,699 - DEBUG - Retrieved 18 tracks for album 4c1odJr0EVeAEJrgqpGA7Q at offset 0
+2025-09-03 11:04:01,699 - INFO - Retrieved total 18 tracks for album 4c1odJr0EVeAEJrgqpGA7Q
+2025-09-03 11:04:02,391 - DEBUG - Retrieved 50 tracks for album 4SWU31pm6pGSBjJfVrMs8f at offset 0
+2025-09-03 11:04:02,575 - DEBUG - Retrieved 14 tracks for album 4SWU31pm6pGSBjJfVrMs8f at offset 50
+2025-09-03 11:04:02,575 - INFO - Retrieved total 64 tracks for album 4SWU31pm6pGSBjJfVrMs8f
+2025-09-03 11:04:03,242 - DEBUG - Retrieved 50 tracks for album 17tI0LEAubONuqyNfoDD12 at offset 0
+2025-09-03 11:04:03,355 - INFO - No tracks found for album 17tI0LEAubONuqyNfoDD12 at offset 50
+2025-09-03 11:04:03,355 - INFO - Retrieved total 50 tracks for album 17tI0LEAubONuqyNfoDD12
+2025-09-03 11:04:03,990 - DEBUG - Retrieved 25 tracks for album 6DO80xzap49k9g1S9Yz9J1 at offset 0
+2025-09-03 11:04:03,990 - INFO - Retrieved total 25 tracks for album 6DO80xzap49k9g1S9Yz9J1
+2025-09-03 11:04:04,697 - DEBUG - Retrieved 44 tracks for album 6jV2k9ZPYO1f8d0BeMn5QF at offset 0
+2025-09-03 11:04:04,697 - INFO - Retrieved total 44 tracks for album 6jV2k9ZPYO1f8d0BeMn5QF
+2025-09-03 11:04:05,366 - DEBUG - Retrieved 50 tracks for album 2djlVaIcxMt1TCzaAErmYn at offset 0
+2025-09-03 11:04:05,568 - DEBUG - Retrieved 50 tracks for album 2djlVaIcxMt1TCzaAErmYn at offset 50
+2025-09-03 11:04:05,703 - INFO - No tracks found for album 2djlVaIcxMt1TCzaAErmYn at offset 100
+2025-09-03 11:04:05,703 - INFO - Retrieved total 100 tracks for album 2djlVaIcxMt1TCzaAErmYn
+2025-09-03 11:04:06,316 - DEBUG - Retrieved 1 tracks for album 1petnUwQGfB5sOKh4gBQhM at offset 0
+2025-09-03 11:04:06,317 - INFO - Retrieved total 1 tracks for album 1petnUwQGfB5sOKh4gBQhM
+2025-09-03 11:04:06,951 - DEBUG - Retrieved 1 tracks for album 04QXxlkGzoDjdHnAqLZgrN at offset 0
+2025-09-03 11:04:06,951 - INFO - Retrieved total 1 tracks for album 04QXxlkGzoDjdHnAqLZgrN
+2025-09-03 11:04:07,566 - DEBUG - Retrieved 1 tracks for album 7pQVVuSwCP5OfCVW3HL3nl at offset 0
+2025-09-03 11:04:07,566 - INFO - Retrieved total 1 tracks for album 7pQVVuSwCP5OfCVW3HL3nl
+2025-09-03 11:04:08,204 - DEBUG - Retrieved 17 tracks for album 73SN6a75mNK3yO1i0eKnMN at offset 0
+2025-09-03 11:04:08,204 - INFO - Retrieved total 17 tracks for album 73SN6a75mNK3yO1i0eKnMN
+2025-09-03 11:04:08,833 - DEBUG - Retrieved 8 tracks for album 07m1QvyV3SsjXCbcplsJ5o at offset 0
+2025-09-03 11:04:08,833 - INFO - Retrieved total 8 tracks for album 07m1QvyV3SsjXCbcplsJ5o
+2025-09-03 11:04:09,551 - DEBUG - Retrieved 40 tracks for album 6t0BzGVhI8onpKQVMdy7iQ at offset 0
+2025-09-03 11:04:09,551 - INFO - Retrieved total 40 tracks for album 6t0BzGVhI8onpKQVMdy7iQ
+2025-09-03 11:04:10,177 - DEBUG - Retrieved 1 tracks for album 1qicN3afO1x4YcA9Sg6yag at offset 0
+2025-09-03 11:04:10,177 - INFO - Retrieved total 1 tracks for album 1qicN3afO1x4YcA9Sg6yag
+2025-09-03 11:04:10,837 - DEBUG - Retrieved 40 tracks for album 4q9jMdqkNEPuqKWqLqAOQo at offset 0
+2025-09-03 11:04:10,838 - INFO - Retrieved total 40 tracks for album 4q9jMdqkNEPuqKWqLqAOQo
+2025-09-03 11:04:11,641 - DEBUG - Retrieved 1 tracks for album 7a71I9OBmd6BtK2FrzZjbb at offset 0
+2025-09-03 11:04:11,641 - INFO - Retrieved total 1 tracks for album 7a71I9OBmd6BtK2FrzZjbb
+2025-09-03 11:04:12,262 - DEBUG - Retrieved 3 tracks for album 3lx6bG65JGTRysNSkVI9u6 at offset 0
+2025-09-03 11:04:12,263 - INFO - Retrieved total 3 tracks for album 3lx6bG65JGTRysNSkVI9u6
+2025-09-03 11:04:13,642 - DEBUG - Retrieved 17 tracks for album 1pzvBxYgT6OVwJLtHkrdQK at offset 0
+2025-09-03 11:04:13,642 - INFO - Retrieved total 17 tracks for album 1pzvBxYgT6OVwJLtHkrdQK
+2025-09-03 11:04:14,297 - DEBUG - Retrieved 17 tracks for album 6AORtDjduMM3bupSWzbTSG at offset 0
+2025-09-03 11:04:14,297 - INFO - Retrieved total 17 tracks for album 6AORtDjduMM3bupSWzbTSG
+2025-09-03 11:04:14,937 - DEBUG - Retrieved 34 tracks for album 0PZ7lAru5FDFHuirTkWe9Z at offset 0
+2025-09-03 11:04:14,937 - INFO - Retrieved total 34 tracks for album 0PZ7lAru5FDFHuirTkWe9Z
+2025-09-03 11:04:15,571 - DEBUG - Retrieved 16 tracks for album 2fenSS68JI1h4Fo296JfGr at offset 0
+2025-09-03 11:04:15,571 - INFO - Retrieved total 16 tracks for album 2fenSS68JI1h4Fo296JfGr
+2025-09-03 11:04:16,275 - DEBUG - Retrieved 31 tracks for album 5H7ixXZfsNMGbIE5OBSpcb at offset 0
+2025-09-03 11:04:16,276 - INFO - Retrieved total 31 tracks for album 5H7ixXZfsNMGbIE5OBSpcb
+2025-09-03 11:04:16,906 - DEBUG - Retrieved 17 tracks for album 7v7pe5vZQPWB5zW0JrKRiw at offset 0
+2025-09-03 11:04:16,906 - INFO - Retrieved total 17 tracks for album 7v7pe5vZQPWB5zW0JrKRiw
+2025-09-03 11:04:17,539 - DEBUG - Retrieved 14 tracks for album 0AQVKtFf3jUweUfflXKSXZ at offset 0
+2025-09-03 11:04:17,539 - INFO - Retrieved total 14 tracks for album 0AQVKtFf3jUweUfflXKSXZ
+2025-09-03 11:04:18,219 - DEBUG - Retrieved 23 tracks for album 1fnJ7k0bllNfL1kVdNVW1A at offset 0
+2025-09-03 11:04:18,219 - INFO - Retrieved total 23 tracks for album 1fnJ7k0bllNfL1kVdNVW1A
+2025-09-03 11:04:18,859 - DEBUG - Retrieved 10 tracks for album 6SSsPPOxMvAiDA6B8AWH3y at offset 0
+2025-09-03 11:04:18,859 - INFO - Retrieved total 10 tracks for album 6SSsPPOxMvAiDA6B8AWH3y
+2025-09-03 11:04:19,502 - DEBUG - Retrieved 17 tracks for album 0nCpVIWYUcXJ8qrVMzaNPM at offset 0
+2025-09-03 11:04:19,502 - INFO - Retrieved total 17 tracks for album 0nCpVIWYUcXJ8qrVMzaNPM
+2025-09-03 11:04:20,163 - DEBUG - Retrieved 10 tracks for album 278ShyW7i6zSpUoJJohaiD at offset 0
+2025-09-03 11:04:20,163 - INFO - Retrieved total 10 tracks for album 278ShyW7i6zSpUoJJohaiD
+2025-09-03 11:04:20,837 - DEBUG - Retrieved 10 tracks for album 55w7p7A3hgiJz7GuK7roj4 at offset 0
+2025-09-03 11:04:20,837 - INFO - Retrieved total 10 tracks for album 55w7p7A3hgiJz7GuK7roj4
+2025-09-03 11:04:21,458 - DEBUG - Retrieved 14 tracks for album 4bi0CKFKviadIaSlkakfN7 at offset 0
+2025-09-03 11:04:21,458 - INFO - Retrieved total 14 tracks for album 4bi0CKFKviadIaSlkakfN7
+2025-09-03 11:04:22,104 - DEBUG - Retrieved 6 tracks for album 2OrjNqYxi3gSY22YMkE081 at offset 0
+2025-09-03 11:04:22,104 - INFO - Retrieved total 6 tracks for album 2OrjNqYxi3gSY22YMkE081
+2025-09-03 11:04:22,762 - DEBUG - Retrieved 30 tracks for album 6kZ42qRrzov54LcAk4onW9 at offset 0
+2025-09-03 11:04:22,762 - INFO - Retrieved total 30 tracks for album 6kZ42qRrzov54LcAk4onW9
+2025-09-03 11:04:23,406 - DEBUG - Retrieved 22 tracks for album 1o59UpKw81iHR0HPiSkJR0 at offset 0
+2025-09-03 11:04:23,407 - INFO - Retrieved total 22 tracks for album 1o59UpKw81iHR0HPiSkJR0
+2025-09-03 11:04:24,027 - DEBUG - Retrieved 10 tracks for album 3U8KQJKMc4G13gGkVYgDRq at offset 0
+2025-09-03 11:04:24,027 - INFO - Retrieved total 10 tracks for album 3U8KQJKMc4G13gGkVYgDRq
+2025-09-03 11:04:24,674 - DEBUG - Retrieved 1 tracks for album 6KHQJyn6SjD1mNOJWlWKDE at offset 0
+2025-09-03 11:04:24,674 - INFO - Retrieved total 1 tracks for album 6KHQJyn6SjD1mNOJWlWKDE
+2025-09-03 11:04:25,311 - DEBUG - Retrieved 10 tracks for album 7FTzYaPRSTpeIkz4zWaJAr at offset 0
+2025-09-03 11:04:25,311 - INFO - Retrieved total 10 tracks for album 7FTzYaPRSTpeIkz4zWaJAr
+2025-09-03 11:04:25,983 - DEBUG - Retrieved 20 tracks for album 5ZBnrHvqxgYeULKGp79NYl at offset 0
+2025-09-03 11:04:25,984 - INFO - Retrieved total 20 tracks for album 5ZBnrHvqxgYeULKGp79NYl
+2025-09-03 11:04:26,611 - DEBUG - Retrieved 14 tracks for album 4sPP6KW7i3k68npvlwB9yI at offset 0
+2025-09-03 11:04:26,611 - INFO - Retrieved total 14 tracks for album 4sPP6KW7i3k68npvlwB9yI
+2025-09-03 11:04:27,233 - DEBUG - Retrieved 15 tracks for album 7mzrIsaAjnXihW3InKjlC3 at offset 0
+2025-09-03 11:04:27,234 - INFO - Retrieved total 15 tracks for album 7mzrIsaAjnXihW3InKjlC3
+2025-09-03 11:04:27,862 - DEBUG - Retrieved 12 tracks for album 1aRhu0xtlPbAb1X8us0uOD at offset 0
+2025-09-03 11:04:27,862 - INFO - Retrieved total 12 tracks for album 1aRhu0xtlPbAb1X8us0uOD
+2025-09-03 11:04:28,503 - DEBUG - Retrieved 10 tracks for album 0eU0Ig4o4Asslx1t3nIPm2 at offset 0
+2025-09-03 11:04:28,503 - INFO - Retrieved total 10 tracks for album 0eU0Ig4o4Asslx1t3nIPm2
+2025-09-03 11:04:29,126 - DEBUG - Retrieved 18 tracks for album 1NAmidJlEaVgA3MpcPFYGq at offset 0
+2025-09-03 11:04:29,126 - INFO - Retrieved total 18 tracks for album 1NAmidJlEaVgA3MpcPFYGq
+2025-09-03 11:04:29,762 - DEBUG - Retrieved 5 tracks for album 1PAxC4UQ1HQzCbfoDMpFIZ at offset 0
+2025-09-03 11:04:29,762 - INFO - Retrieved total 5 tracks for album 1PAxC4UQ1HQzCbfoDMpFIZ
+2025-09-03 11:04:30,421 - DEBUG - Retrieved 9 tracks for album 6pHkQG7j5F1EAQ07BGOOhL at offset 0
+2025-09-03 11:04:30,421 - INFO - Retrieved total 9 tracks for album 6pHkQG7j5F1EAQ07BGOOhL
+2025-09-03 11:04:31,106 - DEBUG - Retrieved 19 tracks for album 34OkZVpuzBa9y40DCy0LPR at offset 0
+2025-09-03 11:04:31,106 - INFO - Retrieved total 19 tracks for album 34OkZVpuzBa9y40DCy0LPR
+2025-09-03 11:04:31,764 - DEBUG - Retrieved 4 tracks for album 48nubh7FCkPvIG8DqHdLbm at offset 0
+2025-09-03 11:04:31,764 - INFO - Retrieved total 4 tracks for album 48nubh7FCkPvIG8DqHdLbm
+2025-09-03 11:04:32,404 - DEBUG - Retrieved 15 tracks for album 6DEjYFkNZh67HP7R9PSZvv at offset 0
+2025-09-03 11:04:32,404 - INFO - Retrieved total 15 tracks for album 6DEjYFkNZh67HP7R9PSZvv
+2025-09-03 11:04:33,080 - DEBUG - Retrieved 22 tracks for album 5AEDGbliTTfjOB8TSm1sxt at offset 0
+2025-09-03 11:04:33,080 - INFO - Retrieved total 22 tracks for album 5AEDGbliTTfjOB8TSm1sxt
+2025-09-03 11:04:33,723 - DEBUG - Retrieved 8 tracks for album 3PD14fJEhU6pvXMhu1h9hU at offset 0
+2025-09-03 11:04:33,723 - INFO - Retrieved total 8 tracks for album 3PD14fJEhU6pvXMhu1h9hU
+2025-09-03 11:04:34,368 - DEBUG - Retrieved 26 tracks for album 4hDok0OAJd57SGIT8xuWJH at offset 0
+2025-09-03 11:04:34,368 - INFO - Retrieved total 26 tracks for album 4hDok0OAJd57SGIT8xuWJH
+2025-09-03 11:04:35,133 - DEBUG - Retrieved 17 tracks for album 1DT6fDJL6AWPJxe7Lq1dPb at offset 0
+2025-09-03 11:04:35,134 - INFO - Retrieved total 17 tracks for album 1DT6fDJL6AWPJxe7Lq1dPb
+2025-09-03 11:04:35,769 - DEBUG - Retrieved 16 tracks for album 0xS0iOtxQRoJvfcFcJA5Gv at offset 0
+2025-09-03 11:04:35,770 - INFO - Retrieved total 16 tracks for album 0xS0iOtxQRoJvfcFcJA5Gv
+2025-09-03 11:04:36,404 - DEBUG - Retrieved 11 tracks for album 2JQDn2wgm2nLVxdWE0GJJa at offset 0
+2025-09-03 11:04:36,404 - INFO - Retrieved total 11 tracks for album 2JQDn2wgm2nLVxdWE0GJJa
+2025-09-03 11:04:37,080 - DEBUG - Retrieved 22 tracks for album 1KlU96Hw9nlvqpBPlSqcTV at offset 0
+2025-09-03 11:04:37,081 - INFO - Retrieved total 22 tracks for album 1KlU96Hw9nlvqpBPlSqcTV
+2025-09-03 11:04:37,725 - DEBUG - Retrieved 16 tracks for album 4K1jpuHe0ggkFmm4sNidFm at offset 0
+2025-09-03 11:04:37,725 - INFO - Retrieved total 16 tracks for album 4K1jpuHe0ggkFmm4sNidFm
+2025-09-03 11:04:38,346 - DEBUG - Retrieved 15 tracks for album 2Xoteh7uEpea4TohMxjtaq at offset 0
+2025-09-03 11:04:38,346 - INFO - Retrieved total 15 tracks for album 2Xoteh7uEpea4TohMxjtaq
+2025-09-03 11:04:38,966 - DEBUG - Retrieved 8 tracks for album 5yqBTSoJqE9EfApl2Pptva at offset 0
+2025-09-03 11:04:38,967 - INFO - Retrieved total 8 tracks for album 5yqBTSoJqE9EfApl2Pptva
+2025-09-03 11:04:39,618 - DEBUG - Retrieved 34 tracks for album 3VaaZ7OIbGLi60NVsnueoo at offset 0
+2025-09-03 11:04:39,619 - INFO - Retrieved total 34 tracks for album 3VaaZ7OIbGLi60NVsnueoo
+2025-09-03 11:04:40,247 - DEBUG - Retrieved 5 tracks for album 7pXGJTAlMU0qQ7GbWbcb2P at offset 0
+2025-09-03 11:04:40,247 - INFO - Retrieved total 5 tracks for album 7pXGJTAlMU0qQ7GbWbcb2P
+2025-09-03 11:04:40,876 - DEBUG - Retrieved 20 tracks for album 3lS1y25WAhcqJDATJK70Mq at offset 0
+2025-09-03 11:04:40,876 - INFO - Retrieved total 20 tracks for album 3lS1y25WAhcqJDATJK70Mq
+2025-09-03 11:04:41,511 - DEBUG - Retrieved 11 tracks for album 0uoIEPON8NkkkCjhpXJ9g8 at offset 0
+2025-09-03 11:04:41,511 - INFO - Retrieved total 11 tracks for album 0uoIEPON8NkkkCjhpXJ9g8
+2025-09-03 11:04:42,193 - DEBUG - Retrieved 13 tracks for album 2dqn5yOQWdyGwOpOIi9O4x at offset 0
+2025-09-03 11:04:42,193 - INFO - Retrieved total 13 tracks for album 2dqn5yOQWdyGwOpOIi9O4x
+2025-09-03 11:04:42,826 - DEBUG - Retrieved 14 tracks for album 5MfAxS5zz8MlfROjGQVXhy at offset 0
+2025-09-03 11:04:42,826 - INFO - Retrieved total 14 tracks for album 5MfAxS5zz8MlfROjGQVXhy
+2025-09-03 11:04:43,465 - DEBUG - Retrieved 31 tracks for album 1d8W5sDOh6xY7y6UYp2rcg at offset 0
+2025-09-03 11:04:43,466 - INFO - Retrieved total 31 tracks for album 1d8W5sDOh6xY7y6UYp2rcg
+2025-09-03 11:04:44,099 - DEBUG - Retrieved 13 tracks for album 151w1FgRZfnKZA9FEcg9Z3 at offset 0
+2025-09-03 11:04:44,099 - INFO - Retrieved total 13 tracks for album 151w1FgRZfnKZA9FEcg9Z3
+2025-09-03 11:04:44,728 - DEBUG - Retrieved 23 tracks for album 19O46pvAPG1Xg6fxAuSU5F at offset 0
+2025-09-03 11:04:44,728 - INFO - Retrieved total 23 tracks for album 19O46pvAPG1Xg6fxAuSU5F
+2025-09-03 11:04:45,427 - DEBUG - Retrieved 16 tracks for album 1Mo4aZ8pdj6L1jx8zSwJnt at offset 0
+2025-09-03 11:04:45,427 - INFO - Retrieved total 16 tracks for album 1Mo4aZ8pdj6L1jx8zSwJnt
+2025-09-03 11:04:46,839 - DEBUG - Retrieved 12 tracks for album 3KKqjBV0QBcgfTErzdkEd3 at offset 0
+2025-09-03 11:04:46,839 - INFO - Retrieved total 12 tracks for album 3KKqjBV0QBcgfTErzdkEd3
+2025-09-03 11:04:47,472 - DEBUG - Retrieved 16 tracks for album 4QviryaneolcRmDB57SLco at offset 0
+2025-09-03 11:04:47,472 - INFO - Retrieved total 16 tracks for album 4QviryaneolcRmDB57SLco
+2025-09-03 11:04:48,107 - DEBUG - Retrieved 1 tracks for album 3Sl6E162SNTBOZymtjRTKD at offset 0
+2025-09-03 11:04:48,107 - INFO - Retrieved total 1 tracks for album 3Sl6E162SNTBOZymtjRTKD
+2025-09-03 11:04:48,736 - DEBUG - Retrieved 13 tracks for album 6GfrOuXqJrJjcldIstEz6A at offset 0
+2025-09-03 11:04:48,736 - INFO - Retrieved total 13 tracks for album 6GfrOuXqJrJjcldIstEz6A
+2025-09-03 11:04:49,386 - DEBUG - Retrieved 20 tracks for album 29hqrN41d2drBr9xp9rMKo at offset 0
+2025-09-03 11:04:49,387 - INFO - Retrieved total 20 tracks for album 29hqrN41d2drBr9xp9rMKo
+2025-09-03 11:04:50,012 - DEBUG - Retrieved 1 tracks for album 3HSA1nXkOcmNTGpRlz78Qh at offset 0
+2025-09-03 11:04:50,012 - INFO - Retrieved total 1 tracks for album 3HSA1nXkOcmNTGpRlz78Qh
+2025-09-03 11:04:50,676 - DEBUG - Retrieved 15 tracks for album 0KFPnm4Ow2L9BuivmWT3pu at offset 0
+2025-09-03 11:04:50,676 - INFO - Retrieved total 15 tracks for album 0KFPnm4Ow2L9BuivmWT3pu
+2025-09-03 11:04:51,360 - DEBUG - Retrieved 1 tracks for album 1QLQiIs7zJlK7y2vuqiRAj at offset 0
+2025-09-03 11:04:51,360 - INFO - Retrieved total 1 tracks for album 1QLQiIs7zJlK7y2vuqiRAj
+2025-09-03 11:04:51,998 - DEBUG - Retrieved 1 tracks for album 4VIh6sniqOKXyIca3WxN1R at offset 0
+2025-09-03 11:04:51,999 - INFO - Retrieved total 1 tracks for album 4VIh6sniqOKXyIca3WxN1R
+2025-09-03 11:04:52,612 - DEBUG - Retrieved 1 tracks for album 10ItYjR010D0iJYVuy7Oh5 at offset 0
+2025-09-03 11:04:52,612 - INFO - Retrieved total 1 tracks for album 10ItYjR010D0iJYVuy7Oh5
+2025-09-03 11:04:53,359 - DEBUG - Retrieved 12 tracks for album 152R8N9N0ACnWPNOBIO4M8 at offset 0
+2025-09-03 11:04:53,359 - INFO - Retrieved total 12 tracks for album 152R8N9N0ACnWPNOBIO4M8
+2025-09-03 11:04:54,015 - DEBUG - Retrieved 26 tracks for album 5yKyv50gYG4q6S2ti49XID at offset 0
+2025-09-03 11:04:54,016 - INFO - Retrieved total 26 tracks for album 5yKyv50gYG4q6S2ti49XID
+2025-09-03 11:04:54,648 - DEBUG - Retrieved 11 tracks for album 5AYoffF42E0cgDuuNgzYir at offset 0
+2025-09-03 11:04:54,648 - INFO - Retrieved total 11 tracks for album 5AYoffF42E0cgDuuNgzYir
+2025-09-03 11:04:55,288 - DEBUG - Retrieved 10 tracks for album 5sUOntUxlMmGEND5wboCTq at offset 0
+2025-09-03 11:04:55,289 - INFO - Retrieved total 10 tracks for album 5sUOntUxlMmGEND5wboCTq
+2025-09-03 11:04:55,946 - DEBUG - Retrieved 12 tracks for album 1ZH5g1RDq3GY1OvyD0w0s2 at offset 0
+2025-09-03 11:04:55,946 - INFO - Retrieved total 12 tracks for album 1ZH5g1RDq3GY1OvyD0w0s2
+2025-09-03 11:04:56,747 - DEBUG - Retrieved 13 tracks for album 6tBUJLHPFbzO665rhzFDg2 at offset 0
+2025-09-03 11:04:56,747 - INFO - Retrieved total 13 tracks for album 6tBUJLHPFbzO665rhzFDg2
+2025-09-03 11:04:57,369 - DEBUG - Retrieved 10 tracks for album 6freV6eqxuFjSr3E93Oqtz at offset 0
+2025-09-03 11:04:57,369 - INFO - Retrieved total 10 tracks for album 6freV6eqxuFjSr3E93Oqtz
+2025-09-03 11:04:58,000 - DEBUG - Retrieved 12 tracks for album 2gEurk31djZjI3P3SY8ZcC at offset 0
+2025-09-03 11:04:58,000 - INFO - Retrieved total 12 tracks for album 2gEurk31djZjI3P3SY8ZcC
+2025-09-03 11:04:58,625 - DEBUG - Retrieved 14 tracks for album 5XpEKORZ4y6OrCZSKsi46A at offset 0
+2025-09-03 11:04:58,625 - INFO - Retrieved total 14 tracks for album 5XpEKORZ4y6OrCZSKsi46A
+2025-09-03 11:04:59,263 - DEBUG - Retrieved 11 tracks for album 3t3BbpFJiGcXl4jI5CRLLA at offset 0
+2025-09-03 11:04:59,264 - INFO - Retrieved total 11 tracks for album 3t3BbpFJiGcXl4jI5CRLLA
+2025-09-03 11:04:59,891 - DEBUG - Retrieved 10 tracks for album 4ObsEU7mIXbo2n9A31yfds at offset 0
+2025-09-03 11:04:59,891 - INFO - Retrieved total 10 tracks for album 4ObsEU7mIXbo2n9A31yfds
+2025-09-03 11:05:00,605 - DEBUG - Retrieved 8 tracks for album 0aJnGEZWIc1VCYlZOXv05a at offset 0
+2025-09-03 11:05:00,605 - INFO - Retrieved total 8 tracks for album 0aJnGEZWIc1VCYlZOXv05a
+2025-09-03 11:05:01,359 - DEBUG - Retrieved 13 tracks for album 5p5lKDY6Ag62f8HWfIFzQ0 at offset 0
+2025-09-03 11:05:01,359 - INFO - Retrieved total 13 tracks for album 5p5lKDY6Ag62f8HWfIFzQ0
+2025-09-03 11:05:02,005 - DEBUG - Retrieved 12 tracks for album 2xChdOg0PvxzHzE1BooUpI at offset 0
+2025-09-03 11:05:02,005 - INFO - Retrieved total 12 tracks for album 2xChdOg0PvxzHzE1BooUpI
+2025-09-03 11:05:02,626 - DEBUG - Retrieved 12 tracks for album 3Kb9vAa1RBNXEQltJpPxwE at offset 0
+2025-09-03 11:05:02,626 - INFO - Retrieved total 12 tracks for album 3Kb9vAa1RBNXEQltJpPxwE
+2025-09-03 11:05:03,255 - DEBUG - Retrieved 12 tracks for album 6UlHZq45Z2Wlea0A0wcg8y at offset 0
+2025-09-03 11:05:03,255 - INFO - Retrieved total 12 tracks for album 6UlHZq45Z2Wlea0A0wcg8y
+2025-09-03 11:05:03,887 - DEBUG - Retrieved 1 tracks for album 4teIzIcBlCmrMrJ0asA1iq at offset 0
+2025-09-03 11:05:03,888 - INFO - Retrieved total 1 tracks for album 4teIzIcBlCmrMrJ0asA1iq
+2025-09-03 11:05:04,544 - DEBUG - Retrieved 5 tracks for album 7wIIhHPyaxAHRvdNQQO2G9 at offset 0
+2025-09-03 11:05:04,545 - INFO - Retrieved total 5 tracks for album 7wIIhHPyaxAHRvdNQQO2G9
+2025-09-03 11:05:05,203 - DEBUG - Retrieved 1 tracks for album 7DP3Fu2ldeukUv5JVNUZh0 at offset 0
+2025-09-03 11:05:05,203 - INFO - Retrieved total 1 tracks for album 7DP3Fu2ldeukUv5JVNUZh0
+2025-09-03 11:05:05,851 - DEBUG - Retrieved 1 tracks for album 44CG52mqjcKpzJL8L4yXkB at offset 0
+2025-09-03 11:05:05,851 - INFO - Retrieved total 1 tracks for album 44CG52mqjcKpzJL8L4yXkB
+2025-09-03 11:05:06,469 - DEBUG - Retrieved 1 tracks for album 1BEgp0bjUmK9WYjKR6e6BX at offset 0
+2025-09-03 11:05:06,469 - INFO - Retrieved total 1 tracks for album 1BEgp0bjUmK9WYjKR6e6BX
+2025-09-03 11:05:07,118 - DEBUG - Retrieved 50 tracks for album 6RF6OqktQg7AtCfS7JbTLs at offset 0
+2025-09-03 11:05:07,255 - DEBUG - Retrieved 20 tracks for album 6RF6OqktQg7AtCfS7JbTLs at offset 50
+2025-09-03 11:05:07,255 - INFO - Retrieved total 70 tracks for album 6RF6OqktQg7AtCfS7JbTLs
+2025-09-03 11:05:07,935 - DEBUG - Retrieved 38 tracks for album 2nqLruojLXh11mAl696aNt at offset 0
+2025-09-03 11:05:07,935 - INFO - Retrieved total 38 tracks for album 2nqLruojLXh11mAl696aNt
+2025-09-03 11:05:08,648 - DEBUG - Retrieved 1 tracks for album 0pRDErjU5x7bGjOyQMD3NR at offset 0
+2025-09-03 11:05:08,648 - INFO - Retrieved total 1 tracks for album 0pRDErjU5x7bGjOyQMD3NR
+2025-09-03 11:05:09,274 - DEBUG - Retrieved 1 tracks for album 6QpD8ZtlIGN0SxjbSNnwYQ at offset 0
+2025-09-03 11:05:09,274 - INFO - Retrieved total 1 tracks for album 6QpD8ZtlIGN0SxjbSNnwYQ
+2025-09-03 11:05:09,894 - DEBUG - Retrieved 1 tracks for album 7AwIgxkaeuzcw6eAMZ8wOp at offset 0
+2025-09-03 11:05:09,894 - INFO - Retrieved total 1 tracks for album 7AwIgxkaeuzcw6eAMZ8wOp
+2025-09-03 11:05:10,514 - DEBUG - Retrieved 1 tracks for album 0dBRziV6zcAhq0U1Ah44wN at offset 0
+2025-09-03 11:05:10,514 - INFO - Retrieved total 1 tracks for album 0dBRziV6zcAhq0U1Ah44wN
+2025-09-03 11:05:11,137 - DEBUG - Retrieved 1 tracks for album 4ErwjOzz1tTmm8vVNBCMaO at offset 0
+2025-09-03 11:05:11,138 - INFO - Retrieved total 1 tracks for album 4ErwjOzz1tTmm8vVNBCMaO
+2025-09-03 11:05:11,761 - DEBUG - Retrieved 1 tracks for album 6Wi0eIgEMemIdqHhBfe1ti at offset 0
+2025-09-03 11:05:11,761 - INFO - Retrieved total 1 tracks for album 6Wi0eIgEMemIdqHhBfe1ti
+2025-09-03 11:05:12,413 - DEBUG - Retrieved 1 tracks for album 6nDCxKRl50wqpyhdhPHbQ9 at offset 0
+2025-09-03 11:05:12,413 - INFO - Retrieved total 1 tracks for album 6nDCxKRl50wqpyhdhPHbQ9
+2025-09-03 11:05:13,054 - DEBUG - Retrieved 1 tracks for album 1tcJxdhiX1QuMrUgKsIOLb at offset 0
+2025-09-03 11:05:13,054 - INFO - Retrieved total 1 tracks for album 1tcJxdhiX1QuMrUgKsIOLb
+2025-09-03 11:05:13,712 - DEBUG - Retrieved 1 tracks for album 1HhyBYDtbRxvFYmPjmDbJX at offset 0
+2025-09-03 11:05:13,712 - INFO - Retrieved total 1 tracks for album 1HhyBYDtbRxvFYmPjmDbJX
+2025-09-03 11:05:14,337 - DEBUG - Retrieved 2 tracks for album 2Bh34W8x50I7Qp4eoyknyr at offset 0
+2025-09-03 11:05:14,337 - INFO - Retrieved total 2 tracks for album 2Bh34W8x50I7Qp4eoyknyr
+2025-09-03 11:05:15,077 - DEBUG - Retrieved 1 tracks for album 25zSrYqshB4L3jMZI3CHER at offset 0
+2025-09-03 11:05:15,077 - INFO - Retrieved total 1 tracks for album 25zSrYqshB4L3jMZI3CHER
+2025-09-03 11:05:15,731 - DEBUG - Retrieved 15 tracks for album 0XIipB9fUUu9aQ9W3U8CHk at offset 0
+2025-09-03 11:05:15,731 - INFO - Retrieved total 15 tracks for album 0XIipB9fUUu9aQ9W3U8CHk
+2025-09-03 11:05:16,404 - DEBUG - Retrieved 1 tracks for album 2dyHVNF1FbGSL7ReyObXEB at offset 0
+2025-09-03 11:05:16,404 - INFO - Retrieved total 1 tracks for album 2dyHVNF1FbGSL7ReyObXEB
+2025-09-03 11:05:17,018 - DEBUG - Retrieved 1 tracks for album 1XxrHkjLql0uTjH5UJGmBH at offset 0
+2025-09-03 11:05:17,019 - INFO - Retrieved total 1 tracks for album 1XxrHkjLql0uTjH5UJGmBH
+2025-09-03 11:05:17,633 - DEBUG - Retrieved 1 tracks for album 68Gth7YZrHgKbUbpZXQFH2 at offset 0
+2025-09-03 11:05:17,633 - INFO - Retrieved total 1 tracks for album 68Gth7YZrHgKbUbpZXQFH2
+2025-09-03 11:05:18,254 - DEBUG - Retrieved 1 tracks for album 7yWtYa0rk2NccNm8J04qoz at offset 0
+2025-09-03 11:05:18,254 - INFO - Retrieved total 1 tracks for album 7yWtYa0rk2NccNm8J04qoz
+2025-09-03 11:05:18,893 - DEBUG - Retrieved 2 tracks for album 0y3DprWeY5DvDtW5SI9w48 at offset 0
+2025-09-03 11:05:18,893 - INFO - Retrieved total 2 tracks for album 0y3DprWeY5DvDtW5SI9w48
+2025-09-03 11:05:20,034 - DEBUG - Retrieved 11 tracks for album 5Rg4ZSwf1LPCuAMr0msdun at offset 0
+2025-09-03 11:05:20,034 - INFO - Retrieved total 11 tracks for album 5Rg4ZSwf1LPCuAMr0msdun
+2025-09-03 11:05:20,689 - DEBUG - Retrieved 12 tracks for album 321q9p7PELvzcFAWxml7VX at offset 0
+2025-09-03 11:05:20,689 - INFO - Retrieved total 12 tracks for album 321q9p7PELvzcFAWxml7VX
+2025-09-03 11:05:21,318 - DEBUG - Retrieved 11 tracks for album 09Df7mUZBQwbDYgvE0t30r at offset 0
+2025-09-03 11:05:21,318 - INFO - Retrieved total 11 tracks for album 09Df7mUZBQwbDYgvE0t30r
+2025-09-03 11:05:21,946 - DEBUG - Retrieved 16 tracks for album 3Xcls9yMGlmwfePyulzrjY at offset 0
+2025-09-03 11:05:21,947 - INFO - Retrieved total 16 tracks for album 3Xcls9yMGlmwfePyulzrjY
+2025-09-03 11:05:22,607 - DEBUG - Retrieved 11 tracks for album 6Gdf5vvFmoEwcsEV61tXiT at offset 0
+2025-09-03 11:05:22,607 - INFO - Retrieved total 11 tracks for album 6Gdf5vvFmoEwcsEV61tXiT
+2025-09-03 11:05:23,251 - DEBUG - Retrieved 18 tracks for album 5JgsQDGzR0AlTRpTcBhloe at offset 0
+2025-09-03 11:05:23,251 - INFO - Retrieved total 18 tracks for album 5JgsQDGzR0AlTRpTcBhloe
+2025-09-03 11:05:23,904 - DEBUG - Retrieved 20 tracks for album 39kLAVdcgW7jbMcTEaY2qy at offset 0
+2025-09-03 11:05:23,904 - INFO - Retrieved total 20 tracks for album 39kLAVdcgW7jbMcTEaY2qy
+2025-09-03 11:05:24,524 - DEBUG - Retrieved 11 tracks for album 13dXX35pYjr8FqRla40K2a at offset 0
+2025-09-03 11:05:24,524 - INFO - Retrieved total 11 tracks for album 13dXX35pYjr8FqRla40K2a
+2025-09-03 11:05:25,144 - DEBUG - Retrieved 8 tracks for album 50V7j3NTDPwAkdTRFbjfJ9 at offset 0
+2025-09-03 11:05:25,145 - INFO - Retrieved total 8 tracks for album 50V7j3NTDPwAkdTRFbjfJ9
+2025-09-03 11:05:25,773 - DEBUG - Retrieved 15 tracks for album 3GWkEWyR2VYVRodMfcPxbD at offset 0
+2025-09-03 11:05:25,775 - INFO - Retrieved total 15 tracks for album 3GWkEWyR2VYVRodMfcPxbD
+2025-09-03 11:05:26,445 - DEBUG - Retrieved 16 tracks for album 0SFA15LcitRvgBM5SeHQ4v at offset 0
+2025-09-03 11:05:26,445 - INFO - Retrieved total 16 tracks for album 0SFA15LcitRvgBM5SeHQ4v
+2025-09-03 11:05:27,096 - DEBUG - Retrieved 17 tracks for album 4SPmILNzFDI8pwcj6VSr9X at offset 0
+2025-09-03 11:05:27,096 - INFO - Retrieved total 17 tracks for album 4SPmILNzFDI8pwcj6VSr9X
+2025-09-03 11:05:27,717 - DEBUG - Retrieved 23 tracks for album 4tw1VLfIYRVGBm55oXoiZo at offset 0
+2025-09-03 11:05:27,717 - INFO - Retrieved total 23 tracks for album 4tw1VLfIYRVGBm55oXoiZo
+2025-09-03 11:05:28,356 - DEBUG - Retrieved 40 tracks for album 55FfXQVWDbB3tEC7L9lvzA at offset 0
+2025-09-03 11:05:28,356 - INFO - Retrieved total 40 tracks for album 55FfXQVWDbB3tEC7L9lvzA
+2025-09-03 11:05:29,005 - DEBUG - Retrieved 16 tracks for album 4jKeipwuUTjlx9USNYdhZn at offset 0
+2025-09-03 11:05:29,006 - INFO - Retrieved total 16 tracks for album 4jKeipwuUTjlx9USNYdhZn
+2025-09-03 11:05:29,665 - DEBUG - Retrieved 12 tracks for album 5KcovfuEj1xrN4CHvWpcuM at offset 0
+2025-09-03 11:05:29,666 - INFO - Retrieved total 12 tracks for album 5KcovfuEj1xrN4CHvWpcuM
+2025-09-03 11:05:30,298 - DEBUG - Retrieved 18 tracks for album 3rcVBCqhDzo3conka87Q4X at offset 0
+2025-09-03 11:05:30,298 - INFO - Retrieved total 18 tracks for album 3rcVBCqhDzo3conka87Q4X
+2025-09-03 11:05:30,947 - DEBUG - Retrieved 10 tracks for album 61RLzpGAy4BrIQoEiHXGXA at offset 0
+2025-09-03 11:05:30,947 - INFO - Retrieved total 10 tracks for album 61RLzpGAy4BrIQoEiHXGXA
+2025-09-03 11:05:31,630 - DEBUG - Retrieved 7 tracks for album 6Wu7QHl7uK1EBunS3YsPni at offset 0
+2025-09-03 11:05:31,631 - INFO - Retrieved total 7 tracks for album 6Wu7QHl7uK1EBunS3YsPni
+2025-09-03 11:05:32,258 - DEBUG - Retrieved 10 tracks for album 655KljKIXl42fiNDMKivbY at offset 0
+2025-09-03 11:05:32,258 - INFO - Retrieved total 10 tracks for album 655KljKIXl42fiNDMKivbY
+2025-09-03 11:05:32,882 - DEBUG - Retrieved 16 tracks for album 1vVZU5EoAOgo1YUCWcofAP at offset 0
+2025-09-03 11:05:32,882 - INFO - Retrieved total 16 tracks for album 1vVZU5EoAOgo1YUCWcofAP
+2025-09-03 11:05:33,545 - DEBUG - Retrieved 16 tracks for album 1nby9Y6NvcDU6P2i7BWnRi at offset 0
+2025-09-03 11:05:33,545 - INFO - Retrieved total 16 tracks for album 1nby9Y6NvcDU6P2i7BWnRi
+2025-09-03 11:05:34,194 - DEBUG - Retrieved 31 tracks for album 3vlkQm8RweDiMawQPfFnkA at offset 0
+2025-09-03 11:05:34,194 - INFO - Retrieved total 31 tracks for album 3vlkQm8RweDiMawQPfFnkA
+2025-09-03 11:05:34,863 - DEBUG - Retrieved 12 tracks for album 7au0yU7KuRJAcpzGV6haVQ at offset 0
+2025-09-03 11:05:34,863 - INFO - Retrieved total 12 tracks for album 7au0yU7KuRJAcpzGV6haVQ
+2025-09-03 11:05:35,502 - DEBUG - Retrieved 12 tracks for album 581TFVtaXAO5GeU5Ry324y at offset 0
+2025-09-03 11:05:35,502 - INFO - Retrieved total 12 tracks for album 581TFVtaXAO5GeU5Ry324y
+2025-09-03 11:05:36,157 - DEBUG - Retrieved 32 tracks for album 4ESdQfdgBr9yaYraKU0Vle at offset 0
+2025-09-03 11:05:36,157 - INFO - Retrieved total 32 tracks for album 4ESdQfdgBr9yaYraKU0Vle
+2025-09-03 11:05:36,799 - DEBUG - Retrieved 22 tracks for album 77WXheyyYBkqqz6Q19l37a at offset 0
+2025-09-03 11:05:36,799 - INFO - Retrieved total 22 tracks for album 77WXheyyYBkqqz6Q19l37a
+2025-09-03 11:05:37,490 - DEBUG - Retrieved 31 tracks for album 1FictwFMH9Uv1LE8zw4pZu at offset 0
+2025-09-03 11:05:37,490 - INFO - Retrieved total 31 tracks for album 1FictwFMH9Uv1LE8zw4pZu
+2025-09-03 11:05:38,140 - DEBUG - Retrieved 13 tracks for album 2BGWnHTib774X9f7RPoato at offset 0
+2025-09-03 11:05:38,140 - INFO - Retrieved total 13 tracks for album 2BGWnHTib774X9f7RPoato
+2025-09-03 11:05:38,808 - DEBUG - Retrieved 10 tracks for album 2d0IEMZB9nPOJsliXeGTlX at offset 0
+2025-09-03 11:05:38,809 - INFO - Retrieved total 10 tracks for album 2d0IEMZB9nPOJsliXeGTlX
+2025-09-03 11:05:39,462 - DEBUG - Retrieved 1 tracks for album 5xwwqaY5S4blxRznTfrHwe at offset 0
+2025-09-03 11:05:39,463 - INFO - Retrieved total 1 tracks for album 5xwwqaY5S4blxRznTfrHwe
+2025-09-03 11:05:40,103 - DEBUG - Retrieved 1 tracks for album 5FMJB2xKTMGdM3w6DmC6L5 at offset 0
+2025-09-03 11:05:40,103 - INFO - Retrieved total 1 tracks for album 5FMJB2xKTMGdM3w6DmC6L5
+2025-09-03 11:05:40,729 - DEBUG - Retrieved 5 tracks for album 1ZvSUAW5du5OC4D3aMB7VZ at offset 0
+2025-09-03 11:05:40,730 - INFO - Retrieved total 5 tracks for album 1ZvSUAW5du5OC4D3aMB7VZ
+2025-09-03 11:05:41,352 - DEBUG - Retrieved 1 tracks for album 7iiwo2OJGz1Fzt5ZxvRXy6 at offset 0
+2025-09-03 11:05:41,352 - INFO - Retrieved total 1 tracks for album 7iiwo2OJGz1Fzt5ZxvRXy6
+2025-09-03 11:05:41,978 - DEBUG - Retrieved 16 tracks for album 2HZVuVnyHKvMt7HNEABRK1 at offset 0
+2025-09-03 11:05:41,978 - INFO - Retrieved total 16 tracks for album 2HZVuVnyHKvMt7HNEABRK1
+2025-09-03 11:05:42,585 - DEBUG - Retrieved 1 tracks for album 0iw4aOXoNy7I3mNCDa6NUU at offset 0
+2025-09-03 11:05:42,585 - INFO - Retrieved total 1 tracks for album 0iw4aOXoNy7I3mNCDa6NUU
+2025-09-03 11:05:43,219 - DEBUG - Retrieved 20 tracks for album 4MMivfa61mLYc88YmeNdGs at offset 0
+2025-09-03 11:05:43,219 - INFO - Retrieved total 20 tracks for album 4MMivfa61mLYc88YmeNdGs
+2025-09-03 11:05:43,871 - DEBUG - Retrieved 4 tracks for album 78hOD1CAqfVLjdDD8UXsUs at offset 0
+2025-09-03 11:05:43,871 - INFO - Retrieved total 4 tracks for album 78hOD1CAqfVLjdDD8UXsUs
+2025-09-03 11:05:44,535 - DEBUG - Retrieved 28 tracks for album 4q5ExOTNNUaH4SKfcGqBIq at offset 0
+2025-09-03 11:05:44,535 - INFO - Retrieved total 28 tracks for album 4q5ExOTNNUaH4SKfcGqBIq
+2025-09-03 11:05:45,227 - DEBUG - Retrieved 10 tracks for album 3foBARAwz0pcvQTv8BanTA at offset 0
+2025-09-03 11:05:45,227 - INFO - Retrieved total 10 tracks for album 3foBARAwz0pcvQTv8BanTA
+2025-09-03 11:05:45,890 - DEBUG - Retrieved 1 tracks for album 7zs4xzRQNX9w3nqjZ9iL9s at offset 0
+2025-09-03 11:05:45,890 - INFO - Retrieved total 1 tracks for album 7zs4xzRQNX9w3nqjZ9iL9s
+2025-09-03 11:05:46,578 - DEBUG - Retrieved 35 tracks for album 4ebS4oB0C4Ewe3eBCh4rsg at offset 0
+2025-09-03 11:05:46,578 - INFO - Retrieved total 35 tracks for album 4ebS4oB0C4Ewe3eBCh4rsg
+2025-09-03 11:05:47,197 - DEBUG - Retrieved 6 tracks for album 14MCIGP0VxGIvdMEXOA36W at offset 0
+2025-09-03 11:05:47,197 - INFO - Retrieved total 6 tracks for album 14MCIGP0VxGIvdMEXOA36W
+2025-09-03 11:05:47,874 - DEBUG - Retrieved 42 tracks for album 3NOtSWC8H117ASAnsMqtkz at offset 0
+2025-09-03 11:05:47,874 - INFO - Retrieved total 42 tracks for album 3NOtSWC8H117ASAnsMqtkz
+2025-09-03 11:05:48,506 - DEBUG - Retrieved 12 tracks for album 79THbqiPgp2tDoFkvfZwTl at offset 0
+2025-09-03 11:05:48,506 - INFO - Retrieved total 12 tracks for album 79THbqiPgp2tDoFkvfZwTl
+2025-09-03 11:05:49,175 - DEBUG - Retrieved 11 tracks for album 2vttMmRbUPgdzY4AsNI9KE at offset 0
+2025-09-03 11:05:49,176 - INFO - Retrieved total 11 tracks for album 2vttMmRbUPgdzY4AsNI9KE
+2025-09-03 11:05:49,802 - DEBUG - Retrieved 1 tracks for album 7yBDA7JYSUBfoi0bR7coVx at offset 0
+2025-09-03 11:05:49,802 - INFO - Retrieved total 1 tracks for album 7yBDA7JYSUBfoi0bR7coVx
+2025-09-03 11:05:50,436 - DEBUG - Retrieved 16 tracks for album 3ILbUjtYZAcMSqGwsHvEr5 at offset 0
+2025-09-03 11:05:50,436 - INFO - Retrieved total 16 tracks for album 3ILbUjtYZAcMSqGwsHvEr5
+2025-09-03 11:05:51,069 - DEBUG - Retrieved 7 tracks for album 77S3VhktdA1jAMVEaNl8mk at offset 0
+2025-09-03 11:05:51,069 - INFO - Retrieved total 7 tracks for album 77S3VhktdA1jAMVEaNl8mk
+2025-09-03 11:05:51,722 - DEBUG - Retrieved 6 tracks for album 33dnDUn6DizXf5CKiS9xOY at offset 0
+2025-09-03 11:05:51,722 - INFO - Retrieved total 6 tracks for album 33dnDUn6DizXf5CKiS9xOY
+2025-09-03 11:05:52,913 - DEBUG - Retrieved 11 tracks for album 4cO51KBYsdsbmSZleoNEGH at offset 0
+2025-09-03 11:05:52,913 - INFO - Retrieved total 11 tracks for album 4cO51KBYsdsbmSZleoNEGH
+2025-09-03 11:05:53,536 - DEBUG - Retrieved 7 tracks for album 5BwjVdVJ4aOmbIYomznfCv at offset 0
+2025-09-03 11:05:53,537 - INFO - Retrieved total 7 tracks for album 5BwjVdVJ4aOmbIYomznfCv
+2025-09-03 11:05:54,164 - DEBUG - Retrieved 11 tracks for album 6kvCH4eS92QkpBNdTmjLEz at offset 0
+2025-09-03 11:05:54,164 - INFO - Retrieved total 11 tracks for album 6kvCH4eS92QkpBNdTmjLEz
+2025-09-03 11:05:54,853 - DEBUG - Retrieved 19 tracks for album 6ImvierEtcok4Ml5uYUjvR at offset 0
+2025-09-03 11:05:54,854 - INFO - Retrieved total 19 tracks for album 6ImvierEtcok4Ml5uYUjvR
+2025-09-03 11:05:55,506 - DEBUG - Retrieved 14 tracks for album 7wXj8GxTkGAUU99DXR7n2f at offset 0
+2025-09-03 11:05:55,506 - INFO - Retrieved total 14 tracks for album 7wXj8GxTkGAUU99DXR7n2f
+2025-09-03 11:05:56,143 - DEBUG - Retrieved 12 tracks for album 5nNeSC4KNxT50MnliLuGRa at offset 0
+2025-09-03 11:05:56,143 - INFO - Retrieved total 12 tracks for album 5nNeSC4KNxT50MnliLuGRa
+2025-09-03 11:05:56,769 - DEBUG - Retrieved 11 tracks for album 61HjwbPeZTesnKzkB2HPoN at offset 0
+2025-09-03 11:05:56,769 - INFO - Retrieved total 11 tracks for album 61HjwbPeZTesnKzkB2HPoN
+2025-09-03 11:05:57,422 - DEBUG - Retrieved 18 tracks for album 6xj8KDSoPvZCquyIHWo0PJ at offset 0
+2025-09-03 11:05:57,422 - INFO - Retrieved total 18 tracks for album 6xj8KDSoPvZCquyIHWo0PJ
+2025-09-03 11:05:58,126 - DEBUG - Retrieved 31 tracks for album 6nHvlvufMa7LPk8BomR9kO at offset 0
+2025-09-03 11:05:58,126 - INFO - Retrieved total 31 tracks for album 6nHvlvufMa7LPk8BomR9kO
+2025-09-03 11:05:58,763 - DEBUG - Retrieved 24 tracks for album 4bSvzPMgzwvfqHAbcWG88o at offset 0
+2025-09-03 11:05:58,763 - INFO - Retrieved total 24 tracks for album 4bSvzPMgzwvfqHAbcWG88o
+2025-09-03 11:05:59,395 - DEBUG - Retrieved 7 tracks for album 4oEKW4TPBobcCy45vAzQm3 at offset 0
+2025-09-03 11:05:59,395 - INFO - Retrieved total 7 tracks for album 4oEKW4TPBobcCy45vAzQm3
+2025-09-03 11:06:00,019 - DEBUG - Retrieved 7 tracks for album 7bxvIUiU9S25YQgleMLCTG at offset 0
+2025-09-03 11:06:00,019 - INFO - Retrieved total 7 tracks for album 7bxvIUiU9S25YQgleMLCTG
+2025-09-03 11:06:00,718 - DEBUG - Retrieved 15 tracks for album 5niyTbKPj1WYWj8fVVLq0r at offset 0
+2025-09-03 11:06:00,718 - INFO - Retrieved total 15 tracks for album 5niyTbKPj1WYWj8fVVLq0r
+2025-09-03 11:06:01,338 - DEBUG - Retrieved 12 tracks for album 7nuZ830tqx4YT8jzJNpU2T at offset 0
+2025-09-03 11:06:01,338 - INFO - Retrieved total 12 tracks for album 7nuZ830tqx4YT8jzJNpU2T
+2025-09-03 11:06:02,086 - DEBUG - Retrieved 14 tracks for album 5mAjYVpMG2MHn8qLYqYoaX at offset 0
+2025-09-03 11:06:02,086 - INFO - Retrieved total 14 tracks for album 5mAjYVpMG2MHn8qLYqYoaX
+2025-09-03 11:06:02,697 - DEBUG - Retrieved 1 tracks for album 3WxNprVVDsnLaayEQI3PFX at offset 0
+2025-09-03 11:06:02,698 - INFO - Retrieved total 1 tracks for album 3WxNprVVDsnLaayEQI3PFX
+2025-09-03 11:06:03,367 - DEBUG - Retrieved 11 tracks for album 3eXr4s3rCLxNJpxqaIDyqJ at offset 0
+2025-09-03 11:06:03,367 - INFO - Retrieved total 11 tracks for album 3eXr4s3rCLxNJpxqaIDyqJ
+2025-09-03 11:06:03,992 - DEBUG - Retrieved 11 tracks for album 2ZR4ieeFQTOH3NqKRT8i4h at offset 0
+2025-09-03 11:06:03,992 - INFO - Retrieved total 11 tracks for album 2ZR4ieeFQTOH3NqKRT8i4h
+2025-09-03 11:06:04,667 - DEBUG - Retrieved 12 tracks for album 7D0rCfJjFj9x0bdgRKtvzb at offset 0
+2025-09-03 11:06:04,667 - INFO - Retrieved total 12 tracks for album 7D0rCfJjFj9x0bdgRKtvzb
+2025-09-03 11:06:05,314 - DEBUG - Retrieved 10 tracks for album 4YZjyiz1O5rBwiz6c0VVyI at offset 0
+2025-09-03 11:06:05,314 - INFO - Retrieved total 10 tracks for album 4YZjyiz1O5rBwiz6c0VVyI
+2025-09-03 11:06:05,976 - DEBUG - Retrieved 6 tracks for album 6lxRA8Rl9a9XoZDCVWBzBY at offset 0
+2025-09-03 11:06:05,977 - INFO - Retrieved total 6 tracks for album 6lxRA8Rl9a9XoZDCVWBzBY
+2025-09-03 11:06:06,630 - DEBUG - Retrieved 18 tracks for album 52LFpW06z2rStTaLi2lLdV at offset 0
+2025-09-03 11:06:06,630 - INFO - Retrieved total 18 tracks for album 52LFpW06z2rStTaLi2lLdV
+2025-09-03 11:06:07,278 - DEBUG - Retrieved 14 tracks for album 5nk9X6TfebDzuEdy59w817 at offset 0
+2025-09-03 11:06:07,278 - INFO - Retrieved total 14 tracks for album 5nk9X6TfebDzuEdy59w817
+2025-09-03 11:06:07,993 - DEBUG - Retrieved 17 tracks for album 6Rro4SnGlmVE4uzc2EIo2I at offset 0
+2025-09-03 11:06:07,993 - INFO - Retrieved total 17 tracks for album 6Rro4SnGlmVE4uzc2EIo2I
+2025-09-03 11:06:08,619 - DEBUG - Retrieved 22 tracks for album 0zjAqh1Fr7XQWy1SlzGhMn at offset 0
+2025-09-03 11:06:08,619 - INFO - Retrieved total 22 tracks for album 0zjAqh1Fr7XQWy1SlzGhMn
+2025-09-03 11:06:09,232 - DEBUG - Retrieved 1 tracks for album 7ddG8bsJLWEgVNONjhnT8z at offset 0
+2025-09-03 11:06:09,232 - INFO - Retrieved total 1 tracks for album 7ddG8bsJLWEgVNONjhnT8z
+2025-09-03 11:06:09,873 - DEBUG - Retrieved 9 tracks for album 43tAFmiohGIyehQQdd3Fps at offset 0
+2025-09-03 11:06:09,873 - INFO - Retrieved total 9 tracks for album 43tAFmiohGIyehQQdd3Fps
+2025-09-03 11:06:10,498 - DEBUG - Retrieved 6 tracks for album 05dECqC2jTJKERNKAOykqk at offset 0
+2025-09-03 11:06:10,498 - INFO - Retrieved total 6 tracks for album 05dECqC2jTJKERNKAOykqk
+2025-09-03 11:06:11,124 - DEBUG - Retrieved 12 tracks for album 63T19joqs65Ep3LcE74SY6 at offset 0
+2025-09-03 11:06:11,125 - INFO - Retrieved total 12 tracks for album 63T19joqs65Ep3LcE74SY6
+2025-09-03 11:06:11,758 - DEBUG - Retrieved 1 tracks for album 5k7tvONUJjP2aTxI6BBCo0 at offset 0
+2025-09-03 11:06:11,758 - INFO - Retrieved total 1 tracks for album 5k7tvONUJjP2aTxI6BBCo0
+2025-09-03 11:06:12,378 - DEBUG - Retrieved 1 tracks for album 5L03CF24pM60lcScp1O7aY at offset 0
+2025-09-03 11:06:12,378 - INFO - Retrieved total 1 tracks for album 5L03CF24pM60lcScp1O7aY
+2025-09-03 11:06:13,094 - DEBUG - Retrieved 17 tracks for album 0Dn05ZrhYlqEXIfbdkNqQS at offset 0
+2025-09-03 11:06:13,096 - INFO - Retrieved total 17 tracks for album 0Dn05ZrhYlqEXIfbdkNqQS
+2025-09-03 11:06:13,726 - DEBUG - Retrieved 16 tracks for album 3ThQ5dvf9wlqB0C7evh5nH at offset 0
+2025-09-03 11:06:13,726 - INFO - Retrieved total 16 tracks for album 3ThQ5dvf9wlqB0C7evh5nH
+2025-09-03 11:06:14,371 - DEBUG - Retrieved 15 tracks for album 3U8n8LzBx2o9gYXvvNq4uH at offset 0
+2025-09-03 11:06:14,371 - INFO - Retrieved total 15 tracks for album 3U8n8LzBx2o9gYXvvNq4uH
+2025-09-03 11:06:15,060 - DEBUG - Retrieved 18 tracks for album 4ebpJ41hnGAIBZ8Cwua250 at offset 0
+2025-09-03 11:06:15,061 - INFO - Retrieved total 18 tracks for album 4ebpJ41hnGAIBZ8Cwua250
+2025-09-03 11:06:15,696 - DEBUG - Retrieved 14 tracks for album 5Kexjw3aLUrvDNAGrUMAmE at offset 0
+2025-09-03 11:06:15,696 - INFO - Retrieved total 14 tracks for album 5Kexjw3aLUrvDNAGrUMAmE
+2025-09-03 11:06:16,335 - DEBUG - Retrieved 9 tracks for album 2qPki6xBkJ1Mbra43t7hnA at offset 0
+2025-09-03 11:06:16,335 - INFO - Retrieved total 9 tracks for album 2qPki6xBkJ1Mbra43t7hnA
+2025-09-03 11:06:16,945 - DEBUG - Retrieved 2 tracks for album 38Vd2K3RytxtNWLE5aU2VR at offset 0
+2025-09-03 11:06:16,946 - INFO - Retrieved total 2 tracks for album 38Vd2K3RytxtNWLE5aU2VR
+2025-09-03 11:06:17,598 - DEBUG - Retrieved 12 tracks for album 2puS4XHci0XEcLNNY4xgjv at offset 0
+2025-09-03 11:06:17,598 - INFO - Retrieved total 12 tracks for album 2puS4XHci0XEcLNNY4xgjv
+2025-09-03 11:06:18,304 - DEBUG - Retrieved 23 tracks for album 1oKWgM9Td5XbgUweHSRGXB at offset 0
+2025-09-03 11:06:18,304 - INFO - Retrieved total 23 tracks for album 1oKWgM9Td5XbgUweHSRGXB
+2025-09-03 11:06:18,939 - DEBUG - Retrieved 16 tracks for album 7tlJjyQw0cDB9R2lIXw2ey at offset 0
+2025-09-03 11:06:18,939 - INFO - Retrieved total 16 tracks for album 7tlJjyQw0cDB9R2lIXw2ey
+2025-09-03 11:06:19,564 - DEBUG - Retrieved 2 tracks for album 17MCK1RRgBwKzmOLioiap3 at offset 0
+2025-09-03 11:06:19,564 - INFO - Retrieved total 2 tracks for album 17MCK1RRgBwKzmOLioiap3
+2025-09-03 11:06:20,210 - DEBUG - Retrieved 1 tracks for album 7yf3T5Ga0DpWFjqzoMkXK2 at offset 0
+2025-09-03 11:06:20,210 - INFO - Retrieved total 1 tracks for album 7yf3T5Ga0DpWFjqzoMkXK2
+2025-09-03 11:06:20,839 - DEBUG - Retrieved 11 tracks for album 4p3CGBlGkqlJj2DgI3GGeo at offset 0
+2025-09-03 11:06:20,839 - INFO - Retrieved total 11 tracks for album 4p3CGBlGkqlJj2DgI3GGeo
+2025-09-03 11:06:21,475 - DEBUG - Retrieved 1 tracks for album 200TWrFxP9Wt0cHbW1PHR5 at offset 0
+2025-09-03 11:06:21,475 - INFO - Retrieved total 1 tracks for album 200TWrFxP9Wt0cHbW1PHR5
+2025-09-03 11:06:22,088 - DEBUG - Retrieved 1 tracks for album 6QZT2zNFTKGtNy1xNCeAA2 at offset 0
+2025-09-03 11:06:22,088 - INFO - Retrieved total 1 tracks for album 6QZT2zNFTKGtNy1xNCeAA2
+2025-09-03 11:06:22,709 - DEBUG - Retrieved 9 tracks for album 1gd3aBH5lv2tH0mEOYESFv at offset 0
+2025-09-03 11:06:22,709 - INFO - Retrieved total 9 tracks for album 1gd3aBH5lv2tH0mEOYESFv
+2025-09-03 11:06:23,337 - DEBUG - Retrieved 8 tracks for album 3xdp3O2a5k1bns8YJ7bKmp at offset 0
+2025-09-03 11:06:23,337 - INFO - Retrieved total 8 tracks for album 3xdp3O2a5k1bns8YJ7bKmp
+2025-09-03 11:06:23,963 - DEBUG - Retrieved 1 tracks for album 07CMoz3nybtxzSjjzqelzv at offset 0
+2025-09-03 11:06:23,963 - INFO - Retrieved total 1 tracks for album 07CMoz3nybtxzSjjzqelzv
+2025-09-03 11:06:24,579 - DEBUG - Retrieved 1 tracks for album 3k4v3wtTP6EQKgFD00Y18m at offset 0
+2025-09-03 11:06:24,579 - INFO - Retrieved total 1 tracks for album 3k4v3wtTP6EQKgFD00Y18m
+2025-09-03 11:06:25,835 - DEBUG - Retrieved 50 tracks for album 54vGSK50oe08qxz2xXECEC at offset 0
+2025-09-03 11:06:25,996 - DEBUG - Retrieved 50 tracks for album 54vGSK50oe08qxz2xXECEC at offset 50
+2025-09-03 11:06:26,114 - INFO - No tracks found for album 54vGSK50oe08qxz2xXECEC at offset 100
+2025-09-03 11:06:26,115 - INFO - Retrieved total 100 tracks for album 54vGSK50oe08qxz2xXECEC
+2025-09-03 11:06:26,787 - DEBUG - Retrieved 30 tracks for album 6kZ42qRrzov54LcAk4onW9 at offset 0
+2025-09-03 11:06:26,787 - INFO - Retrieved total 30 tracks for album 6kZ42qRrzov54LcAk4onW9
+2025-09-03 11:06:27,421 - DEBUG - Retrieved 16 tracks for album 6FJxoadUE4JNVwWHghBwnb at offset 0
+2025-09-03 11:06:27,421 - INFO - Retrieved total 16 tracks for album 6FJxoadUE4JNVwWHghBwnb
+2025-09-03 11:06:28,076 - DEBUG - Retrieved 15 tracks for album 6DEjYFkNZh67HP7R9PSZvv at offset 0
+2025-09-03 11:06:28,077 - INFO - Retrieved total 15 tracks for album 6DEjYFkNZh67HP7R9PSZvv
+2025-09-03 11:06:28,713 - DEBUG - Retrieved 24 tracks for album 1zYMNgeczOfopUj0mDK8Nx at offset 0
+2025-09-03 11:06:28,713 - INFO - Retrieved total 24 tracks for album 1zYMNgeczOfopUj0mDK8Nx
+2025-09-03 11:06:29,367 - DEBUG - Retrieved 18 tracks for album 1NAmidJlEaVgA3MpcPFYGq at offset 0
+2025-09-03 11:06:29,368 - INFO - Retrieved total 18 tracks for album 1NAmidJlEaVgA3MpcPFYGq
+2025-09-03 11:06:30,014 - DEBUG - Retrieved 17 tracks for album 6AORtDjduMM3bupSWzbTSG at offset 0
+2025-09-03 11:06:30,014 - INFO - Retrieved total 17 tracks for album 6AORtDjduMM3bupSWzbTSG
+2025-09-03 11:06:30,646 - DEBUG - Retrieved 9 tracks for album 05I8FltCMnGa3kE38mpOkL at offset 0
+2025-09-03 11:06:30,646 - INFO - Retrieved total 9 tracks for album 05I8FltCMnGa3kE38mpOkL
+2025-09-03 11:06:31,301 - DEBUG - Retrieved 11 tracks for album 1Mo92916G2mmG7ajpmSVrc at offset 0
+2025-09-03 11:06:31,302 - INFO - Retrieved total 11 tracks for album 1Mo92916G2mmG7ajpmSVrc
+2025-09-03 11:06:31,973 - DEBUG - Retrieved 27 tracks for album 6BzxX6zkDsYKFJ04ziU5xQ at offset 0
+2025-09-03 11:06:31,973 - INFO - Retrieved total 27 tracks for album 6BzxX6zkDsYKFJ04ziU5xQ
+2025-09-03 11:06:32,604 - DEBUG - Retrieved 12 tracks for album 4MjzdTkEmTwPAlVwDSSivP at offset 0
+2025-09-03 11:06:32,605 - INFO - Retrieved total 12 tracks for album 4MjzdTkEmTwPAlVwDSSivP
+2025-09-03 11:06:33,237 - DEBUG - Retrieved 14 tracks for album 0EiI8ylL0FmWWpgHVTsZjZ at offset 0
+2025-09-03 11:06:33,238 - INFO - Retrieved total 14 tracks for album 0EiI8ylL0FmWWpgHVTsZjZ
+2025-09-03 11:06:33,884 - DEBUG - Retrieved 12 tracks for album 7kFyd5oyJdVX2pIi6P4iHE at offset 0
+2025-09-03 11:06:33,884 - INFO - Retrieved total 12 tracks for album 7kFyd5oyJdVX2pIi6P4iHE
+2025-09-03 11:06:34,568 - DEBUG - Retrieved 32 tracks for album 2o2G49EPi4lua5zgxUKhLL at offset 0
+2025-09-03 11:06:34,568 - INFO - Retrieved total 32 tracks for album 2o2G49EPi4lua5zgxUKhLL
+2025-09-03 11:06:35,210 - DEBUG - Retrieved 14 tracks for album 6eZdwrhB97A3EYx9QppGfl at offset 0
+2025-09-03 11:06:35,211 - INFO - Retrieved total 14 tracks for album 6eZdwrhB97A3EYx9QppGfl
+2025-09-03 11:06:35,847 - DEBUG - Retrieved 17 tracks for album 47BiFcV59TQi2s9SkBo2pb at offset 0
+2025-09-03 11:06:35,847 - INFO - Retrieved total 17 tracks for album 47BiFcV59TQi2s9SkBo2pb
+2025-09-03 11:06:36,517 - DEBUG - Retrieved 17 tracks for album 1pzvBxYgT6OVwJLtHkrdQK at offset 0
+2025-09-03 11:06:36,517 - INFO - Retrieved total 17 tracks for album 1pzvBxYgT6OVwJLtHkrdQK
+2025-09-03 11:06:37,141 - DEBUG - Retrieved 15 tracks for album 1vWMw6pu3err6qqZzI3RhH at offset 0
+2025-09-03 11:06:37,142 - INFO - Retrieved total 15 tracks for album 1vWMw6pu3err6qqZzI3RhH
+2025-09-03 11:06:37,768 - DEBUG - Retrieved 1 tracks for album 3Fkk9e7uOLt4ZkRg7K5ABl at offset 0
+2025-09-03 11:06:37,768 - INFO - Retrieved total 1 tracks for album 3Fkk9e7uOLt4ZkRg7K5ABl
+2025-09-03 11:06:38,462 - DEBUG - Retrieved 11 tracks for album 1bt6q2SruMsBtcerNVtpZB at offset 0
+2025-09-03 11:06:38,463 - INFO - Retrieved total 11 tracks for album 1bt6q2SruMsBtcerNVtpZB
+2025-09-03 11:06:39,212 - DEBUG - Retrieved 22 tracks for album 6n9DKpOxwifT5hOXtgLZSL at offset 0
+2025-09-03 11:06:39,212 - INFO - Retrieved total 22 tracks for album 6n9DKpOxwifT5hOXtgLZSL
+2025-09-03 11:06:39,836 - DEBUG - Retrieved 12 tracks for album 1m3NgCXFcAW2sFzYbVfWXO at offset 0
+2025-09-03 11:06:39,836 - INFO - Retrieved total 12 tracks for album 1m3NgCXFcAW2sFzYbVfWXO
+2025-09-03 11:06:40,472 - DEBUG - Retrieved 16 tracks for album 4PWBTB6NYSKQwfo79I3prg at offset 0
+2025-09-03 11:06:40,472 - INFO - Retrieved total 16 tracks for album 4PWBTB6NYSKQwfo79I3prg
+2025-09-03 11:06:41,128 - DEBUG - Retrieved 28 tracks for album 4CZBLiXAPe237EfXNZ35Gl at offset 0
+2025-09-03 11:06:41,128 - INFO - Retrieved total 28 tracks for album 4CZBLiXAPe237EfXNZ35Gl
+2025-09-03 11:06:41,795 - DEBUG - Retrieved 14 tracks for album 0XKconI47eiBP6qPYHsx9f at offset 0
+2025-09-03 11:06:41,795 - INFO - Retrieved total 14 tracks for album 0XKconI47eiBP6qPYHsx9f
+2025-09-03 11:06:42,484 - DEBUG - Retrieved 28 tracks for album 3Dx1IXTwJVIMkEzVMSSSrp at offset 0
+2025-09-03 11:06:42,484 - INFO - Retrieved total 28 tracks for album 3Dx1IXTwJVIMkEzVMSSSrp
+2025-09-03 11:06:43,111 - DEBUG - Retrieved 16 tracks for album 19DGbjQW4oJmS1TLmr7OH3 at offset 0
+2025-09-03 11:06:43,111 - INFO - Retrieved total 16 tracks for album 19DGbjQW4oJmS1TLmr7OH3
+2025-09-03 11:06:43,796 - DEBUG - Retrieved 50 tracks for album 0BwWUstDMUbgq2NYONRqlu at offset 0
+2025-09-03 11:06:43,925 - DEBUG - Retrieved 8 tracks for album 0BwWUstDMUbgq2NYONRqlu at offset 50
+2025-09-03 11:06:43,925 - INFO - Retrieved total 58 tracks for album 0BwWUstDMUbgq2NYONRqlu
+2025-09-03 11:06:44,613 - DEBUG - Retrieved 46 tracks for album 1kCHru7uhxBUdzkm4gzRQc at offset 0
+2025-09-03 11:06:44,614 - INFO - Retrieved total 46 tracks for album 1kCHru7uhxBUdzkm4gzRQc
+2025-09-03 11:06:45,258 - DEBUG - Retrieved 13 tracks for album 5QG3tjE5L9F6O2vCAPph38 at offset 0
+2025-09-03 11:06:45,259 - INFO - Retrieved total 13 tracks for album 5QG3tjE5L9F6O2vCAPph38
+2025-09-03 11:06:45,907 - DEBUG - Retrieved 14 tracks for album 0L0WsHBFK6x1FdsobtH9Ko at offset 0
+2025-09-03 11:06:45,907 - INFO - Retrieved total 14 tracks for album 0L0WsHBFK6x1FdsobtH9Ko
+2025-09-03 11:06:46,527 - DEBUG - Retrieved 2 tracks for album 5BQcoDfcZ8aBcikYX9B7Ob at offset 0
+2025-09-03 11:06:46,527 - INFO - Retrieved total 2 tracks for album 5BQcoDfcZ8aBcikYX9B7Ob
+2025-09-03 11:06:47,162 - DEBUG - Retrieved 11 tracks for album 4OBFNwkfAQtAdkO35DxYnR at offset 0
+2025-09-03 11:06:47,163 - INFO - Retrieved total 11 tracks for album 4OBFNwkfAQtAdkO35DxYnR
+2025-09-03 11:06:47,823 - DEBUG - Retrieved 12 tracks for album 6ZqQ9hv1XAhLr8iQBeoWTD at offset 0
+2025-09-03 11:06:47,823 - INFO - Retrieved total 12 tracks for album 6ZqQ9hv1XAhLr8iQBeoWTD
+2025-09-03 11:06:48,436 - DEBUG - Retrieved 1 tracks for album 06nrOPhA7uFztzYVuVlvfe at offset 0
+2025-09-03 11:06:48,436 - INFO - Retrieved total 1 tracks for album 06nrOPhA7uFztzYVuVlvfe
+2025-09-03 11:06:49,066 - DEBUG - Retrieved 2 tracks for album 0iZlkQ8VecIauBVjDtiSzt at offset 0
+2025-09-03 11:06:49,066 - INFO - Retrieved total 2 tracks for album 0iZlkQ8VecIauBVjDtiSzt
+2025-09-03 11:06:49,679 - DEBUG - Retrieved 7 tracks for album 5px0M4ijgpCq9HQFATADol at offset 0
+2025-09-03 11:06:49,679 - INFO - Retrieved total 7 tracks for album 5px0M4ijgpCq9HQFATADol
+2025-09-03 11:06:50,309 - DEBUG - Retrieved 6 tracks for album 6KmrLxGgaRGIchZU1eb3br at offset 0
+2025-09-03 11:06:50,310 - INFO - Retrieved total 6 tracks for album 6KmrLxGgaRGIchZU1eb3br
+2025-09-03 11:06:51,167 - DEBUG - Retrieved 4 tracks for album 0UI1GaK5LARdZrd6UFd9Ua at offset 0
+2025-09-03 11:06:51,168 - INFO - Retrieved total 4 tracks for album 0UI1GaK5LARdZrd6UFd9Ua
+2025-09-03 11:06:51,794 - DEBUG - Retrieved 1 tracks for album 6UB1rhhsxeUx8rQa1I1PaQ at offset 0
+2025-09-03 11:06:51,794 - INFO - Retrieved total 1 tracks for album 6UB1rhhsxeUx8rQa1I1PaQ
+2025-09-03 11:06:52,444 - DEBUG - Retrieved 4 tracks for album 7a9J1MT1u5iuWwSGR3XrD8 at offset 0
+2025-09-03 11:06:52,445 - INFO - Retrieved total 4 tracks for album 7a9J1MT1u5iuWwSGR3XrD8
+2025-09-03 11:06:53,086 - DEBUG - Retrieved 12 tracks for album 25hId0XIBcNfcBtQ9XBpWm at offset 0
+2025-09-03 11:06:53,086 - INFO - Retrieved total 12 tracks for album 25hId0XIBcNfcBtQ9XBpWm
+2025-09-03 11:06:53,711 - DEBUG - Retrieved 1 tracks for album 72F20E7Unees5Uo0YmItkQ at offset 0
+2025-09-03 11:06:53,712 - INFO - Retrieved total 1 tracks for album 72F20E7Unees5Uo0YmItkQ
+2025-09-03 11:06:54,375 - DEBUG - Retrieved 13 tracks for album 4EickkApFQdwrGpgR8a7Q7 at offset 0
+2025-09-03 11:06:54,375 - INFO - Retrieved total 13 tracks for album 4EickkApFQdwrGpgR8a7Q7
+2025-09-03 11:06:55,049 - DEBUG - Retrieved 1 tracks for album 7GM9KvtIrnBubRgfaQwOWT at offset 0
+2025-09-03 11:06:55,049 - INFO - Retrieved total 1 tracks for album 7GM9KvtIrnBubRgfaQwOWT
+2025-09-03 11:06:55,706 - DEBUG - Retrieved 11 tracks for album 4iGudLG00uTMIbb7191EGw at offset 0
+2025-09-03 11:06:55,706 - INFO - Retrieved total 11 tracks for album 4iGudLG00uTMIbb7191EGw
+2025-09-03 11:06:56,382 - DEBUG - Retrieved 7 tracks for album 75QefD9UMZNVTj90r0RXW5 at offset 0
+2025-09-03 11:06:56,382 - INFO - Retrieved total 7 tracks for album 75QefD9UMZNVTj90r0RXW5
+2025-09-03 11:06:56,998 - DEBUG - Retrieved 2 tracks for album 0yICKoffv317JT36u9NTlw at offset 0
+2025-09-03 11:06:56,999 - INFO - Retrieved total 2 tracks for album 0yICKoffv317JT36u9NTlw
+2025-09-03 11:06:57,622 - DEBUG - Retrieved 10 tracks for album 5ErZg7RXcY1zEneMOWQAXc at offset 0
+2025-09-03 11:06:57,623 - INFO - Retrieved total 10 tracks for album 5ErZg7RXcY1zEneMOWQAXc
+2025-09-03 11:06:58,245 - DEBUG - Retrieved 5 tracks for album 7yEHxqwmCt299Wb6WU2qfQ at offset 0
+2025-09-03 11:06:58,245 - INFO - Retrieved total 5 tracks for album 7yEHxqwmCt299Wb6WU2qfQ
+2025-09-03 11:06:58,813 - INFO - Uploading spotify_search.parquet (37009 bytes) to MinIO bucket bronze-layer
+2025-09-03 11:06:58,865 - INFO - Uploaded spotify_search.parquet successfully
+2025-09-03 11:06:58,879 - INFO - Uploading spotify_tracks.parquet (489686 bytes) to MinIO bucket bronze-layer
+2025-09-03 11:06:58,896 - INFO - Uploaded spotify_tracks.parquet successfully
+2025-09-03 11:06:58,899 - INFO - Spotify ETL complete: 600 albums, 9164 tracks

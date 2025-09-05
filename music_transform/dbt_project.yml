@@ -1,0 +1,16 @@
+name: 'music_audit'
+version: '1.0.0'
+config-version: 2
+
+profile: 'music_audit'  # this matches your profiles.yml entry
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  music_audit:
+    bronze:
+      +schema: bronze   # clean models land in bronze schema
+    silver:
+      +schema: silver   # transformed models land in silver schema

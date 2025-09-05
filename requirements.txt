@@ -1,13 +1,13 @@
 dagster
 pandas
 requests
-google_auth_oauthlib
-googleapiclient
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
 dotenv
 textblob
 isodate 
-textblob
 minio
 pyarrow
 fastparquet
-dagster
