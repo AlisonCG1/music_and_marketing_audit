@@ -8,3 +8,10 @@ __pycache__/
 .vscode/
 logs/
 data/
+logs/
+dbt.duckdb
+docker-compose.yml
+music_data.duckdb
+spotify_etl.log
+youtube_etl.log
+.venv/

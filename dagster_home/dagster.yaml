@@ -1,6 +1,0 @@
-storage:
-  sqlite:
-    base_dir: /Users/alisoncordoba/captone/music_and_marketing_audit/dagster_home
-run_launcher:
-  module: dagster.core.launcher
-  class: DefaultRunLauncher
