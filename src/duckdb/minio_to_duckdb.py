@@ -25,15 +25,6 @@ def load_minio_to_duckdb(filenames, duckdb_path="music_data.duckdb"):
         """)
         logger.info("Configured MinIO access in DuckDB")
 
-        for filename in filenames:
-            table_name = filename.replace(".parquet", "")
-            s3_path = f"s3://bronze-layer/{filename}"
-            con.execute(f"""
-                CREATE OR REPLACE TABLE {table_name} AS
-                SELECT * FROM parquet_scan('{s3_path}')
-            """)
-            count = con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
-            logger.info(f"Created table {table_name} with {count} rows from {s3_path}")
     except Exception as e:
         logger.error(f"Error loading tables to DuckDB: {e}")
         con.close()
@@ -50,14 +41,14 @@ def export_duckdb_to_postgres(duckdb_con, tables, pg_config):
         """)
         logger.info("Attached PostgreSQL database")
         
-        for table in tables:
-            duckdb_con.execute("CREATE SCHEMA IF NOT EXISTS pg.bronze")
-            duckdb_con.execute(f"""
-                CREATE TABLE IF NOT EXISTS pg.bronze.{table} AS
-                SELECT * FROM {table}
-            """)
-            count = duckdb_con.execute(f"SELECT COUNT(*) FROM pg.bronze.{table}").fetchone()[0]
-            logger.info(f"Copied {table} to PostgreSQL with {count} rows")
+      #  for table in tables:
+     #       duckdb_con.execute("CREATE SCHEMA IF NOT EXISTS pg.bronze")
+     #       duckdb_con.execute(f"""
+     #           CREATE TABLE IF NOT EXISTS pg.bronze.{table} AS
+     #           SELECT * FROM {table}
+     #       """)
+      #      count = duckdb_con.execute(f"SELECT COUNT(*) FROM pg.bronze.{table}").fetchone()[0]
+          #  logger.info(f"Copied {table} to PostgreSQL with {count} rows")
     except Exception as e:
         logger.error(f"Error copying to PostgreSQL: {e}")
         raise

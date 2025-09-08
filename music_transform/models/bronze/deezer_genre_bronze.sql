@@ -1,4 +1,3 @@
--- Active: 1749228330621@@127.0.0.1@5434
 {{ config(materialized='table') }}
 WITH source AS (
     select

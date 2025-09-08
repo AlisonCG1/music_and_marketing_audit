@@ -1,0 +1,83 @@
+[32m2025-09-08 11:09:21 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - LOGS_CAPTURED - Started capturing logs in process (pid: 27260).
+[32m2025-09-08 11:09:21 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - youtube_search_op - STEP_START - Started execution of step "youtube_search_op".
+[32m2025-09-08 11:09:21 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - youtube_search_op - Loading file from: /Users/alisoncordoba/captone/music_and_marketing_audit/.tmp_dagster_home_rosip6ry/storage/6ccb50f7-c9cb-4b49-8aee-59075b670b6c/youtube_videos_op/videos_df using PickledObjectFilesystemIOManager...
+[32m2025-09-08 11:09:21 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - youtube_search_op - LOADED_INPUT - Loaded input "videos_df" using input manager "io_manager", from output "videos_df" of step "youtube_videos_op"
+[32m2025-09-08 11:09:21 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - youtube_search_op - STEP_INPUT - Got input "videos_df" of type "Any". (Type check passed).
+2025-09-08 11:09:21,855 - INFO - YouTube API client initialized successfully.
+2025-09-08 11:09:21,855 - DEBUG - Starting new HTTP connection (1): localhost:9000
+2025-09-08 11:09:21,863 - DEBUG - http://localhost:9000 "GET /bronze-layer?location= HTTP/1.1" 200 0
+2025-09-08 11:09:21,867 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_pop.parquet HTTP/1.1" 200 3294
+2025-09-08 11:09:21,913 - INFO - [CACHE HIT] Loaded 83 videos for 'pop' from MinIO.
+2025-09-08 11:09:21,914 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=pop&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:22,414 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_pop.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:22,414 - INFO - [API CALL] Saved 50 new videos for 'pop' (total 94) to MinIO.
+2025-09-08 11:09:22,417 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_electronic.parquet HTTP/1.1" 200 3048
+2025-09-08 11:09:22,420 - INFO - [CACHE HIT] Loaded 62 videos for 'electronic' from MinIO.
+2025-09-08 11:09:22,420 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=electronic&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:22,822 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_electronic.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:22,822 - INFO - [API CALL] Saved 50 new videos for 'electronic' (total 62) to MinIO.
+2025-09-08 11:09:22,825 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_heavy%20metal.parquet HTTP/1.1" 200 3047
+2025-09-08 11:09:22,832 - INFO - [CACHE HIT] Loaded 61 videos for 'heavy metal' from MinIO.
+2025-09-08 11:09:22,833 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=heavy+metal&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:23,564 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_heavy%20metal.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:23,564 - INFO - [API CALL] Saved 50 new videos for 'heavy metal' (total 61) to MinIO.
+2025-09-08 11:09:23,567 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_country.parquet HTTP/1.1" 200 3224
+2025-09-08 11:09:23,570 - INFO - [CACHE HIT] Loaded 75 videos for 'country' from MinIO.
+2025-09-08 11:09:23,571 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=country&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:24,051 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_country.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:24,052 - INFO - [API CALL] Saved 50 new videos for 'country' (total 75) to MinIO.
+2025-09-08 11:09:24,055 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_jazz.parquet HTTP/1.1" 200 2980
+2025-09-08 11:09:24,058 - INFO - [CACHE HIT] Loaded 61 videos for 'jazz' from MinIO.
+2025-09-08 11:09:24,059 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=jazz&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:24,494 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_jazz.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:24,494 - INFO - [API CALL] Saved 50 new videos for 'jazz' (total 61) to MinIO.
+2025-09-08 11:09:24,498 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_hip%20hop.parquet HTTP/1.1" 200 3056
+2025-09-08 11:09:24,500 - INFO - [CACHE HIT] Loaded 64 videos for 'hip hop' from MinIO.
+2025-09-08 11:09:24,501 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=hip+hop&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:24,956 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_hip%20hop.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:24,956 - INFO - [API CALL] Saved 50 new videos for 'hip hop' (total 64) to MinIO.
+2025-09-08 11:09:24,966 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_classical.parquet HTTP/1.1" 200 2919
+2025-09-08 11:09:24,971 - INFO - [CACHE HIT] Loaded 53 videos for 'classical' from MinIO.
+2025-09-08 11:09:24,971 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=classical&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:25,422 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_classical.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:25,422 - INFO - [API CALL] Saved 50 new videos for 'classical' (total 83) to MinIO.
+2025-09-08 11:09:25,424 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_folk.parquet HTTP/1.1" 200 2926
+2025-09-08 11:09:25,426 - INFO - [CACHE HIT] Loaded 57 videos for 'folk' from MinIO.
+2025-09-08 11:09:25,426 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=folk&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:25,928 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_folk.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:25,929 - INFO - [API CALL] Saved 50 new videos for 'folk' (total 57) to MinIO.
+2025-09-08 11:09:25,932 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_rock.parquet HTTP/1.1" 200 3136
+2025-09-08 11:09:25,936 - INFO - [CACHE HIT] Loaded 71 videos for 'rock' from MinIO.
+2025-09-08 11:09:25,936 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=rock&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:26,356 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_rock.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:26,356 - INFO - [API CALL] Saved 50 new videos for 'rock' (total 71) to MinIO.
+2025-09-08 11:09:26,361 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_reggae.parquet HTTP/1.1" 200 3047
+2025-09-08 11:09:26,364 - INFO - [CACHE HIT] Loaded 64 videos for 'reggae' from MinIO.
+2025-09-08 11:09:26,364 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=reggae&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:26,833 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_reggae.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:26,833 - INFO - [API CALL] Saved 50 new videos for 'reggae' (total 109) to MinIO.
+2025-09-08 11:09:26,836 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_blues.parquet HTTP/1.1" 200 2961
+2025-09-08 11:09:26,843 - INFO - [CACHE HIT] Loaded 59 videos for 'blues' from MinIO.
+2025-09-08 11:09:26,844 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=blues&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:27,347 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_blues.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:27,347 - INFO - [API CALL] Saved 50 new videos for 'blues' (total 59) to MinIO.
+2025-09-08 11:09:27,350 - DEBUG - http://localhost:9000 "GET /bronze-layer/youtube_search_r%26b.parquet HTTP/1.1" 200 2990
+2025-09-08 11:09:27,353 - INFO - [CACHE HIT] Loaded 63 videos for 'r&b' from MinIO.
+2025-09-08 11:09:27,354 - DEBUG - URL being requested: GET https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=r%26b&type=video&regionCode=US&maxResults=50&order=viewCount&key=AIzaSyBa9dluDh7aZfkmBFA5cowYFrKDVbDhL8o&alt=json
+2025-09-08 11:09:27,773 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search_r%26b.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:27,773 - INFO - [API CALL] Saved 50 new videos for 'r&b' (total 63) to MinIO.
+2025-09-08 11:09:27,787 - DEBUG - http://localhost:9000 "PUT /bronze-layer/youtube_search.parquet HTTP/1.1" 200 0
+2025-09-08 11:09:27,787 - INFO - Uploaded youtube_search.parquet to MinIO bucket bronze-layer
+2025-09-08 11:09:27,787 - INFO - Merged search table saved: youtube_search.parquet with 840 rows
+2025-09-08 11:09:27,787 - INFO - Videos Found by Genre Query (first 5 rows):
+2025-09-08 11:09:27,790 - INFO - 
+      video_id genre
+0  SYM-RJwSGQ8   pop
+1  6JnGBs88sL0   pop
+2  C-u5WLJ9Yk4   pop
+3  cb12KmMMDJA   pop
+4  nmjdaBaZe8Y   pop
+[32m2025-09-08 11:09:27 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - youtube_search_op - STEP_OUTPUT - Yielded output "search_df" of type "Any". (Type check passed).
+[32m2025-09-08 11:09:27 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - youtube_search_op - Writing file at: /Users/alisoncordoba/captone/music_and_marketing_audit/.tmp_dagster_home_rosip6ry/storage/6ccb50f7-c9cb-4b49-8aee-59075b670b6c/youtube_search_op/search_df using PickledObjectFilesystemIOManager...
+[32m2025-09-08 11:09:27 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - youtube_search_op - HANDLED_OUTPUT - Handled output "search_df" using IO manager "io_manager"
+[32m2025-09-08 11:09:27 -0500[0m - dagster - [34mDEBUG[0m - youtube_job - 6ccb50f7-c9cb-4b49-8aee-59075b670b6c - 27260 - youtube_search_op - STEP_SUCCESS - Finished execution of step "youtube_search_op" in 5.97s.

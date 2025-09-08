@@ -3,7 +3,7 @@
 WITH unified_tracks AS (
     -- Combine tracks from Deezer, Spotify, and YouTube
     SELECT
-        COALESCE(st.track_id::text, dc.deezer_chart_id::text, dg.deezer_genre_id::text) AS track_id,
+    COALESCE(st.track_id::text, dc.deezer_chart_id::text, dg.deezer_genre_id::text) AS track_id,
     COALESCE(st.track_title, dc.track_title, dg.track_title) AS track_title,
     COALESCE(st.artist_name, dc.artist_name, dg.artist_name) AS artist_name,
     COALESCE(st.album_name, dc.album_name, dg.album_name) AS album_name,
@@ -39,7 +39,6 @@ WITH unified_tracks AS (
 ),
 
 trend_metrics AS (
-    -- Calculate trend and engagement metrics
     SELECT
         track_id,
         track_title,
@@ -52,9 +51,7 @@ trend_metrics AS (
         deezer_genre_id,
         youtube_genre,
         is_on_deezer_charts,
-        -- Trend score: Weighted combination of popularity and engagement
         COALESCE(spotify_popularity, 0) * 0.6 + COALESCE(youtube_engagement_rate, 0) * 100 * 0.4 AS trend_score,
-        -- Virality potential: High engagement and recent release
         CASE
             WHEN youtube_engagement_rate > 0.05
                 AND release_date >= CURRENT_DATE - INTERVAL '30 days'
@@ -63,14 +60,12 @@ trend_metrics AS (
                 THEN 'Medium'
             ELSE 'Low'
         END AS virality_potential,
-        -- Rank within artist for competitive benchmarking
         ROW_NUMBER() OVER (PARTITION BY artist_name ORDER BY COALESCE(spotify_popularity, 0) DESC, youtube_engagement_rate DESC) AS artist_rank,
         analysis_date
     FROM unified_tracks
     WHERE track_title NOT LIKE '%drop t%'
         AND track_title NOT LIKE '$%'
         AND artist_name NOT LIKE '%electronic%'
-        -- Add more filters for malformed data if needed
 )
 
 SELECT

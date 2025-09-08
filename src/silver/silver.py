@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+#-- ADD FUNCTIONS HERE --
 BUCKET_NAME = os.getenv("BUCKET_NAME")
 
 client = Minio(
