@@ -12,11 +12,11 @@ from minio import Minio
 from minio.error import S3Error
 from googleapiclient.discovery import build
 
-# Set up logging
+
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-# Load environment variables
+
 load_dotenv()
 
 API_KEY = os.getenv("YOUTUBE_API_KEY")
@@ -24,7 +24,7 @@ MINIO_BUCKET = os.getenv("BUCKET_NAME", "bronze-layer")
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
-# MinIO resource
+
 @resource
 def minio_resource(context):
     return Minio(
@@ -34,7 +34,7 @@ def minio_resource(context):
         secure=False
     )
 
-# Initialize YouTube client
+
 def init_youtube_client(api_key):
     try:
         youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=api_key, cache_discovery=False)
@@ -44,10 +44,10 @@ def init_youtube_client(api_key):
         logger.error(f"Failed to initialize YouTube API client: {e}")
         raise
 
-# Fetch video details
+
 def fetch_videos(youtube, video_ids, retries=3, backoff_factor=2):
     video_data = []
-    quota_cost = len(video_ids) * 3  # 3 units per video (snippet, contentDetails, statistics)
+    quota_cost = len(video_ids) * 3  
     logger.info(f"Estimated quota cost for videos.list: {quota_cost} units")
     for attempt in range(retries):
         try:
@@ -91,29 +91,29 @@ def fetch_videos(youtube, video_ids, retries=3, backoff_factor=2):
                 return []
     return []
 
-# Search videos and cache results
+
 def search_videos(youtube, search_queries, max_results_per_query=50, minio_client=None):
     all_data_list = []
     all_video_ids = []
 
     for query in search_queries:
         filename = f"youtube_search_{query}.parquet"
+
         try:
             obj = minio_client.get_object(MINIO_BUCKET, filename)
             cached_df = pd.read_parquet(BytesIO(obj.read()))
             cached_df["genre"] = query
-            all_data_list.append(cached_df)
-            all_video_ids.extend(cached_df["video_id"].tolist())
             logger.info(f"[CACHE HIT] Loaded {len(cached_df)} videos for '{query}' from MinIO.")
-            continue
         except S3Error as e:
             if e.code == "NoSuchKey":
-                logger.info(f"[CACHE MISS] No cached data for '{query}', fetching from YouTube...")
+                logger.info(f"[CACHE MISS] No cached data for '{query}', will fetch fresh results...")
+                cached_df = pd.DataFrame()
             else:
                 logger.error(f"Error accessing {filename} in MinIO: {e}")
                 continue
 
         try:
+            # Fetch fresh search results
             request = youtube.search().list(
                 part="snippet",
                 q=query,
@@ -124,10 +124,12 @@ def search_videos(youtube, search_queries, max_results_per_query=50, minio_clien
             )
             response = request.execute()
             video_ids = [item["id"]["videoId"] for item in response.get("items", [])]
-            df = pd.DataFrame({"video_id": video_ids, "genre": query})
-            all_data_list.append(df)
-            all_video_ids.extend(video_ids)
+            new_df = pd.DataFrame({"video_id": video_ids, "genre": query})
 
+            # Merge cached + new
+            df = pd.concat([cached_df, new_df], ignore_index=True).drop_duplicates("video_id")
+
+            # Save back to MinIO
             buffer = BytesIO()
             df.to_parquet(buffer, index=False)
             buffer.seek(0)
@@ -138,7 +140,12 @@ def search_videos(youtube, search_queries, max_results_per_query=50, minio_clien
                 length=buffer.getbuffer().nbytes,
                 content_type="application/octet-stream"
             )
-            logger.info(f"[API CALL] Saved {len(video_ids)} videos for '{query}' to MinIO.")
+            logger.info(f"[API CALL] Saved {len(new_df)} new videos for '{query}' (total {len(df)}) to MinIO.")
+
+            # Update accumulators
+            all_data_list.append(df)
+            all_video_ids.extend(df["video_id"].tolist())
+
         except HttpError as e:
             if e.resp.status == 403 and "quotaExceeded" in str(e):
                 logger.error("Quota exceeded. Wait until midnight PT for reset.")
@@ -148,27 +155,36 @@ def search_videos(youtube, search_queries, max_results_per_query=50, minio_clien
                 continue
 
     if all_data_list:
-        merged_df = pd.concat(all_data_list, ignore_index=True).drop_duplicates(subset=["video_id"])
+        merged_df = pd.concat(all_data_list, ignore_index=True).drop_duplicates("video_id")
     else:
         merged_df = pd.DataFrame()
 
     return merged_df, all_video_ids, all_data_list
 
-# Merge search tables
-def merge_search_tables(all_data_list, minio_client, merged_filename="youtube_search.parquet"):
+
+def merge_search_tables(all_data_list, minio_client, search_queries=None, merged_filename="youtube_search.parquet"):
+
     if not all_data_list:
         logger.warning("No search tables to merge")
         return pd.DataFrame()
+
+    # If search_queries are provided, add them to each dataframe
+    if search_queries and len(search_queries) == len(all_data_list):
+        for i, df in enumerate(all_data_list):
+            df["search_query"] = search_queries[i]
+
     merged_df = pd.concat(all_data_list, ignore_index=True).drop_duplicates(subset=["video_id"])
+
     try:
         upload_to_minio(minio_client, merged_df, merged_filename)
         logger.info(f"Merged search table saved: {merged_filename} with {len(merged_df)} rows")
     except Exception as e:
         logger.error(f"Error uploading merged search table: {e}")
         raise
+
     return merged_df
 
-# Load from MinIO
+
 def load_from_minio(minio_client, filename):
     try:
         obj = minio_client.get_object(bucket_name=MINIO_BUCKET, object_name=filename)
@@ -185,7 +201,7 @@ def load_from_minio(minio_client, filename):
         logger.error(f"Error loading {filename} from MinIO: {e}")
         raise
 
-# Upload to MinIO
+
 def upload_to_minio(minio_client, df, filename, format="parquet"):
     try:
         if df is None or (isinstance(df, pd.DataFrame) and df.empty):
@@ -211,14 +227,14 @@ def youtube_videos_op(context):
               "classical", "folk", "rock", "reggae", "blues", "r&b"]
     
     try:
-        # Get search results (cached + new)
+
         search_df, all_video_ids, _ = search_videos(youtube, genres, max_results_per_query=100, minio_client=minio_client)
         
-        # Load existing video details
+
         existing_videos_df = load_from_minio(minio_client, "youtube_videos.parquet")
         existing_ids = set(existing_videos_df["video_id"].tolist()) if not existing_videos_df.empty else set()
 
-        # Fetch missing videos
+
         missing_ids = list(set(all_video_ids) - existing_ids)
         logger.info(f"Missing videos to fetch: {len(missing_ids)}")
 
@@ -257,10 +273,10 @@ def youtube_search_op(context, videos_df):
               "classical", "folk", "rock", "reggae", "blues", "r&b"]
     
     try:
-        # Fetch search results (prioritize cache)
+
         _, _, all_data_list = search_videos(youtube, genres, max_results_per_query=100, minio_client=minio_client)
         
-        # Merge search tables
+   
         search_df = merge_search_tables(all_data_list, minio_client)
         
         if not search_df.empty:

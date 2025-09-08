@@ -3,6 +3,9 @@ from src.ingestion.youtubeapi import youtube_videos_op, youtube_search_op
 from src.ingestion.spotifyapi import spotify_search_op
 from src.ingestion.deezerapi import deezer_charts_op, deezer_genres_op, deezer_albums_op
 from src.minioclient import minio_resource
+from src.duckdb.minio_to_duckdb import load_and_update_duckdb_to_postgres
+from src.silver.silver import youtube_videos_clean_op
+
 
 
 @job(resource_defs={"minio": minio_resource})
@@ -10,6 +13,9 @@ def youtube_job():
     videos_df = youtube_videos_op()
     youtube_search_op(videos_df=videos_df)
 
+@job(resource_defs={"minio": minio_resource})
+def youtube_clean_job():
+    youtube_videos_clean_op()
 
 @job(resource_defs={"minio": minio_resource})
 def spotify_job():
@@ -22,10 +28,21 @@ def deezer_job():
     deezer_genres_op()
     deezer_albums_op(charts_df=charts_df)
 
+@job(resource_defs={"minio": minio_resource})
+def duckdb_to_postgres_job():
+    load_and_update_duckdb_to_postgres()
+
+
 
 youtube_schedule = ScheduleDefinition(
     job=youtube_job,
     cron_schedule="5 7 * * *", 
+    execution_timezone="America/Chicago",
+)
+
+youtube_clean_schedule = ScheduleDefinition(
+    job=youtube_clean_job,
+    cron_schedule="0 6 * * *",  # 6:00 AM CDT
     execution_timezone="America/Chicago",
 )
 
@@ -41,9 +58,14 @@ deezer_schedule = ScheduleDefinition(
     execution_timezone="America/Chicago",
 )
 
+duckdb_schedule = ScheduleDefinition(
+    job=duckdb_to_postgres_job,
+    cron_schedule="0 10 * * *",  # 10:00 AM CDT
+    execution_timezone="America/Chicago",
+)
 
 defs = Definitions(
-    jobs=[youtube_job, spotify_job, deezer_job],
-    schedules=[youtube_schedule, spotify_schedule, deezer_schedule],
+    jobs=[youtube_job, spotify_job, deezer_job, duckdb_to_postgres_job, youtube_clean_job],
+    schedules=[youtube_schedule, spotify_schedule, deezer_schedule, duckdb_schedule, youtube_clean_schedule],
     resources={"minio": minio_resource},
 )
