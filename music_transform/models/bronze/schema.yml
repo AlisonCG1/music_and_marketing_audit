@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    tables:
+      - name: youtube_videos_clean
+      - name: youtube_search
+      - name: spotify_tracks
+      - name: spotify_search
+      - name: deezer_genres
+      - name: deezer_charts

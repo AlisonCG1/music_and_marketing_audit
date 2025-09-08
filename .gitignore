@@ -1,2 +1,17 @@
 .env
 youtube_pipeline.log
+spotifyapi.py
+youtubeapi.py
+dagster_home/
+__pycache__/
+.ipynb_checkpoints
+.vscode/
+logs/
+data/
+logs/
+dbt.duckdb
+docker-compose.yml
+music_data.duckdb
+spotify_etl.log
+youtube_etl.log
+.venv/
