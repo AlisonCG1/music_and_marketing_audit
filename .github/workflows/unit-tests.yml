@@ -20,5 +20,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest pandas
       - name: Run tests
-        run: pytest src/ingestion/test.py
+        run: pytest src/tests/test.py
 
