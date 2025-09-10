@@ -12,3 +12,6 @@ minio
 pyarrow
 fastparquet
 streamlit
+seaborn
+matplotlib
+pytest
