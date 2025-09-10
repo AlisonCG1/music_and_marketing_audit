@@ -1,7 +1,6 @@
 {{ config(materialized='table') }}
 
 WITH unified_tracks AS (
-    -- Combine tracks from Deezer, Spotify, and YouTube
     SELECT
     COALESCE(st.track_id::text, dc.deezer_chart_id::text, dg.deezer_genre_id::text) AS track_id,
     COALESCE(st.track_title, dc.track_title, dg.track_title) AS track_title,
@@ -9,8 +8,6 @@ WITH unified_tracks AS (
     COALESCE(st.album_name, dc.album_name, dg.album_name) AS album_name,
     COALESCE(st.release_date, ss.release_date) AS release_date,
     COALESCE(st.duration_seconds, dc.duration_seconds, dg.duration_seconds) AS duration_seconds,
-    st.popularity AS spotify_popularity,
-    dg.genre_id AS deezer_genre_id,
     yv.video_id AS youtube_video_id,
     yv.engagement_rate AS youtube_engagement_rate,
     ys.genre AS youtube_genre,
@@ -46,12 +43,9 @@ trend_metrics AS (
         album_name,
         release_date,
         duration_seconds,
-        spotify_popularity,
         youtube_engagement_rate,
-        deezer_genre_id,
         youtube_genre,
-        is_on_deezer_charts,
-        COALESCE(spotify_popularity, 0) * 0.6 + COALESCE(youtube_engagement_rate, 0) * 100 * 0.4 AS trend_score,
+       COALESCE(youtube_engagement_rate, 0) * 100 AS trend_score,
         CASE
             WHEN youtube_engagement_rate > 0.05
                 AND release_date >= CURRENT_DATE - INTERVAL '30 days'
@@ -60,7 +54,6 @@ trend_metrics AS (
                 THEN 'Medium'
             ELSE 'Low'
         END AS virality_potential,
-        ROW_NUMBER() OVER (PARTITION BY artist_name ORDER BY COALESCE(spotify_popularity, 0) DESC, youtube_engagement_rate DESC) AS artist_rank,
         analysis_date
     FROM unified_tracks
     WHERE track_title NOT LIKE '%drop t%'
@@ -75,14 +68,10 @@ SELECT
     album_name,
     release_date,
     duration_seconds,
-    spotify_popularity,
     youtube_engagement_rate,
-    deezer_genre_id,
     youtube_genre,
-    is_on_deezer_charts,
     trend_score,
     virality_potential,
-    artist_rank,
     analysis_date
 FROM trend_metrics
 WHERE trend_score IS NOT NULL
