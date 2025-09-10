@@ -3,7 +3,7 @@
 WITH source AS (
     select
         album_id,
-        trim(regexp_replace(lower(search_query), '[\(\)"-]', '', 'g')) as search_query,
+        trim(regexp_replace(lower(query), '[\(\)"-]', '', 'g')) as search_query,
         trim(regexp_replace(lower(artist), '[\(\)"-]', '', 'g')) as artist_name,
         case 
             when release_date ~ '^[0-9]{4}$' then to_date(release_date || '-01-01', 'YYYY-MM-DD')

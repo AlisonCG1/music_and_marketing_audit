@@ -3,7 +3,7 @@
 WITH source AS (
     select
         track_id,
-        trim(regexp_replace(lower(track_name), '[\(\)"-]', '', 'g')) as track_title,
+        trim(regexp_replace(lower(name), '[\(\)"-]', '', 'g')) as track_title,
         trim(regexp_replace(lower(artist), '[\(\)"-]', '', 'g')) as artist_name,
         trim(regexp_replace(lower(album), '[\(\)"-]', '', 'g')) as album_name,
         case
@@ -16,7 +16,7 @@ WITH source AS (
         trim(lower(query)) AS query
     from {{ source('bronze', 'spotify_tracks') }}
     where track_id IS NOT NULL
-      and track_name IS NOT NULL
+      and name IS NOT NULL
       and artist IS NOT NULL
 )
 select
