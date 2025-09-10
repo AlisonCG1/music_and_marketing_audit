@@ -1,9 +1,10 @@
 import pandas as pd
 from unittest.mock import patch, MagicMock
 
-from youtubeapi import search_videos, merge_search_tables, upload_to_minio
-from spotifyapi import get_spotify_token
-from deezerapi import deezer_request
+from src.ingestion.youtubeapi import search_videos, merge_search_tables, upload_to_minio
+from src.ingestion.spotifyapi import get_spotify_token
+from src.ingestion.deezerapi import deezer_request
+
 
 def test_search_videos():
     with patch("src.ingestion.youtubeapi.youtube") as mock_youtube:
