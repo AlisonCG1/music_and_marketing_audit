@@ -11,6 +11,30 @@ The goal of the project is to create a database that can be used to analyze the 
 
 This capstone will demonstrate how modern data engineering tools and workflows can be applied to real-world datasets. The final product will include a set of dashboards and reports that allow stakeholders (e.g., artists, music marketers, record labels) to understand the marketing performance of songs, identify high-engagement content, and forecast potential hits.
 
+## Project Overview
+The goal of this project is to:
+Collect music data from Spotify, Deezer, and YouTube.
+Clean and transform raw data into structured tables (bronze, silver, gold).
+Calculate trend metrics such as engagement, virality potential, and trend score.
+Provide a visual analytics dashboard for tracking top artists, genres, and music trends over time.
+
+## Tech Stack
+Python 3.13
+PostgreSQL for storing music data
+DBT for data transformation (bronze → silver → gold layers)
+Streamlit for interactive dashboard visualizations
+Pandas for data manipulation
+Plotly / Seaborn for interactive plots
+SQLAlchemy for database connections
+pytest for testing
+
+## Data Sources
+Spotify: track metadata, search results
+Deezer: charts and genres
+YouTube: video engagement and search data
+All raw data is ingested into the bronze layer in PostgreSQL.
+
+
 
 ## Installation
 
@@ -73,6 +97,8 @@ Engagement trends over time
 Gold-layer insights on artist + genre performance
 Tests & CI with GitHub Actions
 
+
+
 ## Architecture
 - Python
 - Docker
@@ -81,5 +107,7 @@ Tests & CI with GitHub Actions
 - Duckdb
 - MinIO
 - Streamlit
+
+
 
 
