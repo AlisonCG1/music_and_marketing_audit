@@ -20,7 +20,7 @@ def test_merge_search_tables():
     merged = merge_search_tables(df1, df2)
     assert set(merged["video_id"]) == {"a", "b", "c"}
 
-def test_upload_to_mini():
+def test_upload_to_minio():
     with patch("src.ingestion.youtubeapi.minio_client") as mock_minio:
         df = pd.DataFrame({"video_id": ["x"]})
         upload_to_minio(df, "test.parquet")
