@@ -6,13 +6,6 @@
 select
     youtube_genre as genre,
     date_trunc('month', analysis_date) as month,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    avg(spotify_popularity) as avg_spotify_popularity,
->>>>>>> 2c06345870f8e5d722a901503d972f5f0a179638
-=======
->>>>>>> 7e1ed1091d825e96b17dcc9b00ed8d8c5625d894
     avg(youtube_engagement_rate) as avg_engagement,
     avg(trend_score) as avg_trend_score
 from {{ ref('alldata_silver') }}

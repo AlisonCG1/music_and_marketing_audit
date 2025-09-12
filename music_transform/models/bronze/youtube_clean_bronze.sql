@@ -12,8 +12,6 @@ WITH source AS (
         duration_seconds,
         views,
         likes,
-        dislikes,
-        favorite_count,
         comment_count,
         tags,
         engagement_rate
@@ -30,8 +28,6 @@ SELECT
     duration_seconds,
     views,
     likes,
-    dislikes,
-    favorite_count,
     comment_count,
     tags,
     engagement_rate,

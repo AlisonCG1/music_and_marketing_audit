@@ -12,7 +12,6 @@ WITH source AS (
             else null
         end as release_date,
         (duration_ms / 1000)::int as duration_seconds,
-        CAST(popularity AS INT) AS popularity,
         trim(lower(query)) AS query
     from {{ source('bronze', 'spotify_tracks') }}
     where track_id IS NOT NULL
@@ -26,7 +25,6 @@ select
     album_name,
     release_date,
     duration_seconds,
-    popularity,
     query,
     current_timestamp AS ingested_at
 from source
