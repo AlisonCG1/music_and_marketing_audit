@@ -16,3 +16,4 @@ seaborn
 matplotlib
 pytest
 dagster-dbt
+fastapi
