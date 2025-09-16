@@ -7,21 +7,12 @@ st.set_page_config(page_title="Music & Marketing Data Explorer", layout="wide")
 
 bronze_dfs, silver_dfs, gold_dfs = load_all_data()
 
-st.title("Music & Marketing Data Explorer ✨🎹🎶")
-
-st.markdown(
-    """
-    <style>
-        div.block-container { padding-top: 1rem; }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.title("Music & Marketing Data Explorer ")
 
 tab1, tab2, tab3 = st.tabs(["Overall Data", "Insights", "Aggregated Insight"])
 
 with tab1:
-    st.header("🥉 Bronze Layer - Overall Data")
+    st.header(" Overall Data")
 
     bronze_table_names = [
         "youtube_clean_bronze",
@@ -30,7 +21,7 @@ with tab1:
     ]
 
     selected_table = st.selectbox(
-        "📂 Select a Bronze Table to Explore",
+        " Select a Bronze Table to Explore ",
         options=bronze_table_names
     )
 
@@ -41,7 +32,7 @@ with tab1:
             df["ingested_at"] = pd.to_datetime(df["ingested_at"], errors="coerce")
             df["ingested_at_formatted"] = df["ingested_at"].dt.strftime("%Y-%m-%d %H:%M")
 
-        with st.expander(f"🔎 Preview {selected_table}"):
+        with st.expander(f" Preview {selected_table}"):
             st.dataframe(df.head(20), width="stretch")
             st.caption(f"Total rows: {len(df)}")
 
@@ -56,7 +47,7 @@ with tab1:
                 genre_counts.columns = ["genre", "count"]
                 figs.append(px.pie(
                     genre_counts, names="genre", values="count",
-                    title="🎶 Top 10 YouTube Genres",
+                    title=" Top 10 YouTube Genres",
                     color_discrete_sequence=px.colors.qualitative.Pastel
                 ))
 
@@ -65,11 +56,12 @@ with tab1:
                 top_channels.columns = ["channel_title", "count"]
                 figs.append(px.bar(
                     top_channels, x="channel_title", y="count",
-                    title="📺 Top 10 YouTube Channels",
+                    title=" Top 10 YouTube Channels",
                     text_auto=True,
                     color="channel_title",
                     color_discrete_sequence=px.colors.qualitative.Bold
                 ))
+                figs[-1].update_layout(xaxis_title="YouTube Channel", yaxis_title="Video Count")
 
 
             metrics = ["likes", "comment_count", "views"]
@@ -79,11 +71,12 @@ with tab1:
                 df_metrics.columns = ["metric", "total"]
                 figs.append(px.bar(
                     df_metrics, x="metric", y="total",
-                    title="👍 Total Likes, Comments, and Views",
+                    title=" Total Likes, Comments, and Views",
                     text_auto=True,
                     color="metric",
                     color_discrete_sequence=px.colors.qualitative.Vivid
                 ))
+                figs[-1].update_layout(xaxis_title="Metric", yaxis_title="Total Value")
 
     
             if "published_at" in df.columns:
@@ -92,10 +85,11 @@ with tab1:
                 publish_counts.columns = ["year", "count"]
                 figs.append(px.line(
                     publish_counts, x="year", y="count",
-                    title="📅 Videos Published Over Time",
+                    title=" Videos Published Over Time",
                     markers=True,
                     color_discrete_sequence=[px.colors.sequential.Inferno[-1]]
                 ))
+                figs[-1].update_layout(xaxis_title="Year", yaxis_title="Number of Videos")
 
            
             for i in range(0, len(figs), 2):
@@ -111,17 +105,18 @@ with tab1:
                 top_artists.columns = ["artist_name", "count"]
                 fig = px.bar(
                     top_artists, x="artist_name", y="count",
-                    title="🎤 Top 10 Spotify Artists",
+                    title=" Top 10 Spotify Artists",
                     text_auto=True,
                     color="artist_name",
                     color_discrete_sequence=px.colors.qualitative.Bold
                 )
+                fig.update_layout(xaxis_title="Artist Name", yaxis_title="Track Count")
                 st.plotly_chart(fig, use_container_width=True)
 
             if "duration_seconds" in df.columns:
                 fig = px.histogram(
                     df, x="duration_seconds", nbins=50,
-                    title="⏱️ Track Duration Distribution",
+                    title=" Track Duration Distribution",
                     color_discrete_sequence=px.colors.sequential.Plasma
                 )
                 st.plotly_chart(fig, use_container_width=True)
@@ -132,10 +127,11 @@ with tab1:
                 release_counts.columns = ["year", "count"]
                 fig = px.line(
                     release_counts, x="year", y="count",
-                    title="📅 Tracks Released Over Time",
+                    title=" Tracks Released Over Time",
                     markers=True,
                     color_discrete_sequence=[px.colors.sequential.Viridis[-1]]
                 )
+                fig.update_layout(xaxis_title="Duration (Seconds)", yaxis_title="Number of Tracks")
                 st.plotly_chart(fig, use_container_width=True)
 
 
@@ -145,19 +141,21 @@ with tab1:
                 top_artists.columns = ["artist_name", "count"]
                 fig = px.bar(
                     top_artists, x="artist_name", y="count",
-                    title="🔍 Most Searched Artists",
+                    title=" Most Searched Artists",
                     text_auto=True,
                     color="artist_name",
                     color_discrete_sequence=px.colors.qualitative.Prism
                 )
+                fig.update_layout(xaxis_title="Artist Name", yaxis_title="Search Count")
                 st.plotly_chart(fig, use_container_width=True)
 
             if "total_tracks" in df.columns:
                 fig = px.histogram(
                     df, x="total_tracks", nbins=20,
-                    title="🎵 Number of Tracks per Search Query",
+                    title=" Number of Tracks per Search Query",
                     color_discrete_sequence=px.colors.sequential.Magenta
                 )
+                fig.update_layout(xaxis_title="Total Tracks", yaxis_title="Number of Searches")
                 st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
@@ -166,7 +164,7 @@ with tab2:
 
     available_genres = df["youtube_genre"].dropna().unique()
     selected_genres = st.multiselect(
-        "🎶 Select Genres",
+        " Select Genres",
         options=sorted(available_genres),
         default=[],
         help="Filter visualizations by one or more genres"
@@ -175,11 +173,10 @@ with tab2:
     if selected_genres:
         df = df[df["youtube_genre"].isin(selected_genres)]
 
-    with st.expander(" Preview Filtered alldata_silver"):
+    with st.expander(" Preview Filtered Silver Table"):
         st.dataframe(df.head(20).style.background_gradient(cmap="Blues"), width="stretch")
         st.caption(f"Total rows after filtering: {len(df)}")
 
-    # Silver visualizations
     col1, col2 = st.columns(2)
     if "youtube_genre" in df.columns and "trend_score" in df.columns:
         genre_trends = df.groupby("youtube_genre", as_index=False)["trend_score"].mean()
@@ -189,6 +186,7 @@ with tab2:
             color="trend_score",
             color_continuous_scale=px.colors.sequential.Inferno
         )
+        fig1.update_layout(xaxis_title="Genre", yaxis_title="Average Trend Score")
         col1.plotly_chart(fig1, use_container_width=True)
 
     if "artist_name" in df.columns and "youtube_engagement_rate" in df.columns:
@@ -200,6 +198,7 @@ with tab2:
             color="youtube_engagement_rate",
             color_continuous_scale=px.colors.sequential.Plasma
         )
+        fig2.update_layout(xaxis_title="Artist Name", yaxis_title="Average Engagement Rate")
         col2.plotly_chart(fig2, use_container_width=True)
 
     col3, col4 = st.columns(2)
@@ -209,19 +208,21 @@ with tab2:
         yearly_trend = df.groupby("release_year", as_index=False)["trend_score"].mean()
         fig3 = px.line(
             yearly_trend, x="release_year", y="trend_score",
-            title="📈 Trend Score by Release Year",
+            title=" Trend Score by Release Year",
             markers=True,
             color_discrete_sequence=px.colors.sequential.Magma
         )
+        fig3.update_layout(xaxis_title="Release Year", yaxis_title="Average Trend Score")
         col3.plotly_chart(fig3, use_container_width=True)
 
     if "virality_potential" in df.columns and "youtube_genre" in df.columns:
         fig4 = px.histogram(
             df, x="virality_potential", color="youtube_genre",
-            title="🔥 Virality Potential by Genre",
+            title=" Virality Potential by Genre",
             barmode="group",
             color_discrete_sequence=px.colors.qualitative.Set2
         )
+        fig4.update_layout(xaxis_title="Virality Potential", yaxis_title="Number of Tracks")
         col4.plotly_chart(fig4, use_container_width=True)
 
     col5, _, col6 = st.columns([2, 0.5, 2])
@@ -230,37 +231,40 @@ with tab2:
             df, x="duration_seconds", y="youtube_engagement_rate",
             color="youtube_genre",
             hover_data=["track_title", "artist_name"],
-            title="🎵 Duration vs Engagement Rate",
+            title=" Duration vs Engagement Rate",
             color_discrete_sequence=px.colors.qualitative.Pastel
         )
+        fig5.update_layout(xaxis_title="Duration (Seconds)", yaxis_title="Engagement Rate")
         col5.plotly_chart(fig5, use_container_width=True)
 
-# ---------------- TAB 3: Gold Insights ----------------
 with tab3:
-    st.header("🥇 Gold Layer - Insights")
+    st.header(" Insights")
 
     if "artist_performance_gold" in gold_dfs:
         df_artist = gold_dfs["artist_performance_gold"]
-        with st.expander("🔎 Preview artist_performance_gold"):
+        with st.expander(" Preview artist_performance_gold"):
             st.dataframe(df_artist.head(20), width="stretch")
             st.caption(f"Total rows: {len(df_artist)}")
 
-        st.subheader("📊 Artist Performance Insights")
+        st.subheader(" Artist Performance Insights")
         fig1 = px.bar(
             df_artist.sort_values("avg_trend_score", ascending=False).head(15),
             x="artist_name", y="avg_trend_score",
-            title="🏆 Top Artists by Avg Trend Score",
+            title=" Top Artists by Avg Trend Score",
             text_auto=True,
             color="avg_trend_score",
             color_continuous_scale=px.colors.sequential.Plasma
         )
+        fig1.update_layout(xaxis_title="Artist Name", yaxis_title="Average Trend Score")
+
 
         fig2 = px.scatter(
             df_artist, x="track_count", y="avg_engagement",
             color="artist_name", hover_data=["artist_name"],
-            title="🎵 Track Count vs Avg Engagement",
+            title=" Track Count vs Avg Engagement",
             color_discrete_sequence=px.colors.qualitative.Bold
         )
+        fig2.update_layout(xaxis_title="Track Count", yaxis_title="Average Engagement Rate")
 
         col1, col2 = st.columns(2)
         col1.plotly_chart(fig1, use_container_width=True)
@@ -268,11 +272,11 @@ with tab3:
 
     if "genre_trends_gold" in gold_dfs:
         df_genre = gold_dfs["genre_trends_gold"]
-        with st.expander("🔎 Preview genre_trends_gold"):
+        with st.expander(" Preview genre_trends_gold"):
             st.dataframe(df_genre.head(20), width="stretch")
             st.caption(f"Total rows: {len(df_genre)}")
 
-        st.subheader("🎧 Genre Trends Insights")
+        st.subheader(" Genre Trends Insights")
         fig3 = px.bar(
             df_genre, x="genre", y="avg_engagement",
             color="genre",
@@ -280,7 +284,7 @@ with tab3:
             title="Avg Engagement by Genre",
             color_discrete_sequence=px.colors.qualitative.Pastel
         )
-        fig3.update_layout(showlegend=False)
+        fig3.update_layout(xaxis_title="Genre", yaxis_title="Average Engagement Rate", showlegend=False)
 
         fig4 = px.bar(
             df_genre, x="genre", y="avg_trend_score",
@@ -289,7 +293,7 @@ with tab3:
             title="Avg Trend Score by Genre",
             color_discrete_sequence=px.colors.qualitative.Bold
         )
-        fig4.update_layout(showlegend=False)
+        fig4.update_layout(xaxis_title="Genre", yaxis_title="Average Trend Score", showlegend=False)
 
         col3, col4 = st.columns(2)
         col3.plotly_chart(fig3, use_container_width=True)
@@ -302,4 +306,5 @@ with tab3:
             title="Genre: Engagement vs Trend Score",
             color_discrete_sequence=px.colors.qualitative.Vivid
         )
+        fig5.update_layout(xaxis_title="Average Engagement Rate", yaxis_title="Average Trend Score")
         st.plotly_chart(fig5, use_container_width=True)
